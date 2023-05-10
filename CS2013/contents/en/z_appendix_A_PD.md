@@ -77,7 +77,7 @@ for separately in terms of the core hours.
 |                   | Core-Tier1 hours | Core-Tier2 hours | Includes Electives |
 | --- | --- | --- | --- |
 | PD/Parallelism Fundamentals                       | 2 |   | N |
-| DS/Basic Logic                                    | 1 | 3 | N |
+| PD/Parallel Decomposition                         | 1 | 3 | N |
 | PD/Communication and Coordination                 | 1 | 3 | Y |
 | PD/Parallel Algorithms, Analysis, and Programming |   | 3 | Y |
 | PD/Parallel Architecture                          | 1 | 1 | Y |
