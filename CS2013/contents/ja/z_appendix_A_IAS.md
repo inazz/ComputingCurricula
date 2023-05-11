@@ -280,7 +280,7 @@ randomized algorithms to avoid algorithmic denial of service attacks). [Familiar
 
 
 
-## IAS/防御プログラミング
+## IAS/脅威と攻撃
 *[選択必修 1時間]*
 
 **トピック:**
