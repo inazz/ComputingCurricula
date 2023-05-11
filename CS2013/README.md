@@ -157,7 +157,7 @@
 | PD | [形式モデルと意味論](contents/ja/z_appendix_A_PD.md#pd形式モデルと意味論) |   |   | Y |
 | PL | [オブジェクト指向プログラミング](contents/ja/z_appendix_A_PL.md#plオブジェクト指向プログラミング) | 4 | 6 | N |
 | PL | [関数型プログラミング](contents/ja/z_appendix_A_PL.md#pl関数型プログラミング) | 3 | 4 | N |
-| PL | [イベント駆動プログラミングと<br>リアクティブプログラミング](contents/ja/z_appendix_A_PL.md#plイベント駆動プログラミングと<br>リアクティブプログラミング) |   | 2 | N |
+| PL | [イベント駆動プログラミングと<br>リアクティブプログラミング](contents/ja/z_appendix_A_PL.md#plイベント駆動プログラミングとリアクティブプログラミング) |   | 2 | N |
 | PL | [型システムの基本](contents/ja/z_appendix_A_PL.md#pl型システムの基本) | 1 | 4 | N |
 | PL | [プログラムの表現](contents/ja/z_appendix_A_PL.md#plプログラムの表現) |   | 1 | N |
 | PL | [言語翻訳と実行](contents/ja/z_appendix_A_PL.md#pl言語翻訳と実行) |   | 3 | N |
