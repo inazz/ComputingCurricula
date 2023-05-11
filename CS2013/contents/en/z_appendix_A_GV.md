@@ -139,7 +139,7 @@ and ray tracing
 * Sampling and anti-aliasing
 * Scene graphs and the graphics pipeline
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 1. Discuss the light transport problem and its relation to numerical integration i.e., light is emitted, scatters
 around the scene, and is measured by the eye. [Familiarity]
@@ -257,7 +257,6 @@ cloth and flesh and hair
 
 **Learning Outcomes:**
 
-Learning Outcomes:
 1. Compute the location and orientation of model parts using a forward kinematic approach. [Usage]
 2. Compute the orientation of articulated parts of a model from a location and orientation using an inverse
 kinematic approach. [Usage]

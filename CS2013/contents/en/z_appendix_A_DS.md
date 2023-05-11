@@ -86,7 +86,7 @@ Reasoning)
 * Limitations of propositional and predicate logic (e.g., expressiveness issues)
 
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 1. Convert logical statements from informal language to propositional and predicate logic expressions.
 [Usage]

@@ -236,7 +236,7 @@ collections. [Usage]
 
 
 ## PL/Program Representation
-*[1 Core-Tier2 hour*
+*[1 Core-Tier2 hour]*
 
 **Topics:**
 

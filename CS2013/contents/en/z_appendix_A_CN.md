@@ -131,7 +131,7 @@ planning, science, and engineering
 * Software in support of simulation and modeling; packages, languages
 
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 1. Explain and give examples of the benefits of simulation and modeling in a range of important application
 areas. [Familiarity]

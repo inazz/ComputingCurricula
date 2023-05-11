@@ -1,5 +1,5 @@
 
-# Information Assurance and Security (IAS)
+# Information Management (IM)
 
 Information Management is primarily concerned with the capture, digitization, representation,
 organization, transformation, and presentation of information; algorithms for efficient and
@@ -17,10 +17,10 @@ in the Information Assurance and Security (IAS) topic area, IAS/Fundamental Conc
 
 |                   | Core-Tier1 hours | Core-Tier2 hours | Includes Electives |
 | --- | --- | --- | --- |
-| IM/Information Management Concepts | 1 |   | N |
-| IM/Database Systems                |   | 2 | Y |
-| IM/Data Modeling                   |   | 3 | N |
-| IM/Indexing                        |   | 4 | Y |
+| IM/Information Management Concepts | 1 | 2 | N |
+| IM/Database Systems                |   | 3 | Y |
+| IM/Data Modeling                   |   | 4 | N |
+| IM/Indexing                        |   |   | Y |
 | IM/Relational Databases            |   |   | Y |
 | IM/Query Languages                 |   |   | Y |
 | IM/Transaction Processing          |   |   | Y |

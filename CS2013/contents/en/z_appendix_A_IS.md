@@ -302,7 +302,7 @@ Cross-reference HCI/New Interactive Technologies
 * Examples of use: POS tagging and morphology
 * Information retrieval (Cross-reference IM/Information Storage and Retrieval)
  * Vector space model
- TF & IDF
+  * TF & IDF
  * Precision and recall
 * Information extraction
 * Language translation

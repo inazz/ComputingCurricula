@@ -83,7 +83,7 @@ interface construction.
 * User interface standards
 
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 1. For an identified user group, undertake and document an analysis of their needs. [Assessment]
 2. Create a simple application, together with help and documentation, that supports a graphical user
@@ -155,63 +155,6 @@ expert-based analysis, heuristics, guidelines, and standards
 3. Choose appropriate methods to support the development of a specific UI. [Assessment]
 4. Use a variety of techniques to evaluate a given UI. [Assessment]
 5. Compare the constraints and benefits of different evaluative methods. [Assessment]
-
-
-
-## HCI/New Interactive Technologies
-*[Elective]*
-
-**Motivation:** As technologies evolve, new interaction styles are made possible. This knowledge
-unit should be considered extensible, to track emergent technology.
-
-**Topics:**
-
-* Choosing interaction styles and interaction techniques
-* Representing information to users: navigation, representation, manipulation
-* Approaches to design, implementation and evaluation of non-mouse interaction
- * Touch and multi-touch interfaces
- * Shared, embodied, and large interfaces
- * New input modalities (such as sensor and location data)
- * New Windows, e.g., iPhone, Android
- * Speech recognition and natural language processing (cross reference IS/Natural Language
-Processing)
- * Wearable and tangible interfaces
- * Persuasive interaction and emotion
- * Ubiquitous and context-aware interaction technologies (Ubicomp)
- * Bayesian inference (e.g. predictive text, guided pointing)
- * Ambient/peripheral display and interaction
-
-**Learning Outcomes:**
-
-1. Describe when non-mouse interfaces are appropriate. [Familiarity]
-2. Understand the interaction possibilities beyond mouse-and-pointer interfaces. [Familiarity]
-3. Discuss the advantages (and disadvantages) of non-mouse interfaces. [Assessment]
-
-
-
-## HCI/Collaboration and Communication
-*[Elective]*
-
-**Motivation:** Computer interfaces not only support users in achieving their individual goals but
-also in their interaction with others, whether that is task-focused (work or gaming) or taskunfocused (social networking). 
-
-
-**Topics:**
-
-* Asynchronous group communication, e.g., e-mail, forums, social networks
-* Synchronous group communication, e.g., chat rooms, conferencing, online games
-* Social media, social computing, and social network analysis
-* Online collaboration, 'smart' spaces, and social coordination aspects of workflow technologies
-* Online communities
-* Software characters and intelligent agents, virtual worlds and avatars (cross-reference IS/Agents)
-* Social psychology
-
-**Learning Outcomes:**
-
-1. Describe the difference between synchronous and asynchronous communication. [Familiarity]
-2. Compare the HCI issues in individual interaction with group interaction. [Assessment]
-3. Discuss several issues of social concern raised by collaborative software. [Familiarity]
-4. Discuss the HCI issues in software that embodies human intention. [Familiarity]
 
 
 

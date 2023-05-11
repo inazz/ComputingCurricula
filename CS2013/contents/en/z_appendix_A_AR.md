@@ -76,7 +76,7 @@ level. [Assessment]
 * Representation of non-numeric data (character codes, graphical data)
 * Representation of records and arrays
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 1. Explain why everything is data, including instructions, in computers. [Familiarity]
 2. Explain the reasons for using alternative formats to represent numerical data. [Familiarity]

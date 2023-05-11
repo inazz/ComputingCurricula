@@ -110,7 +110,7 @@ that the 1:2 ratio is reasonable.
 * Heuristics
 * Reduction: transform-and-conquer
 
-**Larning Outcomes:**
+**Learning Outcomes:**
 
 [Core-Tier1]
 
