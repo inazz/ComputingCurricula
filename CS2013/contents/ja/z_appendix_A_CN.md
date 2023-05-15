@@ -1,44 +1,14 @@
 
 # 計算科学 (CN)
 
-Computational Science is a field of applied computer science, that is, the application of computer
-science to solve problems across a range of disciplines. In the book Introduction to
-Computational Science [^3], the authors offer the following definition: “the field of computational
-science combines computer simulation, scientific visualization, mathematical modeling,
-computer programming and data structures, networking, database design, symbolic computation,
-and high performance computing with various disciplines.” Computer science, which largely
-focuses on the theory, design, and implementation of algorithms for manipulating data and
-information, can trace its roots to the earliest devices used to assist people in computation over
-four thousand years ago. Various systems were created and used to calculate astronomical
-positions. Ada Lovelace’s programming achievement was intended to calculate Bernoulli
-numbers. In the late nineteenth century, mechanical calculators became available, and were
-immediately put to use by scientists. The needs of scientists and engineers for computation have
-long driven research and innovation in computing. As computers increase in their problemsolving power, computational science has grown in both breadth and importance. It is a
-discipline in its own right[^2] and is considered to be “one of the five college majors on the rise
-[^1].” An amazing assortment of sub-fields have arisen under the umbrella of Computational
-Science, including computational biology, computational chemistry, computational mechanics,
-computational archeology, computational finance, computational sociology and computational
-forensics.
+計算科学は、応用コンピューターサイエンスの一分野であり、さまざまな学問領域にわたる問題を解決するためにコンピューターサイエンスを応用したものです。「計算科学入門」[^3]という本では、著者たちは次のように定義しています。「計算科学の分野は、コンピューターシミュレーション、科学的視覚化、数理モデリング、コンピュータープログラミングとデータ構造、ネットワーキング、データベース設計、記号計算、高性能計算をさまざまな学問領域と組み合わせたものです。」
+コンピューターサイエンスは、主にデータと情報の操作を行うアルゴリズムの理論、設計、実装に焦点を当てており、その起源は約4000年前に人々が計算を補助するために使った最初の装置にまで遡ることができます。天体の位置を計算するためのさまざまな装置が作成され、使用されました。エイダ・ラブレスのプログラミングの成果は、ベルヌーイ数を計算するためのものでした。19世紀後半には機械式計算機が利用可能になり、すぐに科学者たちに利用されました。科学者やエンジニアの計算ニーズは、長い間コンピューティングの研究と革新を推進してきました。
+コンピューターが問題解決能力を増すにつれて、計算科学の幅広さと重要性も増してきました。それ自体が一つの学問領域[^2]となり、「台頭している5つの大学専攻の一つ[^1]」と考えられています。計算科学の傘下には、計算生物学、計算化学、計算力学、計算考古学、金融工学、計算社会学、計算法科学など、驚くほど多くの副領域が生まれています。
 
-Some fundamental concepts of computational science are germane to every computer scientist
-(e.g., modeling and simulation), and computational science topics are extremely valuable
-components of an undergraduate program in computer science. This area offers exposure to
-many valuable ideas and techniques, including precision of numerical representation, error
-analysis, numerical techniques, parallel architectures and algorithms, modeling and simulation,
-information visualization, software engineering, and optimization. Topics relevant to
-computational science include fundamental concepts in program construction (SDF/Fundamental
-Programming Concepts), algorithm design (SDF/Algorithms and Design), program testing
-(SDF/Development Methods), data representations (AR/Machine Representation of Data), and
-basic computer architecture (AR/Memory System Organization and Architecture). At the same
-time, students who take courses in this area have an opportunity to apply these techniques in a
-wide range of application areas, such as molecular and fluid dynamics, celestial mechanics,
-economics, biology, geology, medicine, and social network analysis. Many of the techniques
-used in these areas require advanced mathematics such as calculus, differential equations, and
-linear algebra. The descriptions here assume that students have acquired the needed
-mathematical background elsewhere.
- In the computational science community, the terms run, modify, and create are often used to
-describe levels of understanding. This chapter follows the conventions of other chapters in this
-volume and uses the terms familiarity, usage, and assessment.
+計算科学のいくつかの基本的な概念は、すべてのコンピューターサイエンティストにとって重要です（例えば、モデリングやシミュレーション）、そして計算科学のトピックは、コンピューターサイエンスの学部プログラムの非常に価値ある要素です。この分野は、数値表現の精度、誤差分析、数値解析、並列アーキテクチャとアルゴリズム、モデリングとシミュレーション、情報可視化、ソフトウェア工学、最適化など、多くの有益なアイデアと技術を学ぶ機会を提供します。
+計算科学に関連するトピックには、プログラム構築の基本的な概念（[SDF/プログラミングの基本概念](./z_appendix_A_SDF.md#sdfプログラミングの基本概念)）、アルゴリズム設計（[SDF/アルゴリズムと設計](./z_appendix_A_SDF.md#sdfアルゴリズムと設計)）、プログラムテスト（[SDF/開発方法](./z_appendix_A_SDF.md#sdf開発方法)）、データ表現（[AR/機械レベルでのデータの表現](./z_appendix_A_AR.md#ar機械レベルでのデータの表現)）、基本的なコンピューターアーキテクチャ（[AR/メモリシステムの構成とアーキテクチャ](./z_appendix_A_AR.md#arメモリシステムの構成とアーキテクチャ)）などが含まれます。
+同時に、この分野を受講する学生は、分子動力学、流体動力学、天体力学、経済学、生物学、地質学、医学、ソーシャルネットワーク分析などの幅広い応用領域で技術を適用する機会を得ます。これらの領域で使用される多くの技術は、微積分、微分方程式、線形代数といった高度な数学を必要とします。ここでの説明は、学生が他の場所で必要な数学的背景を習得していることを前提としています。
+計算科学のコミュニティでは、理解のレベルを説明するために「実行」「修正」「作成」の用語がよく使われます。この章では、この書籍の他の章の慣例に従って、「知識」「使用」「評価」の用語を使用しています。
 
 [^1]: Fischer, K. and Glenn, D., “5 College Majors on the Rise,” The Chronicle of Higher
 Education, August 31, 2009.
@@ -62,259 +32,192 @@ Simulation for the Sciences, Princeton University Press, 2006: p. 3.
 ## CN/モデリングとシミュレーションへの導入
 *[必修 1時間]*
 
-Abstraction is a fundamental concept in computer science. A principal approach to computing is
-to abstract the real world, create a model that can be simulated on a machine. The roots of
-computer science can be traced to this approach, modeling things such as trajectories of artillery
-shells and the modeling cryptographic protocols, both of which pushed the development of early
-computing systems in the early and mid-1940’s.
-
-Modeling and simulation of real world systems represent essential knowledge for computer
-scientists and provide a foundation for computational sciences. Any introduction to modeling
-and simulation would either include or presume an introduction to computing. In addition, a
-general set of modeling and simulation techniques, data visualization methods, and software
-testing and evaluation mechanisms are also important. 
+抽象化はコンピューターサイエンスの基本的な概念です。コンピューティングの主要なアプローチの一つは、現実世界を抽象化し、機械上でシミュレート可能なモデルを作成することです。コンピューターサイエンスの起源はこのアプローチに遡ることができ、砲弾の軌道や暗号プロトコルのモデリングなどが1940年代初頭から中頃の初期のコンピューティングシステムの開発を推進しました。
+現実世界のシステムのモデリングとシミュレーションは、コンピューターサイエンティストにとっての必須の知識であり、計算科学の基礎を提供します。「モデリングとシミュレーションへの導入」は、コンピューティングへの導入を含むか、もしくはそれを前提とします。一般的なモデリングとシミュレーションの技術、データ可視化方法、ソフトウェアテストと評価メカニズムも重要です。
 
 
 **トピック:**
-* Models as abstractions of situations
-* Simulations as dynamic modeling
-* Simulation techniques and tools, such as physical simulations, human-in-the-loop guided simulations, and
-virtual reality
-* Foundational approaches to validating models (e.g., comparing a simulation’s output to real data or the
-output of another model)
-* Presentation of results in a form relevant to the system being modeled
+* モデルとは状況の抽象化
+* シミュレーションとは動的なモデリング
+* 物理シミュレーション、人間が介在するシミュレーション、バーチャルリアリティなどのシミュレーション手法とツール
+* モデルの検証に対する基本的なアプローチ（例えば、シミュレーションの出力と実際のデータや別のモデルの出力を比較する）
+* モデル化されるシステムに関連した形式での結果の提示
 
 **学習到達目標:**
 
-1. Explain the concept of modeling and the use of abstraction that allows the use of a machine to solve a
-problem. [Familiarity]
-2. Describe the relationship between modeling and simulation, i.e., thinking of simulation as dynamic
-modeling. [Familiarity]
-3. Create a simple, formal mathematical model of a real-world situation and use that model in a simulation.
-[Usage]
-4. Differentiate among the different types of simulations, including physical simulations, human-guided
-simulations, and virtual reality. [Familiarity]
-5. Describe several approaches to validating models. [Familiarity]
-6. Create a simple display of the results of a simulation. [Usage]
+1. モデリングの概念と、抽象化により問題解決のために機械を使用可能にできることを説明する。[知識]
+2. モデリングとシミュレーションの関係性を説明する、つまりシミュレーションを動的なモデリングと考える。[知識]
+3. 現実世界の状況の単純で正式な数学モデルを作成し、そのモデルをシミュレーションで使用する。[使用]
+4. 物理シミュレーション、人間が誘導するシミュレーション、バーチャルリアリティなど、異なるタイプのシミュレーションを区別する。[知識]
+5. モデルを検証するいくつかのアプローチを説明する。[知識]
+6. シミュレーション結果の単純な表示を作成する。[使用]
 
 
 
 ## CN/モデリングとシミュレーション
-*[Elective]*
+*[選択科目]*
 
 **トピック:**
 
-* Purpose of modeling and simulation including optimization; supporting decision making, forecasting,
-safety considerations; for training and education
-* Tradeoffs including performance, accuracy, validity, and complexity
-* The simulation process; identification of key characteristics or behaviors, simplifying assumptions;
-validation of outcomes
-* Model building: use of mathematical formulas or equations, graphs, constraints; methodologies and
-techniques; use of time stepping for dynamic systems
-* Formal models and modeling techniques: mathematical descriptions involving simplifying assumptions
-and avoiding detail. Examples of techniques include:
- * Monte Carlo methods
- * Stochastic processes
- * Queuing theory
- * Petri nets and colored Petri nets
- * Graph structures such as directed graphs, trees, networks
- * Games, game theory, the modeling of things using game theory
- * Linear programming and its extensions
- * Dynamic programming
- * Differential equations: ODE, PDE
- * Non-linear techniques
- * State spaces and transitions
-* Assessing and evaluating models and simulations in a variety of contexts; verification and validation of
-models and simulations
-* Important application areas including health care and diagnostics, economics and finance, city and urban
-planning, science, and engineering
-* Software in support of simulation and modeling; packages, languages
+* モデリングとシミュレーションの目的: 最適化・予測や安全性考慮など意思決定の支援・教育や訓練
+* トレードオフ: 性能・精度・妥当性・複雑性
+* シミュレーションの手順: 主要な特徴や振る舞いの特定・単純化した仮定・結果の検証
+* モデル作成: 数式や方程式、グラフ、制約の使用・方法論と手法・動的システムに対するタイムステップの使用
+* 形式的モデルとモデリング手法：単純化した仮定と詳細を避ける数学的な記述。以下は手法の例。
+ * モンテカルロ法
+ * 確率過程
+ * 行列理論
+ * ペトリネットとカラーペトリネット
+ * 有向グラフ、木、ネットワークなどのグラフ構造
+ * ゲーム、ゲーム理論、ゲーム理論を用いたもののモデリング
+ * 線型計画法とその拡張
+ * 動的計画法
+ * 微分方程式：ODE、PDE
+ * 非線形手法
+ * 状態空間と遷移
+* さまざまな状況でのモデルとシミュレーションの質的量的評価: 検証と妥当性確認
+* 重要な応用領域: 医療と診断・経済と金融・都市と都市計画・科学・工学
+* シミュレーションとモデリングを支援するソフトウェア、パッケージ、言語
 
 
 **学習到達目標:**
 
-1. Explain and give examples of the benefits of simulation and modeling in a range of important application
-areas. [Familiarity]
-2. Demonstrate the ability to apply the techniques of modeling and simulation to a range of problem areas.
-[Usage]
-3. Explain the constructs and concepts of a particular modeling approach. [Familiarity]
-4. Explain the difference between validation and verification of a model; demonstrate the difference with
-specific examples[^4]. [Assessment]
-5. Verify and validate the results of a simulation. [Assessment]
-6. Evaluate a simulation, highlighting the benefits and the drawbacks. [Assessment]
-7. Choose an appropriate modeling approach for a given problem or situation. [Assessment]
-8. Compare results from different simulations of the same situation and explain any differences. [Assessment]
-9. Infer the behavior of a system from the results of a simulation of the system. [Assessment]
-10. Extend or adapt an existing model to a new situation. [Assessment]
+1. 重要な応用領域におけるシミュレーションとモデリングの利点を説明し、例を挙げる。[知識]
+2. モデリングとシミュレーションの技術を様々な問題領域に適用する能力を示す。[使用]
+3. 特定のモデリングアプローチの構造と概念を説明する。[知識]
+4. モデルの検証と妥当性確認の違いを説明し、具体的な例を用いてその違いを示す[^4]。[評価]
+5. シミュレーションの結果を検証し、妥当性を確認する。[評価]
+6. シミュレーションを評価し、その利点と欠点を強調する。[評価]
+7. 与えられた問題や状況に対して適切なモデリングアプローチを選択する。[評価]
+8. 同じ状況に対する異なるシミュレーションの結果を比較し、その違いを説明する。[評価]
+9. システムのシミュレーション結果から、そのシステムの振る舞いを推測する。[評価]
+10. 既存のモデルを新しい状況に拡張または適応する。[評価]
 
-[^4]: Verification means that the computations of the model are correct. If we claim to compute total time, for example,
-the computation actually does that. Validation asks whether the model matches the real situation.
+[^4]: 検証とは、モデルの計算が正しいことを意味します。例えば、合計時間を計算すると主張する場合、モデルの計算がそうなっているということです。妥当性確認とは、モデルが実際の状況に一致するかどうかを問います。
 
 
 
 ## CN/プロセッシング
-*[Elective]*
+*[選択科目]*
 
-The processing topic area includes numerous topics from other knowledge areas. Specifically,
-coverage of processing should include a discussion of hardware architectures, including parallel
-systems, memory hierarchies, and interconnections among processors. These are covered in
-AR/Interfacing and Communication, AR/Multiprocessing and Alternative Architectures,
-AR/Performance Enhancements.
+プロセッシングのトピックは、他の知識領域からの多数のトピックを含みます。具体的には、並列システム、メモリ階層、プロセッサ間の相互接続を含むハードウェアアーキテクチャの議論は含まれるべきです。これらは[AR/インターフェースと通信](./z_appendix_A_AR.md#arインターフェースと通信)、[AR/マルチプロセッシングとその構成の選択肢](./z_appendix_A_AR.md#arマルチプロセッシングとその構成の選択肢)、[AR/性能向上のための技術](./z_appendix_A_AR.md#ar性能向上のための技術)で取り上げられています。
+
 
 **トピック:**
 
-* Fundamental programming concepts:
- * The concept of an algorithm consisting of a finite number of well-defined steps, each of which
-completes in a finite amount of time, as does the entire process.
- * Examples of well-known algorithms such as sorting and searching.
- * The concept of analysis as understanding what the problem is really asking, how a problem can be
-approached using an algorithm, and how information is represented so that a machine can process
-it.
- * The development or identification of a workflow.
- * The process of converting an algorithm to machine-executable code.
- * Software processes including lifecycle models, requirements, design, implementation, verification
-and maintenance.
- * Machine representation of data computer arithmetic.
-* Numerical methods
- * Algorithms for numerically fitting data (e.g., Newton’s method)
- * Architectures for numerical computation, including parallel architectures
-* Fundamental properties of parallel and distributed computation:
- * Bandwidth.
- * Latency.
- * Scalability.
- * Granularity.
- * Parallelism including task, data, and event parallelism.
- * Parallel architectures including processor architectures, memory and caching.
- * Parallel programming paradigms including threading, message passing, event driven techniques,
-parallel software architectures, and MapReduce.
- * Grid computing.
- * The impact of architecture on computational time.
- * Total time to science curve for parallelism: continuum of things.
-* Computing costs, e.g., the cost of re-computing a value vs. the cost of storing and lookup.
-
+* 基本的なプログラミングの概念
+ * 明確に定義された有限の手順からなるアルゴリズムの概念。各手順は有限時間で完了すことでプロセス全体も有限時間で完了する。
+ * ソートや検索などのよく知られたアルゴリズムの例。
+ * 分析という概念は、問題の本質が何か、問題をアルゴリズムを使ってどのようにアプローチするか、情報を機械処理させるためにどのように表現するかを理解すること。
+ * ワークフローの開発または識別。
+ * アルゴリズムを機械実行可能なコードに変換するプロセス。
+ * ソフトウェアプロセスは、ライフサイクルモデル、要件、設計、実装、検証、および保守を含む。
+ * コンピュータ算術のためのデータの機械表現。
+* 数値計算
+ * データを数値的にフィットさせるためのアルゴリズム（例えば、ニュートン法）
+ * 数値計算のためのアーキテクチャ、並列アーキテクチャを含む。
+* 並列および分散計算の基本的な特性
+ * 帯域幅
+ * レイテンシ
+ * スケーラビリティ
+ * 粒度
+ * タスク、データ、イベント並列性を含む並列性
+ * プロセッサアーキテクチャ、メモリ、キャッシュを含む並列アーキテクチャ
+ * スレッド、メッセージパッシング、イベント駆動の手法、並列ソフトウェアアーキテクチャ、およびMapReduceを含む並列プログラミングパラダイム
+ * グリッドコンピューティング
+ * アーキテクチャが計算時間に与える影響
+ * 合計時間と並列性の科学的な連続曲線
+* 計算コスト。 例: 値の再計算コスト vs 保存と参照のコスト。
 
 
 **学習到達目標:**
 
-1. Explain the characteristics and defining properties of algorithms and how they relate to machine
-processing. [Familiarity]
-2. Analyze simple problem statements to identify relevant information and select appropriate processing to
-solve the problem. [Assessment]
-3. Identify or sketch a workflow for an existing computational process such as the creation of a graph based
-on experimental data. [Familiarity]
-4. Describe the process of converting an algorithm to machine-executable code. [Familiarity]
-5. Summarize the phases of software development and compare several common lifecycle models.
-[Familiarity]
-6. Explain how data is represented in a machine. Compare representations of integers to floating point
-numbers. Describe underflow, overflow, round off, and truncation errors in data representations.
-[Familiarity]
-7. Apply standard numerical algorithms to solve ODEs and PDEs. Use computing systems to solve systems of
-equations. [Usage]
-8. Describe the basic properties of bandwidth, latency, scalability and granularity. [Familiarity]
-9. Describe the levels of parallelism including task, data, and event parallelism. [Familiarity]
-10. Compare and contrast parallel programming paradigms recognizing the strengths and weaknesses of each.
-[Assessment]
-11. Identify the issues impacting correctness and efficiency of a computation. [Familiarity]
-12. Design, code, test and debug programs for a parallel computation. [Usage]
+1. アルゴリズムを定義づける各性質と特徴を説明し、それらが機械処理とどのように関連しているかを説明します。[知識]
+2. 単純な問題定義を分析して関連する情報を特定し、問題を解決するための適切な処理を選択します。[評価]
+3. 実験データに基づいたグラフの作成など、既存の計算プロセスのワークフローを特定または説明します。[知識]
+4. アルゴリズムを機械実行可能なコードに変換するプロセスを説明します。[知識]
+5. ソフトウェア開発のフェーズを要約し、いくつかの一般的なライフサイクルモデルを比較します。[知識]
+6. データが機械でどのように表現されるかを説明します。整数の表現と浮動小数点数の表現を比較します。データ表現におけるアンダーフロー、オーバーフロー、丸め誤差、切り捨て誤差を説明します。[知識]
+7. 標準的な数値アルゴリズムを用いてODEとPDEを解きます。計算システムを用いて連立方程式を解きます。[使用]
+8. 帯域幅、レイテンシ、スケーラビリティ、粒度の基本的な特性を説明します。[知識]
+9. タスク、データ、イベント並列性を含む並列性のレベルを説明します。[知識]
+10. 並列プログラミングパラダイムを比較対比し、それぞれの強みと弱みを認識します。[評価]
+11. 計算の正確さや効率に影響を与える問題を特定します。[知識]
+12. 並列計算のプログラムを設計、実装、テスト、デバッグします。[使用]
 
 
 
 ## CN/対話的な視覚化
-*[Elective]*
+*[選択科目]*
 
-This sub-area is related to modeling and simulation. Most topics are discussed in detail in other
-knowledge areas in this document. There are many ways to present data and information,
-including immersion, realism, variable perspectives; haptics and heads-up displays, sonification,
-and gesture mapping.
+この副領域はモデリングとシミュレーションに関連しています。ほとんどのトピックは、他の知識領域で詳しく説明されています。
+データと情報を提示するのには様々な手法があり、没入視点、写実表現、可変視点、触覚技術とヘッドアップディスプレイ、可聴化、ジェスチャー操作などが含まれます。
+一般的に、対話的な視覚化は、人間の知覚 -- グラフィックスパイプライン、幾何学的表現とデータ構造（[GV/基礎概念](z_appendix_GV.md#gv基礎概念)）や、2Dと3Dのレンダリング、表面と立体のレンダリング（[GV/基本的なレンダリング](./z_appendix_GV.md#gv基本的なレンダリング)、[GV/幾何モデリング](./z_appendix_GV.md#gv幾何モデリング)、[GV/先進的なレンダリング](./z_appendix_GV.md#gv先進的なレンダリング)）-- の理解を必要とし、標準的な入力コンポーネント(メニュー、スライダー、ボタンなど)やデータ表示用の標準的な出力コンポーネント(チャート、グラフ、テーブル、ヒストグラムなど)を使ったUIの開発用 API を使用する必要があります（[HCI/インタラクションの設計](./z_appendix_HCI.md#hciインタラクションの設計)、[HCI/対話システムのプログラミング](./z_appendix_HCI.md#hci対話システムのプログラミング))。
 
-Interactive visualization in general requires understanding of human perception (GV/Basics);
-graphics pipelines, geometric representations and data structures (GV/Fundamental Concepts);
-2D and 3D rendering, surface and volume rendering (GV/Rendering, GV/Modeling, and
-GV/Advanced Rendering); and the use of APIs for developing user interfaces using standard
-input components such as menus, sliders, and buttons; and standard output components for data
-display, including charts, graphs, tables, and histograms (HCI/GUI Construction, HCI/GUI
-Programming).
 
 **トピック:**
 
-* Principles of data visualization
-* Graphing and visualization algorithms
-* Image processing techniques
-* Scalability concerns
+* データ視覚化の原則
+* グラフと視覚化アルゴリズム
+* 画像処理技術
+* スケーラビリティの問題
 
 **学習到達目標:**
 
-1. Compare common computer interface mechanisms with respect to ease-of-use, learnability, and cost.
-[Assessment]
-2. Use standard APIs and tools to create visual displays of data, including graphs, charts, tables, and
-histograms. [Usage]
-3. Describe several approaches to using a computer as a means for interacting with and processing data.
-[Familiarity]
-4. Extract useful information from a dataset. [Assessment]
-5. Analyze and select visualization techniques for specific problems. [Assessment]
-6. Describe issues related to scaling data analysis from small to large data sets. [Familiarity]
+1. 使いやすさ、学習性、コストの観点から、一般的なコンピュータインターフェース機構を比較する。[評価]
+2. 標準的なAPIとツールを使用して、グラフ、チャート、テーブル、ヒストグラムなどとしてデータを視覚的表示する。[使用]
+3. コンピュータを使用してデータと対話し、データを処理するためのいくつかのアプローチを説明する。[知識]
+4. データセットから有用な情報を抽出する。[評価]
+5. 特定の問題を分析し、視覚化技術を選択する。[評価]
+6. 小規模から大規模なデータセットを分析する際のスケーリングに関連する問題を説明する。[知識]
 
 
 
 ## CN/データ・情報・知識
-*[Elective]*
+*[選択科目]*
 
-Many topics are discussed in detail in other knowledge areas in this document, specifically
-Information Management (IM/Information Management Concepts, IM/Database Systems, and
-IM/Data Modeling), Algorithms and Complexity (AL/Basic Analysis, AL/Fundamental Data
-Structures and Algorithms), and Software Development Fundamentals (SDF/Fundamental
-Programming Concepts, SDF/Development Methods).
+他の知識領域で詳しく議論されている多くのトピックがあります。具体的には、情報管理（[IM/情報管理の概念](./z_appendix_IM.md#im情報管理の概念)、[IM/データベースシステム](./z_appendix_IM.md#imデータベースシステム)、[IM/データモデル](./z_appendix_IM.md#imデータモデル)）、アルゴリズムと計算量（[AL/計算量の解析](./z_appendix_AL.md#al計算量の解析)、[AL/基本データ構造とアルゴリズム](./z_appendix_AL.md#al基本データ構造とアルゴリズム)）、ソフトウェア開発の基礎（[SDF/プログラミングの基本概念](./z_appendix_SDF.md#sdfプログラミングの基本概念)、[SDF/開発手法](z_appendix_SDF.md#sdf開発手法)）が該当します。
+
+
 
 **トピック:**
-* Content management models, frameworks, systems, design methods (as in IM. Information Management)
-* Digital representations of content including numbers, text, images (e.g., raster and vector), video (e.g.,
-QuickTime, MPEG2, MPEG4), audio (e.g., written score, MIDI, sampled digitized sound track) and
-animations; complex/composite/aggregate objects; FRBR
-* Digital content creation/capture and preservation, including digitization, sampling, compression,
-conversion, transformation/translation, migration/emulation, crawling, harvesting
-* Content structure / management, including digital libraries and static/dynamic/stream aspects for:
- * Data: data structures, databases
- * Information: document collections, multimedia pools, hyperbases (hypertext, hypermedia),
-catalogs, repositories
- * Knowledge: ontologies, triple stores, semantic networks, rules
-* Processing and pattern recognition, including indexing, searching (including: queries and query languages;
-central / federated / P2P), retrieving, clustering, classifying/categorizing, analyzing/mining/extracting,
-rendering, reporting, handling transactions
-* User / society support for presentation and interaction, including browse, search, filter, route, visualize,
-share, collaborate, rate, annotate, personalize, recommend
-* Modeling, design, logical and physical implementation, using relevant systems/software
 
+* コンテンツ管理モデル、フレームワーク、システム、設計手法（[IM. 情報管理](./z_appendix_IM.md)を参照）
+* 数字、テキスト、画像 (例: ラスターとベクター)、動画 (例: QuickTime、MPEG2、MPEG4)、音声 (例: 楽譜、MIDI、サンプル化されたデジタル音声信号）やアニメーションなどのコンテンツのデジタル表現。複雑な/複合的な/集約的なオブジェクト。FRBR。
+* デジタルコンテンツの作成/キャプチャおよび保存。デジタル化、サンプリング、圧縮、変換、変換/翻訳、移植/エミュレーション、クローリング、収集を含む。
+* コンテンツ構造/管理。これにはデジタルライブラリや静的/動的/ストリームの観点からの以下を含む:
+ * データ: データ構造、データベース
+ * 情報: ドキュメントのコレクション、マルチメディアプール、ハイパーベース（ハイパーテキスト、ハイパーメディア）、カタログ、リポジトリ
+ * 知識: オントロジー、トリプルストア、セマンティックネットワーク、ルール
+* 処理とパターンの認識、これには索引付け、検索（クエリ/クエリ言語・中央集権型/連合型/P2P を含む）、取得、クラスタリング、分類/カテゴライズ、分析/マイニング/抽出、描画、報告、トランザクション処理が含まれます
+* ユーザー/社会の発表や交流の支援。これには閲覧、検索、フィルタリング、ルーティング、視覚化、共有、協働、評価、注釈付け、パーソナライズ、レコメンドを含む。
+* 関連するシステム/ソフトウェアを使用したモデリング、設計、論理的および物理的な実装。
+
+  
 **学習到達目標:**
-1. Identify all of the data, information, and knowledge elements and related organizations, for a computational
-science application. [Assessment]
-2. Describe how to represent data and information for processing. [Familiarity]
-3. Describe typical user requirements regarding that data, information, and knowledge. [Familiarity]
-4. Select a suitable system or software implementation to manage data, information, and knowledge.
-[Assessment]
-5. List and describe the reports, transactions, and other processing needed for a computational science
-application. [Familiarity]
-6. Compare and contrast database management, information retrieval, and digital library systems with regard
-to handling typical computational science applications. [Assessment]
-7. Design a digital library for some computational science users/societies, with appropriate content and
-services. [Usage]
+1. 計算科学アプリケーションに関連するすべてのデータ、情報、知識要素および関連構造を特定する。[評価]
+2. データと情報を処理するための表現方法を説明する。[知識]
+3. データ、情報、および知識に関する典型的なユーザー要件を説明する。[知識]
+4. データ、情報、および知識を管理するための適切なシステムまたはソフトウェア実装を選択する。[評価]
+5. 計算科学アプリケーションに必要なレポート、トランザクション、その他の処理をリストアップし、説明する。[知識]
+6. 典型的な計算科学アプリケーションに対して、データベース管理、情報検索、およびデジタルライブラリシステムを比較対比する。[評価]
+7. 適切なコンテンツとサービスを備えた、計算科学ユーザー/社会向けのデジタルライブラリを設計する。[使用]
 
 
 
 ## CN/数値解析
-*[Elective]*
+*[選択科目]*
 
-Cross-reference AR/Machine Level Representation of Data
+相互参照: [AR/機械レベルでのデータの表現](./z_appendix_AR.md#ar機械レベルでのデータの表現)
 
 **トピック:**
-* Error, stability, convergence, including truncation and round-off
-* Function approximation including Taylor’s series, interpolation, extrapolation, and regression
-* Numerical differentiation and integration (Simpson’s Rule, explicit and implicit methods)
-* Differential equations (Euler’s Method, finite differences)
+* 誤差、安定性、収束性。切り捨てと丸め込みを含む。
+* テイラー級数、補間、外挿、回帰を含む関数の近似。
+* 数値的な微分と積分（シンプソンの公式・陽解法と陰解法)
+* 微分方程式（オイラー法、有限差分法）
 
 **学習到達目標:**
-1. Define error, stability, machine precision concepts and the inexactness of computational approximations.
-[Familiarity]
-2. Implement Taylor series, interpolation, extrapolation, and regression algorithms for approximating
-functions. [Usage]
-3. Implement algorithms for differentiation and integration. [Usage]
-4. Implement algorithms for solving differential equations. [Usage]
+1. 誤差、安定性、機械精度の概念および計算近似の不正確さを定義する。[知識]
+2. テイラー級数、補間、外挿、および回帰アルゴリズムを使用して関数を近似するための実装を行う。[使用]
+3. 微分と積分のためのアルゴリズムを実装する。[使用]
+4. 微分方程式を解くためのアルゴリズムを実装する。[使用]
