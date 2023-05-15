@@ -1,30 +1,11 @@
 
 # 離散構造 (DS)
-Discrete structures are foundational material for computer science. By foundational we mean that
-relatively few computer scientists will be working primarily on discrete structures, but that many
-other areas of computer science require the ability to work with concepts from discrete
-structures. Discrete structures include important material from such areas as set theory, logic,
-graph theory, and probability theory. 
+離散構造はコンピューターサイエンスの基礎的な題材です。基礎的とは、主に離散構造に取り組むコンピューターサイエンティストは比較的少数だが、他の多くのコンピューターサイエンスの領域が離散構造からの概念を扱う能力を必要とする、という意味です。離散構造には、集合論、論理学、グラフ理論、確率論などの領域からの重要な題材が含まれます。
 
-The material in discrete structures is pervasive in the areas of data structures and algorithms but
-appears elsewhere in computer science as well. For example, an ability to create and understand
-a proof—either a formal symbolic proof or a less formal but still mathematically rigorous
-argument—is important in virtually every area of computer science, including (to name just a
-few) formal specification, verification, databases, and cryptography. Graph theory concepts are
-used in networks, operating systems, and compilers. Set theory concepts are used in software
-engineering and in databases. Probability theory is used in intelligent systems, networking, and a
-number of computing applications.
+離散構造の題材は、データ構造とアルゴリズムの領域で広く使用されていますが、コンピューターサイエンスの他の領域でも使用されています。たとえば、証明を作成し理解する能力（形式的な記号証明またはあまり形式的でないがそれでも数学的に厳密な議論）は、（少しだけ例を挙げると）形式仕様記述、検証、データベース、暗号化を含むほぼすべてのコンピューターサイエンスの領域で重要です。グラフ理論の概念はネットワーク、オペレーティングシステム、コンパイラで使用されます。集合論の概念はソフトウェア工学やデータベースで使用されます。確率論は知的システム、ネットワーキング、および多くの計算アプリケーションで使用されます。
 
-Given that discrete structures serves as a foundation for many other areas in computing, it is
-worth noting that the boundary between discrete structures and other areas, particularly
-Algorithms and Complexity, Software Development Fundamentals, Programming Languages,
-and Intelligent Systems, may not always be crisp. Indeed, different institutions may choose to
-organize the courses in which they cover this material in very different ways. Some institutions
-may cover these topics in one or two focused courses with titles like "discrete structures" or
-"discrete mathematics," whereas others may integrate these topics in courses on programming,
-algorithms, and/or artificial intelligence. Combinations of these approaches are also prevalent
-(e.g., covering many of these topics in a single focused introductory course and covering the
-remaining topics in more advanced topical courses).
+離散構造がコンピューティングの他の多くの領域の基礎として機能しているため、離散構造と他の領域、特に[アルゴリズムと計算量](./z_appendix_A_AL.md)、[ソフトウェア開発基礎](./z_appendix_A_SDF.md)、[プログラミング言語](./z_appendix_A_PL.md)、そして[知的システム](./z_appendix_A_IS.md)との間の境界が常に明確でないことに注意する価値があります。実際、異なる機関では、この題材をカバーする講座を非常に異なる方法で組成するかもしれません。一部の機関では、これらのトピックを「離散構造」や「離散数学」のようなタイトルの1つまたは2つの焦点を絞った講座でカバーするかもしれません。一方、他の機関では、これらのトピックをプログラミング、アルゴリズム、および/または人工知能のコースに統合する場合があります。これらのアプローチの組み合わせも一般的です（例えば、これらのトピックの多くを一つの集中的な入門講座でカバーし、残りのトピックをより高度で専門的な講座でカバーします）。
+
 
 
 **DS. 離散構造 (必修 37時間, 選択必修 4時間)**
@@ -45,26 +26,25 @@ remaining topics in more advanced topical courses).
 
 **トピック:**
 
-* Sets
- * Venn diagrams
- * Union, intersection, complement
- * Cartesian product
- * Power sets
- * Cardinality of finite sets
-* Relations
- * Reflexivity, symmetry, transitivity
- * Equivalence relations, partial orders
-* Functions
- * Surjections, injections, bijections
- * Inverses
- * Composition
+* 集合
+ * ベン図
+ * 和集合・積集合・補集合
+ * 直積
+ * 冪集合
+ * 冪集合
+* 関係
+ * 反射律・対象律・推移律
+ * 同値関係・半順序
+* 函数
+ * 全射・単射・全単射
+ * 逆関数
+ * 合成関数
 
 **学習到達目標:**
 
-1. Explain with examples the basic terminology of functions, relations, and sets. [Familiarity]
-2. Perform the operations associated with sets, functions, and relations. [Usage]
-3. Relate practical examples to the appropriate set, function, or relation model, and interpret the associated
-operations and terminology in context. [Assessment]
+1. 集合、関係、函数の基本的な用語を例を用いて説明する。[知識]
+2. 集合、関係、函数に関連する操作を実行する。[使用]
+3. 実用的な例を適切な集合、函数、または関係モデルに関連付け、関連する操作と用語を文脈に即して解釈する。[評価]
 
 
 
@@ -74,31 +54,25 @@ operations and terminology in context. [Assessment]
 
 **トピック:**
 
-* Propositional logic (cross-reference: Propositional logic is also reviewed in IS/Knowledge Based
-Reasoning)
-* Logical connectives
-* Truth tables
-* Normal forms (conjunctive and disjunctive)
-* Validity of well-formed formula
-* Propositional inference rules (concepts of modus ponens and modus tollens)
-* Predicate logic
- * Universal and existential quantification
-* Limitations of propositional and predicate logic (e.g., expressiveness issues)
+* 命題論理 (相互参照: [IS/基礎的知識表現と推論](./z_appendix_A_IS.md#is基礎的知識表現と推論))
+* 論理演算
+* 真理値表
+* 標準形（連言形と選言形）
+* 論理式の妥当性
+* 命題論理の推論規則（モーダス・ポーネンスとモーダス・トレンスの概念）
+* 述語論理
+ * 全称量化と存在量化
+* 命題論理と述語論理の限界 (たとえば、表現力の問題)
 
 
 **学習到達目標:**
 
-1. Convert logical statements from informal language to propositional and predicate logic expressions.
-[Usage]
-2. Apply formal methods of symbolic propositional and predicate logic, such as calculating validity of
-formulae and computing normal forms. [Usage]
-3. Use the rules of inference to construct proofs in propositional and predicate logic. [Usage]
-4. Describe how symbolic logic can be used to model real-life situations or applications, including those
-arising in computing contexts such as software analysis (e.g., program correctness), database queries, and
-algorithms. [Usage]
-5. Apply formal logic proofs and/or informal, but rigorous, logical reasoning to real problems, such as
-predicting the behavior of software or solving problems such as puzzles. [Usage]
-6. Describe the strengths and limitations of propositional and predicate logic. [Familiarity]
+1. 非形式的な言語から命題論理と述語論理での表現への論理的な言明の変換。[使用]
+2. 計算式の妥当性や正規形の計算など、記号的な命題論理と述語論理の正式な手法の適用。[使用]
+3. 推論規則を使用し、命題論理と述語論理の証明を構築する。[使用]
+4. 記号論理をどのように用いて、ソフトウェア分析（例：プログラムの正確性）、データベースのクエリ、アルゴリズムなど、コンピューティングの文脈で生じるものを含む、実生活の状況やアプリケーションをモデル化できるか説明する。[使用]
+5. 形式的な論理証明や非形式的だが厳密な論理的推理を実際の問題に適用する。例えば、ソフトウェアの振る舞いを予測したり、パズルのような問題を解決したりする。[使用]
+6. 命題論理と述語論理の強みと限界を説明する。[知識]
 
 
 
@@ -107,40 +81,37 @@ predicting the behavior of software or solving problems such as puzzles. [Usage]
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Notions of implication, equivalence, converse, inverse, contrapositive, negation, and contradiction
-* The structure of mathematical proofs
-* Direct proofs
-* Disproving by counterexample
-* Proof by contradiction
-* Induction over natural numbers
-* Structural induction
-* Weak and strong induction (i.e., First and Second Principle of Induction)
-* Recursive mathematical definitions
+* 論理包含、同値、逆、裏、対偶、否定、矛盾の概念
+* 数学的証明の構造
+* 直接証明
+* 反例による否定
+* 矛盾による証明 (背理法)
+* 数学的帰納法
+* 構造的帰納法
+* 弱い帰納法と強い帰納法（つまり、帰納法の第一原理と第二原理）
+* 再帰的定義
 
-[Core-Tier2]
 
-* Well orderings
+[選択必修]
+
+* 整列順序
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Identify the proof technique used in a given proof. [Familiarity]
-2. Outline the basic structure of each proof technique (direct proof, proof by contradiction, and induction)
-described in this unit. [Usage]
-3. Apply each of the proof techniques (direct proof, proof by contradiction, and induction) correctly in the
-construction of a sound argument. [Usage]
-4. Determine which type of proof is best for a given problem. [Assessment]
-5. Explain the parallels between ideas of mathematical and/or structural induction to recursion and recursively
-defined structures. [Assessment]
-6. Explain the relationship between weak and strong induction and give examples of the appropriate use of
-each. [Assessment]
+1. 与えられた証明で使用されている証明手法を特定する。[知識]
+2. この知識単位で説明されている各証明手法（直接証明、背理法、帰納法）の基本的な構造を概説する。[使用]
+3. 各証明手法 (直接証明、背理法、帰納法) を正しく適用して、確かな論拠を構築する。[使用]
+4. 与えられた問題に対して最適な証明の種類を決定する。[評価]
+5. 数学的帰納法や構造的帰納法の考え方と、再帰や構造的再帰との間の類似性を説明する。[評価]
+6. 弱い帰納法と強い帰納法の関係を説明し、それぞれの適切な使用例を挙げる。[評価]
 
-[Core-Tier2]
+[選択必修]
 
-7. State the well-ordering principle and its relationship to mathematical induction. [Familiarity]
+7. 整列原理と数学的帰納法との関係を述べる。[知識]
 
 
 
@@ -149,80 +120,67 @@ each. [Assessment]
 
 **トピック:**
 
-* Counting arguments
- * Set cardinality and counting
- * Sum and product rule
- * Inclusion-exclusion principle
- * Arithmetic and geometric progressions
-* The pigeonhole principle
-* Permutations and combinations
- * Basic definitions
- * Pascal’s identity
- * The binomial theorem
-* Solving recurrence relations (cross-reference: AL/Basic Analysis)
- * An example of a simple recurrence relation, such as Fibonacci numbers
- * Other examples, showing a variety of solutions
-* Basic modular arithmetic
-
-
+* 数え上げ論法
+ * 集合の濃度と数え上げ
+ * 和の法則、積の法則
+ * 包除原理
+ * 等差と等比数列
+* 鳩の巣原理
+* 順列と組み合わせ
+ * 基本的な定義
+ * パスカルの三角形
+ * 二項定理
+* 漸化式の解法 (相互参照: [AL/計算量の解析](./z_appendix_A_AL.md#al計算量の解析))
+ * 単純な漸化式の例、例えばフィボナッチ数列
+ * さまざまな解を示す他の例
+* 基本的な合同算術
 
 **学習到達目標:**
 
-[Core-Tier1]
-
-1. Apply counting arguments, including sum and product rules, inclusion-exclusion principle and
-arithmetic/geometric progressions. [Usage]
-2. Apply the pigeonhole principle in the context of a formal proof. [Usage]
-3. Compute permutations and combinations of a set, and interpret the meaning in the context of the particular
-application. [Usage]
-4. Map real-world applications to appropriate counting formalisms, such as determining the number of ways
-to arrange people around a table, subject to constraints on the seating arrangement, or the number of ways
-to determine certain hands in cards (e.g., a full house). [Usage]
-5. Solve a variety of basic recurrence relations. [Usage]
-6. Analyze a problem to determine underlying recurrence relations. [Usage]
-7. Perform computations involving modular arithmetic. [Usage]
+1. 和の法則、積の法則、包除原理、等差と等比数列を含む数え上げ論法を適用する。[使用]
+2. 鳩の巣原理を形式証明の文脈で適用する。[使用]
+3. 集合の順列と組み合わせを計算し、その意味を特定のアプリケーションの文脈で解釈する。[使用]
+4. 実世界のアプリケーションを適切な数え上げの形式に対応させる。例えば、座席配置の制約に従って人々をテーブルの周りに配置する場合の数や、特定の手札（例えばフルハウス）となる場合の数を計算する。[使用]
+5. 各種の基本的な漸化式を解く。[使用]
+6. 問題を分析して内在する漸化式を特定する。[使用]
+7. 合同算術に関する計算を実行する。[使用]
 
 
 
 ## DS/グラフと木
 *[必修 3時間, 選択必修 1時間]*
 
-Cross-reference: AL/Fundamental Data Structures and Algorithms, especially with relation to
-graph traversal strategies.
+相互参照: [AL/基本データ構造とアルゴリズム](./z_appendix_A_AL.md#al基本データ構造とアルゴリズム)、特にグラフ探索戦略。
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Trees
- * Properties
- * Traversal strategies
-* Undirected graphs
-* Directed graphs
-* Weighted graphs
+* 木
+ * 木の性質
+ * 探索戦略
+* 無向グラフ
+* 有向グラフ
+* 重み付きグラフ
 
-[Core-Tier2]
+[選択必修]
 
-* Spanning trees/forests
-* Graph isomorphism
+* 全域木/全域森
+* グラフ同型性
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Illustrate by example the basic terminology of graph theory, as well as some of the properties and special
-cases of each type of graph/tree. [Familiarity]
-2. Demonstrate different traversal methods for trees and graphs, including pre-, post-, and in-order traversal of
-trees. [Usage]
-3. Model a variety of real-world problems in computer science using appropriate forms of graphs and trees,
-such as representing a network topology or the organization of a hierarchical file system. [Usage]
-4. Show how concepts from graphs and trees appear in data structures, algorithms, proof techniques
-(structural induction), and counting. [Usage]
+1. グラフ理論の基本的な用語、各種のグラフ/木の性質と特殊なケースを例示する。[知識]
+2. 木やグラフのさまざまな探索方法を示す、木の行きがけ順、帰りがけ順、戻りがけ順探索など。[使用]
+3. ネットワークトポロジーや階層的ファイルシステムの構造など、コンピュータサイエンスの様々な実世界の問題を、適切な形のグラフや木を用いてモデル化する。[使用]
+4. グラフと木の概念が、データ構造、アルゴリズム、証明手法（構造的帰納法）、および数え上げにどのように現れるかを示す。[使用]
 
-[Core-Tier2]
+[選択必修]
 
-5. Explain how to construct a spanning tree of a graph. [Usage]
-6. Determine if two graphs are isomorphic. [Usage]
+5. グラフの全域木を構築する方法を説明する。[使用]
+6. 2つのグラフが同型であるかを決定する。[使用]
 
 
 
@@ -230,31 +188,33 @@ such as representing a network topology or the organization of a hierarchical fi
 *[必修 6時間, 選択必修 2時間]*
 
 **トピック:**
-[Core-Tier1]
-* Finite probability space, events
-* Axioms of probability and probability measures
-* Conditional probability, Bayes’ theorem
-* Independence
-* Integer random variables (Bernoulli, binomial)
-* Expectation, including Linearity of Expectation
-[Core-Tier2]
-* Variance
-* Conditional Independence
 
+[必修]
+
+* 有限確率空間、事象
+* 確率の公理と確率尺度
+* 条件付き確率、ベイズの定理
+* 独立
+* 整数の確率変数（ベルヌーイ、二項分布）
+* 期待値、期待値の線形性を含む
+
+[選択必修]
+
+* 分散
+* 条件付き独立
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Calculate probabilities of events and expectations of random variables for elementary problems such as
-games of chance. [Usage]
-2. Differentiate between dependent and independent events. [Usage]
-3. Identify a case of the binomial distribution and compute a probability using that distribution. [Usage]
-4. Apply Bayes theorem to determine conditional probabilities in a problem. [Usage]
-5. Apply the tools of probability to solve problems such as the average case analysis of algorithms or
-analyzing hashing. [Usage]
+1. 確率の計算や確率変数の期待値を、たとえば運が絡むゲームような基本的な問題に対して計算する。[使用]
+2. 依存性のある事象と独立した事象を区別する。[使用]
+3. 二項分布の例を特定し、その分布を利用して確率を計算する。[使用]
+4. ベイズの定理を適用して問題の条件付き確率を決定する。[使用]
+5. 確率の手法を用いて、アルゴリズムの平均ケースの分析やハッシュの分析などの問題を解決する。[使用]
 
-[Core-Tier2]
+[選択必修]
 
-6. Compute the variance for a given probability distribution. [Usage]
-7. Explain how events that are independent can be conditionally dependent (and vice-versa). Identify realworld examples of such cases. [Usage]
+6. 与えられた確率分布の分散を計算する。[使用]
+7. 独立事象が条件付き依存となる場合を説明する (逆もまた然り) 。そのような現実の例を特定する。[使用]
+
