@@ -1,42 +1,21 @@
 
 # グラフィックスと視覚化 (GV)
 
-Computer graphics is the term commonly used to describe the computer generation and
-manipulation of images. It is the science of enabling visual communication through computation.
-Its uses include cartoons, film special effects, video games, medical imaging, engineering, as
-well as scientific, information, and knowledge visualization. Traditionally, graphics at the
-undergraduate level has focused on rendering, linear algebra, and phenomenological approaches.
-More recently, the focus has begun to include physics, numerical integration, scalability, and
-special-purpose hardware. In order for students to become adept at the use and generation of
-computer graphics, many implementation-specific issues must be addressed, such as file formats,
-hardware interfaces, and application program interfaces. These issues change rapidly, and the
-description that follows attempts to avoid being overly prescriptive about them. The area
-encompassed by Graphics and Visualization is divided into several interrelated fields:
+コンピュータグラフィックスは、コンピュータによる画像の生成と操作と記述するために一般的に使用される用語です。これは、計算を通じて視覚的な対話を可能にする科学です。その使用例には、カートゥーン、映画の特殊効果、ビデオゲーム、医療画像、工学、さらには科学的、情報的、知識的な視覚化が含まれます。伝統的に、学士レベルのグラフィックスはレンダリング、線形代数、現象論的アプローチに焦点を当ててきました。最近では、物理学、数値積分、スケーラビリティ、特殊用途ハードウェアを含めるように焦点が移り始めています。学生がコンピュータグラフィックスの使用と生成に熟練するためには、ファイル形式、ハードウェアインターフェース、アプリケーションプログラムインターフェースなど、多くの実装固有の問題に対処する必要があります。これらの問題は急速に変化し、下記の説明はそれらについて過度に規範的にならないよう試みています。グラフィックスと視覚化の範囲は、いくつかの相互に関連する分野に分けられます:
 
-* Fundamentals: Computer graphics depends on an understanding of how humans use
-vision to perceive information and how information can be rendered on a display device.
-Every computer scientist should have some understanding of where and how graphics can
-be appropriately applied as well as the fundamental processes involved in display
-rendering.
-* Modeling: Information to be displayed must be encoded in computer memory in some
-form, often in the form of a mathematical specification of shape and form.
-* Rendering: Rendering is the process of displaying the information contained in a model.
-* Animation: Animation is the rendering in a manner that makes images appear to move
-and the synthesis or acquisition of the time variations of models.
-* Visualization: The field of visualization seeks to determine and present underlying
-correlated structures and relationships in data sets from a wide variety of application
-areas. The prime objective of the presentation should be to communicate the information
-in a dataset so as to enhance understanding
-* Computational Geometry: Computational Geometry is the study of algorithms that are
-stated in terms of geometry.
+* 基本原理: コンピュータグラフィックスは、人間の視覚を使った情報の知覚についてと、情報が表示デバイスにどう描画されるかについての知識に依存しています。すべてのコンピュータサイエンティストは、どのグラフィックスがどのように適用されるべきかや、画面描画に関与する基本的なプロセスについて、ある程度の理解を持つべきです。
+* モデリング: 表示する情報は、コンピュータのメモリに何らかの形で符号化される必要があります。これは種類と形状の数学的な仕様の形で行われます。
+* レンダリング: レンダリングは、モデルに含まれる情報を表示するプロセスです。
+* アニメーション: アニメーションは、画像が動いているように見せるレンダリングと、モデルの時間変動の合成・取得です。
+* 可視化: 可視化の分野では、幅広い応用領域からのデータセットの相関構造と関係を特定し、提示することを目指しています。提示の主な目的は、データセットの情報を伝えて理解を深めることです。
+* 計算幾何学: 計算幾何学は、幾何学の用語で記述されるアルゴリズムの研究です。
 
-Graphics and Visualization is related to machine vision and image processing, which are found
-in the Intelligent Systems (IS) KA, and algorithms such as computational geometry, which are
-found in the Algorithms and Complexity (AL) KA. Topics in virtual reality are found in the
-Human-Computer Interaction (HCI) KA.
 
-This description assumes students are familiar with fundamental concepts of data representation,
-abstraction, and program implementation. 
+グラフィックスと視覚化は、[知的システム (IS)](./z_appendix_A_IS.md) 知識領域に見られるマシンビジョンや画像処理、および[アルゴリズムと計算量 (AL)](./z_appendix_A_AL.md) 知識領域に見られる計算幾何学などのアルゴリズムと関連しています。仮想現実に関するトピックは、[ヒューマンコンピュータインタラクション (HCI)](./z_appendix_A_HCI.md) 知識領域にあります。
+
+ここでは、データ表現、抽象化、プログラム実装の基本的な概念について学生が理解していることを前提としています。
+
+
 
 **GV. グラフィックスと視覚化 (必修 2時間, 選択必修 1時間)**
 
@@ -54,111 +33,89 @@ abstraction, and program implementation.
 ## GV/基礎概念
 *[必修 2 時間, 選択必修 1時間]*
 
-For nearly every computer scientist and software developer, an understanding of how humans
-interact with machines is essential. While these topics may be covered in a standard
-undergraduate graphics course, they may also be covered in introductory computer science and
-programming courses. Part of our motivation for including immediate and retained modes is that
-these modes are analogous to polling vs. event driven programming. This is a fundamental
-question in computer science: Is there a button object, or is there just the display of a button on
-the screen? Note that most of the outcomes in this section are at the knowledge level, and many
-of these topics are revisited in greater depth in later sections.
+ほぼ全てのコンピュータ科学者やソフトウェア開発者にとって、人間が機械とどのように対話するかを理解することは必須です。これらのトピックは、標準的な学部のグラフィックスの講座でカバーされることもありますが、初級のコンピュータ科学やプログラミングの講座でも取り扱うことがあります。即時モードと保持モードを含める動機の一部は、これらのモードがポーリングとイベント駆動プログラミングに類似しているからです。これはコンピュータ科学における基本的な問いです: ボタンオブジェクトは存在するのか、それとも画面上にボタンの表示だけが存在するのか？ このセクションでの学習到達目標のほとんどは知識レベルで、これらのトピックの多くは後のセクションでより深く再訪されます。
+
+
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Media applications including user interfaces, audio and video editing, game engines, cad, visualization,
-virtual reality
-* Digitization of analog data, resolution, and the limits of human perception, e.g., pixels for visual display,
-dots for laser printers, and samples for audio (HCI/Foundations)
-* Use of standard APIs for the construction of UIs and display of standard media formats (see HCI/GUI
-construction)
-* Standard media formats, including lossless and lossy formats
+* ユーザーインターフェース、音声と動画の編集、ゲームエンジン、CAD、可視化、仮想現実を含むメディアアプリケーション
+* アナログデータのデジタル化、解像度、人間の知覚の限界 (例えば、視覚ディスプレイのピクセル、レーザープリンターのドット、音声のサンプリングなど([HCI/基礎](./z_appendix_A_HCI.md#hci基礎)))
+* UIの構築と標準メディア形式の表示のための標準APIの使用 ([HCI/インタラクションの設計](./z_appendix_A_HCI.md#hciインタラクションの設計)）
+* 可逆と非可逆形式を含む標準メディア形式
 
-[Core-Tier2]
+[選択必修]
 
-* Additive and subtractive color models (CMYK and RGB) and why these provide a range of colors
-* Tradeoffs between storing data and re-computing data as embodied by vector and raster representations of
-images
-* Animation as a sequence of still images
+* 加法混色と減法混色 (CMYKとRGB) と、これらが異なる色域を提供する理由
+* ベクターとラスター表現の画像に体現される、データの保存と再計算の間のトレードオフ
+* 静止画の連続としてのアニメーション
 
-[Elective]
+[選択科目]
 
-* Double buffering
+* ダブルバッファリング
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Identify common uses of digital presentation to humans (e.g., computer graphics, sound). [Familiarity]
-2. Explain in general terms how analog signals can be reasonably represented by discrete samples, for
-example, how images can be represented by pixels. [Familiarity]
-3. Explain how the limits of human perception affect choices about the digital representation of analog
-signals. [Familiarity]
-4. Construct a simple user interface using a standard API. [Usage]
-5. Describe the differences between lossy and lossless image compression techniques, for example as
-reflected in common graphics image file formats such as JPG, PNG, MP3, MP4, and GIF. [Familiarity]
+1. デジタル表示の一般的な用途を特定する（例：コンピューターグラフィックス、音声）。[知識]
+2. アナログ信号がどのようにして離散的なサンプルで適切に表現できるかを一般的な言葉で説明する。(例: 画像をどうピクセルで表現するか)[知識]
+3. 人間の知覚の限界がアナログ信号のデジタル表現の選択にどう影響するかを説明する。[知識]
+4. 標準的なAPIを使用して単純なユーザーインターフェースを構築する。[使用]
+5. 可逆と非可逆の画像圧縮技術の違いを説明する。例えば、JPG、PNG、MP3、MP4、GIFなどの一般的な画像ファイル形式にどう反映されているか。[知識]
 
-[Core-Tier2]
+[選択必修]
 
-6. Describe color models and their use in graphics display devices. [Familiarity]
-7. Describe the tradeoffs between storing information vs. storing enough information to reproduce the
-information, as in the difference between vector and raster rendering. [Familiarity]
+6. カラーモデルと、画像表示機器での用途について説明する。[知識]
+7. 情報の単なる保存と、再現に必要最低限の情報の保存との間のトレードオフを説明します。(例: ベクターとラスター描画の違い)。[知識]
 
-[Elective]
+[選択科目]
 
-8. Describe the basic process of producing continuous motion from a sequence of discrete frames (sometimes
-called “flicker fusion”). [Familiarity]
-9. Describe how double-buffering can remove flicker from animation. [Familiarity]
+* 離散的なフレームの列から連続した動きを生成する基本的なプロセスを説明します（これは時々「フリッカー融合」と呼ばれます）。[知識]
+* ダブルバッファリングによってアニメーションのちらつきを除去する方法を説明します。[知識]
 
 
 
 ## GV/基本的なレンダリング
 *[選択科目]*
 
-This section describes basic rendering and fundamental graphics techniques that nearly every
-undergraduate course in graphics will cover and that are essential for further study in graphics.
-Sampling and anti-aliasing are related to the effect of digitization and appear in other areas of
-computing, for example, in audio sampling.
+このセクションでは、ほぼ全ての大学の画像処理の講座でカバーされ、研究を進めるにあたり必須となる基本的なレンダリングやグラフィック技術について説明します。サンプリングとアンチエイリアシングは、デジタル変換の影響と関連し、音声サンプリングなどの他のコンピューティングの領域でも登場します。
 
 **トピック:**
 
-* Rendering in nature, e.g., the emission and scattering of light and its relation to numerical integration
-* Forward and backward rendering (i.e., ray-casting and rasterization)
-* Polygonal representation
-* Basic radiometry, similar triangles, and projection model
-* Affine and coordinate system transformations
-* Ray tracing
-* Visibility and occlusion, including solutions to this problem such as depth buffering, Painter’s algorithm,
-and ray tracing
-* The forward and backward rendering equation
-* Simple triangle rasterization
-* Rendering with a shader-based API
-* Texture mapping, including minification and magnification (e.g., trilinear MIP-mapping)
-* Application of spatial data structures to rendering
-* Sampling and anti-aliasing
-* Scene graphs and the graphics pipeline
+* レンダリングの本質。例えば、光の放射や散乱とそれが数値積分との関連性。
+* 前進レンダリングと後進レンダリング（つまり、レイキャスティングとラスタリゼーション）
+* ポリゴン表現
+* 基本的な放射測定、相似三角形、投影モデル
+* アフィン変換と座標系変換
+* レイトレーシング
+* 可視性と遮蔽。解決策としての深度バッファリング、画家のアルゴリズム、レイトレーシング
+* 前進レンダリング方程式と後進レンダリング方程式
+* 単純な三角形ラスタリゼーション
+* シェーダーベースのAPIを使用したレンダリング
+* テクスチャマッピング。縮小と拡大（例えば、三線形MIPマッピング）を含む
+* 空間データ構造のレンダリングへの適用
+* サンプリングとアンチエイリアシング
+* シーングラフとグラフィックスパイプライン
 
 **学習到達目標:**
 
-1. Discuss the light transport problem and its relation to numerical integration i.e., light is emitted, scatters
-around the scene, and is measured by the eye. [Familiarity]
-2. Describe the basic graphics pipeline and how forward and backward rendering factor in this. [Familiarity]
-3. Create a program to display 3D models of simple graphics images. [Usage]
-4. Derive linear perspective from similar triangles by converting points (x, y, z) to points (x/z, y/z, 1). [Usage]
-5. Obtain 2-dimensional and 3-dimensional points by applying affine transformations. [Usage]
-6. Apply 3-dimensional coordinate system and the changes required to extend 2D transformation operations to
-handle transformations in 3D. [Usage]
-7. Contrast forward and backward rendering. [Assessment]
-8. Explain the concept and applications of texture mapping, sampling, and anti-aliasing. [Familiarity]
-9. Explain the ray tracing/rasterization duality for the visibility problem. [Familiarity]
-10. Implement simple procedures that perform transformation and clipping operations on simple 2-dimensional
-images. [Usage]
-11. Implement a simple real-time renderer using a rasterization API (e.g., OpenGL) using vertex buffers and
-shaders. [Usage]
-12. Compare and contrast the different rendering techniques. [Assessment]
-13. Compute space requirements based on resolution and color coding. [Assessment]
-14. Compute time requirements based on refresh rates, rasterization techniques. [Assessment]
+1. 光の伝達の問題と数値積分との関連性を議論します。光が放出され、シーン内で散乱し、目によって測定される。[知識]
+2. 基本的なグラフィックスパイプラインと、それにおける前進レンダリングと後進レンダリングの役割を説明します。[知識]
+3. 単純なグラフィックイメージの3Dモデルを表示するプログラムを作成する。[使用]
+4. 相似三角形から透視図を導出し、点（x、y、z）を点（x/z、y/z、1）に変換する。[使用]
+5. アフィン変換を適用して2次元および3次元の点を取得します。[使用]
+6. 3次元座標系を適用し、2D変換操作を拡張して3Dの変換を扱うために必要な変更を行う。[使用]
+7. 前進レンダリングと後進レンダリングを対比させる。[評価]
+8. テクスチャマッピング、サンプリング、アンチエイリアシングの概念と応用について説明する。[知識]
+9. 可視性問題に対するレイトレーシング/ラスタリゼーションの二重性を説明する。[知識]
+10. 単純な2次元画像に対して変換とクリッピング操作を実行する簡単な手順を実装する。[使用]
+11. 頂点バッファとシェーダーを使用したラスタリゼーションAPI（例：OpenGL）を使用して、シンプルなリアルタイムレンダラーを実装する。[使用]
+12. 異なるレンダリング技術を比較対比する。[評価]
+13. 解像度と色深度に基づき、必要容量を算出する。[評価レベル]
+14. リフレッシュレート、ラスタリゼーション技術に基づき、必要計算時間を算出する。[評価レベル]
 
 
 
@@ -167,35 +124,30 @@ shaders. [Usage]
 
 **トピック:**
 
-[Core-Tier1]
-
-* Basic geometric operations such as intersection calculation and proximity tests
-* Volumes, voxels, and point-based representations
-* Parametric polynomial curves and surfaces
-* Implicit representation of curves and surfaces
-* Approximation techniques such as polynomial curves, Bezier curves, spline curves and surfaces, and nonuniform rational basis (NURB) spines, and level set method
-* Surface representation techniques including tessellation, mesh representation, mesh fairing, and mesh
-generation techniques such as Delaunay triangulation, marching cubes
-* Spatial subdivision techniques
-* Procedural models such as fractals, generative modeling, and L-systems
-* Graftals, cross referenced with programming languages (grammars to generated pictures)
-* Elastically deformable and freeform deformable models
-* Subdivision surfaces
-* Multiresolution modeling
-* Reconstruction
-* Constructive Solid Geometry (CSG) representation
+* 交差の計算や近接判定などの基本的な幾何学的操作
+* 体積、ボクセル、頂点ベースの表現
+* パラメトリック多項式曲線と曲面
+* 曲線と曲面の暗黙的表現
+* 多項式曲線、ベジェ曲線、スプライン曲線と曲面、非一様有理Bスプライン(NURB)、レベルセット法などの近似技術
+* テッセレーション、メッシュ表現、メッシュ滑面化、ドロネー三角形分割やマーチングキューブなどのメッシュ生成技術を含む表面表現技術
+* 空間分割技術
+* フラクタル、生成モデリング、L-システムなどの手続き型モデル
+* グラフタル（プログラミング言語と関連し、画像を生成する文法）
+* 弾性変形可能モデル、自由形状変形モデル
+* 細分割曲面
+* 多重解像度モデリング
+* 再構成
+* 空間領域構成法 (CSG)
 
 **学習到達目標:**
 
-1. Represent curves and surfaces using both implicit and parametric forms. [Usage]
-2. Create simple polyhedral models by surface tessellation. [Usage]
-3. Generate a mesh representation from an implicit surface. [Usage]
-4. Generate a fractal model or terrain using a procedural method. [Usage]
-5. Generate a mesh from data points acquired with a laser scanner. [Usage]
-6. Construct CSG models from simple primitives, such as cubes and quadric surfaces. [Usage]
-7. Contrast modeling approaches with respect to space and time complexity and quality of image.
-[Assessment]
-
+1. 暗黙的形式とパラメトリック形式の両方を使用して曲線と曲面を表現する。[使用]
+2. 曲面のテッセレーションにより単純な多面体モデルを作成する。[使用]
+3. 暗黙的な曲面からメッシュ表現を生成する。[使用]
+4. 手続き型の手法を用いてフラクタルモデルまたは地形を生成する。[使用]
+5. レーザースキャナーで取得したデータ点からメッシュを生成する。[使用]
+6. 立方体や二次曲面などの単純な基本形状からCSGモデルを作成する。[使用]
+7. 空間・時間計算量、画像の品質に関して、モデリングのアプローチを比較対比する。[評価]
 
 
 ## GV/先進的なレンダリング
@@ -203,39 +155,35 @@ generation techniques such as Delaunay triangulation, marching cubes
 
 **トピック:**
 
-* Solutions and approximations to the rendering equation, for example:
- * Distribution ray tracing and path tracing
- * Photon mapping
- * Bidirectional path tracing
- * Reyes (micropolygon) rendering
- * Metropolis light transport
-* Time (motion blur), lens position (focus), and continuous frequency (color) and their impact on rendering
-* Shadow mapping
-* Occlusion culling
-* Bidirectional Scattering Distribution function (BSDF) theory and microfacets
-* Subsurface scattering
-* Area light sources
-* Hierarchical depth buffering
-* The Light Field, image-based rendering
-* Non-photorealistic rendering
-* GPU architecture
-* Human visual systems including adaptation to light, sensitivity to noise, and flicker fusion
+* レンダリング方程式への解と近似。以下はその例
+ * 分散レイトレーシングとパストレーシング
+ * フォトンマッピング
+ * 双方向パストレーシング
+ * Reyes（マイクロポリゴン）レンダリング
+ * メトロポリス光輸送法
+* 時間（モーションブラー）、レンズ位置（フォーカス）、連続周波数（色）とそれらがレンダリングに与える影響
+* シャドウマッピング
+* 遮蔽カリング
+* 双方向散乱分布関数（BSDF）理論とマイクロファセット
+* 表面下散乱
+* 面光源
+* 階層的デプスバッファリング
+* ライトフィールド、画像ベースレンダリング
+* 非写実的レンダリング
+* GPUアーキテクチャ
+* 光への順応、ノイズへの感度、フリッカー融合を含む人間の視覚システム
 
 
 **学習到達目標:**
 
-1. Demonstrate how an algorithm estimates a solution to the rendering equation. [Assessment]
-2. Prove the properties of a rendering algorithm, e.g., complete, consistent, and unbiased. [Assessment]
-3. Analyze the bandwidth and computation demands of a simple algorithm. [Assessment]
-4. Implement a non-trivial shading algorithm (e.g., toon shading, cascaded shadow maps) under a rasterization
-API. [Usage]
-5. Discuss how a particular artistic technique might be implemented in a renderer. [Familiarity]
-6. Explain how to recognize the graphics techniques used to create a particular image. [Familiarity]
-7. Implement any of the specified graphics techniques using a primitive graphics system at the individual
-pixel level. [Usage]
-8. Implement a ray tracer for scenes using a simple (e.g., Phong model) BRDF plus reflection and refraction.
-[Usage]
-
+1. アルゴリズムがレンダリング方程式の解をどのように推定するかを実演する。[評価]
+2. レンダリングアルゴリズムの特性（例えば、完全性、一貫性、無偏性）を証明する。[評価]
+3. 簡単なアルゴリズムの帯域幅と必要計算量を分析する。[評価]
+4. ラスタリゼーションAPIを用いて、非自明なシェーディングアルゴリズム（例えば、トゥーンシェーディング、カスケードシャドウマップ）を実装する。[使用]
+5. 特定の芸術的技術がどのようにレンダラーで実装されるかについて議論する。[知識]
+6. 特定の画像を作成するために使用されたグラフィックス技術をどのように認識するかを説明する。[知識]
+7. 個々のピクセルレベルの原始的なグラフィックスシステムを用いて、指定されたグラフィックス技術のいずれかを実装する。[使用]
+8. 簡単な（例えば、フォンモデルの）BRDFと反射・屈折を使用して、レイトレーサーを実装する。[使用]
 
 
 ## GV/コンピュータ・アニメーション
@@ -243,64 +191,54 @@ pixel level. [Usage]
 
 **トピック:**
 
-* Forward and inverse kinematics
-* Collision detection and response
-* Procedural animation using noise, rules (boids/crowds), and particle systems
-* Skinning algorithms
-* Physics based motions including rigid body dynamics, physical particle systems, mass-spring networks for
-cloth and flesh and hair
-* Key-frame animation
-* Splines
-* Data structures for rotations, such as quaternions
-* Camera animation
-* Motion capture
+* 順運動学と逆運動学
+* 衝突検出と反応
+* ノイズ、ルール（ボイド/群衆）、パーティクルシステムを使用した手続き型アニメーション
+* スキニングアルゴリズム
+* 剛体動力学、物理パーティクルシステム、布や肉体や髪のための質量+バネのネットワークを含む物理ベースの動き
+* キーフレームアニメーション
+* スプライン
+* 四元数などの回転用のデータ構造
+* カメラアニメーション
+* モーションキャプチャ
 
 **学習到達目標:**
 
-1. Compute the location and orientation of model parts using a forward kinematic approach. [Usage]
-2. Compute the orientation of articulated parts of a model from a location and orientation using an inverse
-kinematic approach. [Usage]
-3. Describe the tradeoffs in different representations of rotations. [Assessment]
-4. Implement the spline interpolation method for producing in-between positions and orientations. [Usage]
-5. Implement algorithms for physical modeling of particle dynamics using simple Newtonian mechanics, for
-example Witkin & Kass, snakes and worms, symplectic Euler, Stormer/Verlet, or midpoint Euler methods.
-[Usage]
-6. Discuss the basic ideas behind some methods for fluid dynamics for modeling ballistic trajectories, for
-example for splashes, dust, fire, or smoke. [Familiarity]
-7. Use common animation software to construct simple organic forms using metaball and skeleton. [Usage]
+1. 順運動学的アプローチを使用して、モデル部品の位置と向きを計算する。[使用]
+2. 逆運動学的アプローチを使用して、位置と向きからモデルの関節部分の向きを計算する。[使用]
+3. 回転の異なる表現におけるトレードオフを説明する。[評価]
+4. 中間の位置と方向を生成するためのスプライン補間法を実装する。[使用]
+5. 例えば [Witkin & Kass](https://www.cs.ait.ac.th/~mdailey/cvreadings/Kass-Snakes.pdf)、[スネークとワーム](https://dl.acm.org/doi/10.1145/54852.378508)、[シンプレクティックオイラー法](https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%95%B0%E5%80%A4%E7%A9%8D%E5%88%86%E6%B3%95)、[ベレの方法](https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AC%E3%81%AE%E6%96%B9%E6%B3%95)、または中点オイラー法など、単純なニュートン力学を使用した粒子動力学的物理モデリングのアルゴリズムを実装する。[使用]
+6. 飛沫・埃・火・煙などの弾道軌道のモデリングのための流体力学的手法の背後にある基本的なアイデアを議論する。[知識]
+7. 一般的なアニメーションソフトウェアを使用して、メタボールと骨格構造を用いた単純な有機的形状を構築する。[使用]
 
 
 
 ## GV/視覚化
 *[選択科目]*
 
-Visualization has strong ties to the Human-Computer Interaction (HCI) knowledge area as well
-as Computational Science (CN). Readers should refer to the HCI and CN KAs for additional
-topics related to user population and interface evaluations.
+視覚化は、[ヒューマンコンピュータインタラクション (HCI)](./z_appendix_A_HCI.md)の知識領域および[計算科学 (CN)](./z_appendix_A_CN.md)と強い関連性があります。利用人口やインターフェイスの評価に関連する追加のトピックについては、HCIおよびCNの知識領域を参照してください。
 
 **トピック:**
 
-* Visualization of 2D/3D scalar fields: color mapping, isosurfaces
-* Direct volume data rendering: ray-casting, transfer functions, segmentation
-* Visualization of:
- * Vector fields and flow data
- * Time-varying data
- * High-dimensional data: dimension reduction, parallel coordinates,
- * Non-spatial data: multi-variate, tree/graph structured, text
-* Perceptual and cognitive foundations that drive visual abstractions
-* Visualization design
-* Evaluation of visualization methods
-* Applications of visualization
-
-
+* 2D/3D スカラー場の可視化: カラーマッピング、等値面
+* 立体データの直接レンダリング: レイキャスティング、伝達関数、セグメンテーション
+* 以下の情報の視覚化: 
+ * ベクトル場と流量データ
+ * 時系列データ
+ * 高次元データ: 次元削減、平行座標
+ * 非空間データ: 多変量、ツリー/グラフ構造、テキスト
+* 視覚的抽象化のための知覚と認知の基礎
+* 視覚化の設計
+* 視覚化手法の評価
+* 視覚化の応用
 
 **学習到達目標:**
 
-1. Describe the basic algorithms for scalar and vector visualization. [Familiarity]
-2. Describe the tradeoffs of visualization algorithms in terms of accuracy and performance. [Assessment]
-3. Propose a suitable visualization design for a particular combination of data characteristics and application
-tasks. [Assessment]
-4. Analyze the effectiveness of a given visualization for a particular task. [Assessment]
-5. Design a process to evaluate the utility of a visualization algorithm or system. [Assessment]
-6. Recognize a variety of applications of visualization including representations of scientific, medical, and
-mathematical data; flow visualization; and spatial analysis. [Familiarity]
+
+1. スカラーとベクトルの可視化のための基本的なアルゴリズムを説明する。[知識]
+2. 正確性と性能の観点から、可視化アルゴリズムのトレードオフを説明する。[評価]
+3. データの特性とアプリケーションタスクの特定の組み合わせに対して適切な可視化を設計し提案する。[評価]
+4. 特定のタスクに対する与えられた可視化の効果を分析する。[評価]
+5. 可視化アルゴリズムやシステムの有用性を評価するためのプロセスを設計する。[評価]
+6. 科学的、医学的、数学的データの表現、流れの可視化、空間分析など、可視化のさまざまな応用を認識する。[知識]
