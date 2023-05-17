@@ -1,23 +1,9 @@
 
 # プラットフォームに依存した開発 (PBD)
 
-Platform-based development is concerned with the design and development of software
-applications that reside on specific software platforms. In contrast to general purpose
-programming, platform-based development takes into account platform-specific constraints. For
-instance web programming, multimedia development, mobile computing, app development, and
-robotics are examples of relevant platforms that provide specific services/APIs/hardware that
-constrain development. Such platforms are characterized by the use of specialized APIs, distinct
-delivery/update mechanisms, and being abstracted away from the machine level. Platform-based
-development may be applied over a wide breadth of ecosystems.  
+「プラットフォームに依存した開発」は、特定のソフトウェアプラットフォーム上に存在するソフトウェアアプリケーションの設計と開発に関心を向けています。汎用プログラミングとは異なり、プラットフォームに依存した開発では、プラットフォーム固有の制約を考慮する必要があります。たとえば、Webプログラミング、マルチメディア開発、モバイルコンピューティング、アプリ開発、ロボット技術などでは、特定のサービス/API/ハードウェアが関連プラットフォームから提供され、これらが開発に制約を与えます。こうしたプラットフォームは、特化したAPIの使用、特異な配信/更新メカニズム、およびマシンレベルを見せない抽象化によって特徴付けられます。プラットフォームに依存した開発は、幅広いエコシステムに適用可能です。
 
-While we recognize that some platforms (e.g., web development) are prominent, we are also
-cognizant of the fact that no particular platform should be specified as a requirement in the
-CS2013 curricular guidelines. Consequently, this Knowledge Area highlights many of the
-platforms that have become popular, without including any such platform in the core curriculum.
-We note that the general skill of developing with respect to an API or a constrained environment
-is covered in other Knowledge Areas, such as Software Development Fundamentals (SDF).
-Platform-based development further emphasizes such general skills within the context of
-particular platforms.
+いくつかのプラットフォーム (例: Web開発) が特出していることを認識していますが、CS2013のカリキュラムガイドラインで特定のプラットフォームを必須として指定すべきではないと認識しています。その結果、この知識領域では、人気となった多くのプラットフォームを強調していますが、コアカリキュラムにそのようなプラットフォームを含めていません。APIや制約された環境に対して開発する一般的な技術は、[ソフトウェア開発基礎 (SDF)](./z_appendix_A_SDF.md)などの他の知識りょいきでカバーされていることに注意してください。プラットフォームに依存した開発では、特定のプラットフォームの文脈内で、そのような一般的な技術をさらに強調します。
 
 
 **PBD. プラットフォームに依存した開発 (選択科目)**
@@ -35,22 +21,21 @@ particular platforms.
 ## PBD/導入
 *[選択科目]*
 
-This knowledge unit describes the fundamental differences that Platform-Based Development
-has over traditional software development.
+この知識単位では、プラットフォームに依存した開発が伝統的なソフトウェア開発とどのように異なるかを説明します。
 
 **トピック:**
 
-* Overview of platforms (e.g., Web, Mobile, Game, Industrial)
-* Programming via platform-specific APIs
-* Overview of Platform Languages (e.g., Objective C, HTML5)
-* Programming under platform constraints 
+* プラットフォームの概要 (例: Web、モバイル、ゲーム、産業)
+* プラットフォーム固有のAPIを介したプログラミング
+* プラットフォームの言語の概要（例：Objective C、HTML5）
+* プラットフォーム制約下でのプログラミング
 
 **学習到達目標:**
 
-1. Describe how platform-based development differs from general purpose programming. [Familiarity]
-2. List characteristics of platform languages. [Familiarity]
-3. Write and execute a simple platform-based program. [Usage]
-4. List the advantages and disadvantages of programming with platform constraints. [Familiarity]
+1. プラットフォームに依存した開発が汎用プログラミングとどのように異なるかを説明する。 [知識]
+2. プラットフォームの言語の特性をリスト化する。 [知識]
+3. プラットフォームに依存した簡単なプログラムを書き、実行する。 [使用]
+4. プラットフォーム制約付きのプログラミングの利点と欠点を並べる。 [知識]
 
 
 
@@ -59,19 +44,19 @@ has over traditional software development.
 
 **トピック:**
 
-* Web programming languages (e.g., HTML5, Java Script, PHP, CSS)
-* Web platform constraints
-* Software as a Service (SaaS)
-* Web standards
+* Webプログラミングの言語（例：HTML5、Java Script、PHP、CSS）
+* Webプラットフォームの制約
+* ソフトウェア・アズ・ア・サービス（SaaS）
+* Web標準
 
-**学習到達目標:**
+学習到達目標:
 
-1. Design and Implement a simple web application. [Usage]
-2. Describe the constraints that the web puts on developers. [Familiarity]
-3. Compare and contrast web programming with general purpose programming. [Assessment]
-4. Describe the differences between Software-as-a-Service and traditional software products. [Familiarity]
-5. Discuss how web standards impact software development. [Familiarity]
-6. Review an existing web application against a current web standard. [Assessment]
+1. 簡単なWebアプリケーションの設計と実装を行う。 [使用]
+2. Webが開発者に課す制約を説明する。 [知識]
+3. Webプログラミングと汎用プログラミングを比較対比する。 [評価]
+4. ソフトウェア・アズ・ア・サービス（SaaS）と伝統的なソフトウェア製品の違いを説明する。 [知識]
+5. Web標準がソフトウェア開発にどのような影響を及ぼすかを議論する。 [知識]
+6. 既存のWebアプリケーションを現行のWeb標準に照らしてレビューする。 [評価]
 
 
 
@@ -80,41 +65,39 @@ has over traditional software development.
 
 **トピック:**
 
-* Mobile programming languages
-* Challenges with mobility and wireless communication
-* Location-aware applications
-* Performance / power tradeoffs
-* Mobile platform constraints
-* Emerging technologies
+* モバイルのプログラミング言語
+* 可動性と無線通信の課題
+* 位置情報を用いたアプリケーション
+* パフォーマンスと電力のトレードオフ
+* モバイルプラットフォームの制約
+* 新興技術
 
 **学習到達目標:**
 
-1. Design and implement a mobile application for a given mobile platform. [Usage]
-2. Discuss the constraints that mobile platforms put on developers. [Familiarity]
-3. Discuss the performance vs. power tradeoff. [Familiarity]
-4. Compare and contrast mobile programming with general purpose programming. [Assessment]
+1. 指定されたモバイルプラットフォームのためのモバイルアプリケーションを設計し、実装する。 [使用]
+2. モバイルプラットフォームが開発者に課す制約を議論する。 [知識]
+3. 性能と電力のトレードオフについて議論する。 [知識]
+4. モバイルプログラミングと汎用プログラミングを比較対比する。 [評価]
 
 
 
 ## PBD/産業プラットフォーム
 *[選択科目]*
 
-This knowledge unit is related to IS/Robotics.
+この知識単位は[IS/ロボット工学](./z_appendix_A_IS.md#isロボット工学)に関連しています。
 
 **トピック:**
 
-* Types of Industrial Platforms (e.g., Mathematic, Robotic, Industrial Control)
-* Robotic software and its architecture
-* Domain-specific languages
-* Industrial platform constraints
+* 産業プラットフォームの種類（例：数学、ロボット、産業用制御システム）
+* ロボットソフトウェアとそのアーキテクチャ
+* ドメイン特化型言語
+* 産業プラットフォームの制約
 
-**学習到達目標:**
+学習到達目標:
 
-1. Design and implement an industrial application on a given platform (e.g., using Lego Mindstorms or
-Matlab). [Usage]
-2. Compare and contrast domain specific languages with general purpose programming languages.
-[Assessment]
-3. Discuss the constraints that a given industrial platforms impose on developers. [Familiarity]
+1. 与えられたプラットフォーム (例: Lego MindstormsやMatlabを使用) で産業アプリケーションを設計し、実装する。 [使用]
+2. ドメイン特化型言語と汎用プログラミング言語を比較対比する。 [評価]
+3. 与えられた産業プラットフォームが開発者に課す制約を議論する。 [知識]
 
 
 
@@ -123,13 +106,13 @@ Matlab). [Usage]
 
 **トピック:**
 
-* Types of game platforms (e.g., XBox, Wii, PlayStation)
-* Game platform languages (e.g., C++, Java, Lua, Python)
-* Game platform constraints
+* ゲームプラットフォームの種類 (例: XBox, Wii, PlayStation)
+* ゲームプラットフォームの言語 (例: C++, Java, Lua, Python)
+* ゲームプラットフォームの制約
 
 **学習到達目標:**
 
-1. Design and implement a simple application on a game platform. [Usage]
-2. Describe the constraints that game platforms impose on developers. [Familiarity]
-3. Compare and contrast game programming with general purpose programming. [Assessment]
+1. ゲームプラットフォーム上で簡単なアプリケーションを設計・実装する。 [使用]
+2. ゲームプラットフォームが開発者に課した制約を説明する。 [知識]
+3. ゲームプログラミングと汎用プログラミングを比較対比する。 [評価]
 
