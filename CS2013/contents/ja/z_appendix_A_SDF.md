@@ -1,49 +1,13 @@
 
 # ソフトウェア開発基礎 (SDF)
 
-Fluency in the process of software development is a prerequisite to the study of most of
-computer science. In order to use computers to solve problems effectively, students must be
-competent at reading and writing programs in multiple programming languages. Beyond
-programming skills, however, they must be able to design and analyze algorithms, select
-appropriate paradigms, and utilize modern development and testing tools. This knowledge area
-brings together those fundamental concepts and skills related to the software development
-process. As such, it provides a foundation for other software-oriented knowledge areas, most
-notably Programming Languages, Algorithms and Complexity, and Software Engineering.
+ソフトウェア開発プロセスをスムーズに進めることは、コンピュータ科学のほとんどの学習にとって前提条件となります。問題を効果的に解決するためコンピュータを使用するには、学生は複数のプログラミング言語でプログラムを読み書きする能力が必要です。しかし、それだけでなく、アルゴリズムを設計し分析する能力、適切なパラダイムを選択する能力、そして現代の開発ツールとテストツールを利用する能力も必要とします。この知識領域は、ソフトウェア開発プロセスに関連する基本的な概念とスキルをまとめています。そのため、特に[プログラミング言語](./z_appendix_A_PL.md)、[アルゴリズムと計算量](./z_appendix_A_AL.md)、[ソフトウェア工学](./z_appendix_A_SE.md)といった他のソフトウェア指向の知識領域の基盤となります。
 
-It is important to note that this knowledge area is distinct from the old Programming
-Fundamentals knowledge area from CC2001. Whereas that knowledge area focused exclusively
-on the programming skills required in an introductory computer science course, this new
-knowledge area is intended to fill a much broader purpose. It focuses on the entire software
-development process, identifying those concepts and skills that should be mastered in the first
-year of a computer science program. This includes the design and simple analysis of algorithms,
-fundamental programming concepts and data structures, and basic software development
-methods and tools. As a result of its broader purpose, the Software Development Fundamentals
-knowledge area includes fundamental concepts and skills that could naturally be listed in other
-software-oriented knowledge areas (e.g., programming constructs from Programming
-Languages, simple algorithm analysis from Algorithms & Complexity, simple development
-methodologies from Software Engineering). Likewise, each of these knowledge areas will
-contain more advanced material that builds upon the fundamental concepts and skills listed here.
+この知識領域が、CC2001の旧プログラミング基礎 (Programming Fundamentals) 知識領域とは異なることを強調しておきたいと思います。旧知識領域は、導入的なコンピュータサイエンスのコースで必要とされるプログラミングスキルに焦点を当てていましたが、この新しい知識領域は、はるかに広範な目的を果たすことを意図しています。それはソフトウェア開発プロセス全体に焦点を当て、コンピュータサイエンスプログラムの最初の年に習得すべき概念とスキルを特定します。これには、アルゴリズムの設計と単純な分析、基本的なプログラミング概念とデータ構造、そして基本的なソフトウェア開発手法とツールが含まれます。その広範な目的の結果として、ソフトウェア開発基礎知識領域は、他のソフトウェア指向知識領域（例えば、[プログラミング言語](./z_appendix_A_PL.md)からのプログラミング構文、[アルゴリズムと計算量](./z_appendix_A_AL.md)からの単純なアルゴリズム分析、[ソフトウェア工学](./z_appendix_A_SE.md)からの単純な開発方法論）に自然にリストアップされる基本的な概念とスキルを含んでいます。同様に、これらの知識領域は、ここにリストアップされている基本的な概念とスキルを基にしたより高度な題材を含むでしょう。
 
-While broader in scope than the old Programming Fundamentals, this knowledge area still allows
-for considerable flexibility in the design of first-year curricula. For example, the Fundamental
-Programming Concepts unit identifies only those concepts that are common to all programming
-paradigms. It is expected that an instructor would select one or more programming paradigms
-(e.g., object-oriented programming, functional programming, scripting) to illustrate these
-programming concepts, and would pull paradigm-specific content from the Programming
-Languages knowledge area to fill out a course. Likewise, an instructor could choose to
-emphasize formal analysis (e.g., Big-Oh, computability) or design methodologies (e.g., team
-projects, software life cycle) early, thus integrating hours from the Programming Languages,
-Algorithms and Complexity, and/or Software Engineering knowledge areas. Thus, the 43 hours
-of material in this knowledge area will typically be augmented with core material from one or
-more of these knowledge areas to form a complete and coherent first-year experience.
+旧プログラミング基礎と比べて範囲が広いにもかかわらず、この知識領域は、初年度のカリキュラムの設計においてかなりの柔軟性を許容しています。例えば、[プログラミングの基本概念](#sdkプログラミングの基本概念)は、すべてのプログラミングパラダイムに共通する概念のみを特定しています。教員はこれらのプログラミング概念を示すために1つ以上のプログラミングパラダイム（例えば、オブジェクト指向プログラミング、関数型プログラミング、スクリプト）を選択し、講座を補完するためにプログラミング言語の知識領域からパラダイム固有のコンテンツを引き出すことが期待されます。同様に、教員は早期に形式的な分析（例えば、ビッグオー、計算可能性）や設計方法論（例えば、チームプロジェクト、ソフトウェアライフサイクル）を強調することを選択し、プログラミング言語、アルゴリズムと計算量、および/またはソフトウェア工学の知識領域の時間を統合することができます。したがって、この知識領域の43時間の題材は、通常、これらの知識領域の1つ以上からのコア題材で補完され、完全で一貫した初年度の経験を形成します。
 
-When considering the hours allocated to each knowledge unit, it should be noted that these hours
-reflect the minimal amount of classroom coverage needed to introduce the material. Many
-software development topics will reappear and be reinforced by later topics (e.g., applying
-iteration constructs when processing lists). In addition, the mastery of concepts and skills from
-this knowledge area requires a significant amount of software development experience outside of
-class.
-
+各知識単位に割り当てられた時間を考慮する際、これらの時間は、題材を紹介するために必要な教室での授業の最小量を反映していることに注意すべきです。多くのソフトウェア開発のトピックは、後のトピックによって再度取り上げられ、強化されます（例えば、リストの処理時に繰り返し構文を適用するなど）。さらに、この知識領域からの概念とスキルの習得には、クラスの外でのソフトウェア開発経験が大量に必要です。
 
 **SDF. ソフトウェア開発基礎 (必修 43時間)**
 
@@ -59,159 +23,134 @@ class.
 ## SDF/アルゴリズムと設計
 *[必修 11時間]*
 
-This unit builds the foundation for core concepts in the Algorithms and Complexity Knowledge
-Area, most notably in the Basic Analysis and Algorithmic Strategies knowledge units.
+このユニットは、[アルゴリズムと計算量](./z_appendix_A_AL.md)の知識領域、特に[計算量の解析](./z_appendix_A_AL.md#al計算量の解析)と[アルゴリズム設計の手法](./z_appendix_A_AL.md#alアルゴリズム設計の手法)の知識単位で注目される中核コンセプトの基礎を築きます。
 
 **トピック:**
 
-* The concept and properties of algorithms
- * Informal comparison of algorithm efficiency (e.g., operation counts)
-* The role of algorithms in the problem-solving process
-* Problem-solving strategies
- * Iterative and recursive mathematical functions
- * Iterative and recursive traversal of data structures
- * Divide-and-conquer strategies
-* Fundamental design concepts and principles
- * Abstraction
- * Program decomposition
- * Encapsulation and information hiding
- * Separation of behavior and implementation
-
+* アルゴリズムの概念と特性
+* アルゴリズム効率の非公式な比較 (例えば、操作数)
+* 問題解決プロセスにおけるアルゴリズムの役割
+* 問題解決の戦略
+ * 反復的および再帰的な数学関数
+ * 反復的および再帰的なデータ構造の探索
+ * 分割統治戦略
+* 基本的な設計概念と原則
+ * 抽象化
+ * プログラムの分解
+ * カプセル化と情報隠蔽
+ * 振舞いと実装の分離
 
 **学習到達目標:**
 
-1. Discuss the importance of algorithms in the problem-solving process. [Familiarity]
-2. Discuss how a problem may be solved by multiple algorithms, each with different properties. [Familiarity]
-3. Create algorithms for solving simple problems. [Usage]
-4. Use a programming language to implement, test, and debug algorithms for solving simple problems.
-[Usage]
-5. Implement, test, and debug simple recursive functions and procedures. [Usage]
-6. Determine whether a recursive or iterative solution is most appropriate for a problem. [Assessment]
-7. Implement a divide-and-conquer algorithm for solving a problem. [Usage]
-8. Apply the techniques of decomposition to break a program into smaller pieces. [Usage]
-9. Identify the data components and behaviors of multiple abstract data types. [Usage]
-10. Implement a coherent abstract data type, with loose coupling between components and behaviors. [Usage]
-11. Identify the relative strengths and weaknesses among multiple designs or implementations for a problem.
-[Assessment]
-
+1. 問題解決プロセスにおけるアルゴリズムの重要性を議論する。[知識]
+2. 問題が異なる特性を持つ複数のアルゴリズムによって解決されうることについて議論する。[知識]
+3. 簡単な問題を解決するためのアルゴリズムを作成する。[使用]
+4. プログラミング言語を使用して、簡単な問題を解決するためのアルゴリズムを実装、テスト、デバッグする。[使用]
+5. 単純な再帰する関数や手続きを実装、テスト、デバッグする。[使用]
+6. 問題に対して再帰的な解法か反復的な解法のどちらが最適かを判断する。[評価]
+7. 問題を解決するための分割統治アルゴリズムを実装する。[使用]
+8. プログラムを小さな部分に分解するための技術を適用する。[使用]
+9. 複数の抽象データ型の構成データ要素と振る舞いを特定する。[使用]
+10. 構成要素と振る舞いの間に疎結合を持つ一貫性のある抽象データ型を実装する。[使用]
+11. 問題に対する複数の設計や実装について、相対的な長所と短所を特定する。[評価]
 
 
 ## SDF/プログラミングの基本概念
 *[必修 10時間]*
 
-This knowledge unit builds the foundation for core concepts in the Programming Languages
-Knowledge Area, most notably in the paradigm-specific units: Object-Oriented Programming,
-Functional Programming, and Event-Driven & Reactive Programming.
+この知識他には、[プログラミング言語](./z_appendix_A_PL.md)知識領域の中核概念、特にパラダイム特有の知識単位: [オブジェクト指向プログラミング](./z_appendix_A_PL.md#plオブジェクト指向プログラミング)、[関数型プログラミング](./z_appendix_A_PL.md#pl関数型プログラミング)、[イベント駆動プログラミングとリアクティブプログラミング](./z_appendix_A_PL.md#plイベント駆動プログラミングとリアクティブプログラミング)の基礎を築いています。
 
 **トピック:**
 
-* Basic syntax and semantics of a higher-level language
-* Variables and primitive data types (e.g., numbers, characters, Booleans)
-* Expressions and assignments
-* Simple I/O including file I/O
-* Conditional and iterative control structures
-* Functions and parameter passing
-* The concept of recursion
+* 高水準言語の基本的な構文と意味論
+* 変数と基本データ型（例：数値、文字、ブール値）
+* 式と代入
+* ファイルを含む簡単な I/O (入出力)
+* 条件判定と反復制御構造
+* 関数とパラメータの渡し方
+* 再帰の概念
 
 **学習到達目標:**
 
-1. Analyze and explain the behavior of simple programs involving the fundamental programming
-constructs variables, expressions, assignments, I/O, control constructs, functions, parameter passing,
-and recursion. [Assessment]
-2. Identify and describe uses of primitive data types. [Familiarity]
-3. Write programs that use primitive data types. [Usage]
-4. Modify and expand short programs that use standard conditional and iterative control structures and
-functions. [Usage]
-5. Design, implement, test, and debug a program that uses each of the following fundamental
-programming constructs: basic computation, simple I/O, standard conditional and iterative structures,
-the definition of functions, and parameter passing. [Usage]
-6. Write a program that uses file I/O to provide persistence across multiple executions. [Usage]
-7. Choose appropriate conditional and iteration constructs for a given programming task. [Assessment]
-8. Describe the concept of recursion and give examples of its use. [Familiarity]
-9. Identify the base case and the general case of a recursively-defined problem. [Assessment]
+1. 基本的なプログラミング構造 (変数、式、代入、I/O、制御構造、関数、パラメータの渡し方、再帰) を含むシンプルなプログラムの振る舞いを分析し、説明する。[評価]
+2. 基本データ型の使用例を特定し、説明する。[知識]
+3. 基本データ型を使用したプログラムを書く。[使用]
+4. 標準的な条件判定および反復制御構造、関数を使用した短いプログラムを修正し、拡張する。[使用]
+5. 基本的な計算、単純なI/O、標準的な条件判定および反復構造、関数の定義、パラメータの渡し方といった基本的なプログラミング構造を使用したプログラムを設計、実装、テスト、デバッグする。[使用]
+6. ファイルI/Oを使用して複数の実行間で持続性を提供するプログラムを書く。[使用]
+7. 与えられたプログラミング課題に対して適切な条件判定および反復構造を選択する。[評価]
+8. 再帰の概念を説明し、その使用例を示す。[知識]
+9. 再帰的に定義された問題の基底段階と再帰段階を特定する。[評価]
 
 
 
 ## SDF/基本データ構造
 *[必修 12時間]*
 
-This unit builds the foundation for core concepts in the Algorithms and Complexity Knowledge
-Area, most notably in the Fundamental Data Structures and Algorithms and Basic Computability
-and Complexity knowledge units.
+この知識単位は、[アルゴリズムと計算量](./z_appendix_AL.md)の知識領域の基本的な概念、特に[基本データ構造とアルゴリズム](./z_appendix_AL.md#al基本データ構造とアルゴリズム)、[形式言語・計算可能性・計算量の基礎](./z_appendix_AL.md#al形式言語計算可能性計算量の基礎)の知識単位の基礎を構築します。
 
-**トピック:**
+トピック:
 
-* Arrays
-* Records/structs (heterogeneous aggregates)
-* Strings and string processing
-* Abstract data types and their implementation
- * Stacks
- * Queues
- * Priority queues
- * Sets
- * Maps
-* References and aliasing
-* Linked lists
-* Strategies for choosing the appropriate data structure
+* 配列
+* レコード/構造体 (不均質な集合体)
+* 文字列と文字列処理
+* 抽象データ型とその実装
+ * スタック (stack)
+ * キュー (queue)
+ * 優先度付きキュー (priority queue)
+ * セット (set)
+ * マップ (map)
+* 参照とエイリアス
+* リンクリスト (linked list)
+* 適切なデータ構造を選択するための戦略
 
 **学習到達目標:**
 
-1. Discuss the appropriate use of built-in data structures. [Familiarity]
-2. Describe common applications for each of the following data structures: stack, queue, priority queue, set,
-and map. [Familiarity]
-3. Write programs that use each of the following data structures: arrays, records/structs, strings, linked lists,
-stacks, queues, sets, and maps. [Usage]
-4. Compare alternative implementations of data structures with respect to performance. [Assessment]
-5. Describe how references allow for objects to be accessed in multiple ways. [Familiarity]
-6. Compare and contrast the costs and benefits of dynamic and static data structure implementations.
-[Assessment]
-7. Choose the appropriate data structure for modeling a given problem. [Assessment]
+1. 組み込みデータ構造の適切な使用について議論する。[知識]
+2. スタック、キュー、優先度付きキュー、セット、マップといった各データ構造の一般的な用途を説明する。[知識]
+3. 配列、レコード/構造体、文字列、リンクリスト、スタック、キュー、セット、マップといった各データ構造を使用したプログラムを作成する。[使用]
+4. データ構造の複数異なる実装について性能を比較する。[評価]
+5. オブジェクトをアクセス可能にする参照には複数の方法があることを説明する。[知識]
+6. 動的データ構造と静的データ構造の実装について、コストと利点を比較対比する。[評価]
+7. 与えられた問題をモデリングするのに適したデータ構造を選ぶ。[評価]
 
 
 
 ## SDF/開発方法
 *[必修 10時間]*
 
-This unit builds the foundation for core concepts in the Software Engineering knowledge area,
-most notably in the Software Processes, Software Design and Software Evolution knowledge
-units.
+この知識単位では、主に[ソフトウェア工学](./z_appendix_A_SE.md)の知識領域における[ソフトウェアプロセス](./z_appendix_A_SE.md#seソフトウェアプロセス)、[ソフトウェア設計](./z_appendix_A_SE.md#seソフトウェア設計)、[ソフトウェア進化・発展](./z_appendix_A_SE.md#seソフトウェア進化発展) の知識単位における、基本的な概念を構築するものです。
+
 
 **トピック:**
 
-* Program comprehension
-* Program correctness
- * Types of errors (syntax, logic, run-time)
- * The concept of a specification
- * Defensive programming (e.g. secure coding, exception handling)
- * Code reviews
- * Testing fundamentals and test-case generation
- * The role and the use of contracts, including pre- and post-conditions
- * Unit testing
-* Simple refactoring
-* Modern programming environments
- * Code search
- * Programming using library components and their APIs
-* Debugging strategies
-* Documentation and program style
+* プログラムの理解
+* プログラムの正確性
+ * エラーの種類 (構文、ロジック、実行時)
+ * 仕様の概念
+ * 防御的プログラミング (例: セキュアコーディング、例外処理)
+ * コードレビュー
+ * テストの基本とテストケースの生成
+ * 契約の役割と利用法。事前条件と事後条件を含む。
+ * ユニットテスト
+* 簡単なリファクタリング
+* 現代のプログラミング環境
+ * コード検索
+ * ライブラリとそのAPIを用いたプログラミング
+* デバッグ戦略
+* ドキュメンテーションとプログラムスタイル
 
 **学習到達目標:**
 
-1. Trace the execution of a variety of code segments and write summaries of their computations. [Assessment]
-2. Explain why the creation of correct program components is important in the production of high-quality
-software. [Familiarity]
-3. Identify common coding errors that lead to insecure programs (e.g., buffer overflows, memory leaks,
-malicious code) and apply strategies for avoiding such errors. [Usage]
-4. Conduct a personal code review (focused on common coding errors) on a program component using a
-provided checklist. [Usage]
-5. Contribute to a small-team code review focused on component correctness. [Usage]
-6. Describe how a contract can be used to specify the behavior of a program component. [Familiarity]
-7. Refactor a program by identifying opportunities to apply procedural abstraction. [Usage]
-8. Apply a variety of strategies to the testing and debugging of simple programs. [Usage]
-9. Construct, execute and debug programs using a modern IDE and associated tools such as unit testing tools
-and visual debuggers. [Usage]
-10. Construct and debug programs using the standard libraries available with a chosen programming language.
-[Usage]
-11. Analyze the extent to which another programmer’s code meets documentation and programming style
-standards. [Assessment]
-12. Apply consistent documentation and program style standards that contribute to the readability and
-maintainability of software. [Usage]
+1. さまざまなコードセグメントの実行を追いかけ、その処理の要約を書く。[評価]
+2. 正確なプログラムコンポーネントの作成が高品質ソフトウェアの生成にどのように重要であるかを説明する。[知識]
+3. プログラムの安全性を破壊する一般的なコーディングエラー (例: バッファオーバーフロー、メモリリーク、悪意のあるコード) を特定し、そのようなエラーを避けるための戦略を適用する。[使用]
+4. 提供されたチェックリストを使用して、プログラムコンポーネントに対する個人的なコードレビュー (一般的なコーディングエラーに焦点を当てたもの) を行う。[使用]
+5. コンポーネントの正確性に焦点を当てた小チームのコードレビューに貢献する。[使用]
+6. 契約がプログラムコンポーネントの動作を指定するためにどのように使用できるかを説明する。[知識]
+7. 手続きの抽象化を適用する機会を特定して、プログラムをリファクタリングする。[使用]
+8. 単純なプログラムのテストとデバッグにさまざまな戦略を適用する。[使用]
+9. 現代のIDEとそれに関連するツール（ユニットテストツールやビジュアルデバッガなど）を使用してプログラムを構築、実行、デバッグする。[使用]
+10. 選択したプログラミング言語で利用可能な標準ライブラリを使用してプログラムを構築し、デバッグする。[使用]
+11. 他のプログラマーのコードがドキュメンテーションとプログラミングスタイルの標準をどの程度満たしているかを分析する。[評価]
+12. ソフトウェアの可読性と保守性に貢献する一貫したドキュメンテーションと標準プログラムスタイルを適用する。[使用]
