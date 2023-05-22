@@ -1,96 +1,40 @@
 
 # ソフトウェア工学 (SE)
 
-In every computing application domain, professionalism, quality, schedule, and cost are critical
-to producing software systems. Because of this, the elements of software engineering are
-applicable to developing software in all areas of computing. A wide variety of software
-engineering practices have been developed and utilized since the need for a discipline of
-software engineering was first recognized. Many trade-offs between these different practices
-have also been identified. Practicing software engineers have to select and apply appropriate
-techniques and practices to a given development effort in order to maximize value. To learn how
-to do so, they study the elements of software engineering.
 
-Software engineering is the discipline concerned with the application of theory, knowledge, and
-practice to effectively and efficiently build reliable software systems that satisfy the requirements
-of customers and users. This discipline is applicable to small, medium, and large-scale systems.
-It encompasses all phases of the lifecycle of a software system, including requirements
-elicitation, analysis and specification; design; construction; verification and validation;
-deployment; and operation and maintenance. Whether small or large, following a traditional
-plan-driven development process, an agile approach, or some other method, software engineering
-is concerned with the best way to build good software systems.
+すべてのコンピューティングアプリケーション分野において、専門性、品質、スケジュール、コストはソフトウェアシステムの生産において重要です。このため、ソフトウェア工学の要素は、コンピューティングのすべての分野でソフトウェアを開発する際に適用可能です。ソフトウェア工学の規律が最初に認識される必要があって以来、様々なソフトウェア工学の実践が開発され、利用されてきました。これらの異なる実践の間の多くのトレードオフも特定されてきました。実践的なソフトウェアエンジニアは、開発労力から引き出される価値を最大化するために、適切な技術と慣習を選択し適用しなければなりません。これをどのように行うかを学ぶために、彼らはソフトウェア工学の要素を学習します。
 
-Software engineering uses engineering methods, processes, techniques, and measurements. It
-benefits from the use of tools for managing software development; analyzing and modeling
-software artifacts; assessing and controlling quality; and for ensuring a disciplined, controlled
-approach to software evolution and reuse. The software engineering toolbox has evolved over the
-years. For instance, the use of contracts, with requires and ensure clauses and class invariants, is
-one good practice that has become more common. Software development, which can involve an
-individual developer or a team or teams of developers, requires choosing the most appropriate
-tools, methods, and approaches for a given development environment.
+ソフトウェア工学は、顧客やユーザーの要求を満足させる信頼性のあるソフトウェアシステムを効果的かつ効率的に構築するための理論、知識、実践の応用に関心を持つ学問分野です。この分野は、小規模、中規模、大規模なシステムに適用可能です。また、ソフトウェアシステムのライフサイクル全体、すなわち要求の抽出、分析と仕様化、設計、構築、検証と妥当性確認、展開、運用と保守を包括します。小規模であろうと大規模であろうと、伝統的な計画主導型の開発プロセスを採用しようと、アジャイルなアプローチを採用しようと、あるいはその他の方法を採用しようと、ソフトウェア工学は優れたソフトウェアシステムを構築する最善の方法について関心を持っています。
 
-Students and instructors need to understand the impacts of specialization on software engineering
-approaches. For example, specialized systems include:
- 
-* Real time systems
-* Client-server systems
-* Distributed systems
-* Parallel systems
-* Web-based systems
-* High integrity systems
-* Games
-* Mobile computing
-* Domain specific software (e.g., scientific computing or business applications)
+ソフトウェア開発においては、工学的手法、プロセス、技術、および測定を用います。また、様々なツール (ソフトウェア開発の管理、ソフトウェア成果物の分析とモデリング、品質の評価と制御、そしてソフトウェアの進化と再利用に対する規律ある制御されたアプローチを確保するためのツール) の利用から利益を得ています。ソフトウェア工学のツールボックスは年々進化しています。たとえば、文節やクラスの不変条件を要求・確保する契約の使用は、より一般的になっている良い実践の1つです。ソフトウェア開発は、個々の開発者や開発者のチーム、あるいは複数チームが関与するため、指定された開発環境に対する最も適したツール、方法、アプローチを選択する必要があります。
 
-Issues raised by each of these specialized systems demand specific treatments in each phase of
-software engineering. Students must become aware of the differences between general software
-engineering techniques and principles and the techniques and principles needed to address issues
-specific to specialized systems.
+学生と教員は、専門性がソフトウェア工学のアプローチにどのような影響を与えるかを理解する必要があります。例えば、特化したシステムには以下のようなものがあります：
 
-An important effect of specialization is that different choices of material may need to be made
-when teaching applications of software engineering, such as between different process models,
-different approaches to modeling systems, or different choices of techniques for carrying out any
-of the key activities. This is reflected in the assignment of core and elective material, with the
-core topics and learning outcomes focusing on the principles underlying the various choices, and
-the details of the various alternatives from which the choices have to be made being assigned to
-the elective material.
+* リアルタイムシステム
+* クライアントサーバーシステム
+* 分散システム
+* 並列システム
+* Webベースのシステム
+* 高信頼性システム
+* ゲーム
+* モバイルコンピューティング
+* ドメイン特化型ソフトウェア（例えば、科学計算やビジネスアプリケーションなど）
 
-Another division of the practices of software engineering is between those concerned with the
-fundamental need to develop systems that implement correctly the functionality that is required
-for them and those concerned with other qualities for systems and the trade-offs needed to
-balance these qualities. This division too is reflected in the assignment of core and elective
-material, so that topics and learning outcomes concerned with the basic methods for developing
-such system are assigned to the core and those that are concerned with other qualities and tradeoffs between them are assigned to the elective material.
+これらの特化したシステムそれぞれが提起する問題は、ソフトウェア工学の各フェーズで特定の処理を要求します。学生は、一般的なソフトウェア工学の技術と原則と、特化したシステム特有の問題に対処するための技術と原則との違いを認識する必要があります。
 
-In general, students can best learn to apply much of the material defined in the Sofware
-Engineering KA by participating in a project. Such projects should require students to work on a
-team to develop a software system through as much of its lifecycle as is possible. Much of
-software engineering is devoted to effective communication among team members and
-stakeholders. Utilizing project teams, projects can be sufficiently challenging to require students
-to use effective software engineering techniques and to develop and practice their
-communication skills. While organizing and running effective projects within the academic
-framework can be challenging, the best way to learn to apply software engineering theory and
-knowledge is in the practical environment of a project. The minimum hours specified for some
-knowledge units in this document may appear insufficient to accomplish associated applicationlevel learning outcomes. It should be understood that these outcomes are to be achieved through
-project experience that may even occur later in the curriculum than when the topics within the
-knowledge unit are introduced.
+ソフトウェア工学の応用を教える際には、専門性が与える重要な影響として異なる題材の選択が必要になる場合があります (異なるプロセスモデル、システムのモデル化への異なるアプローチ、あるいは主要な活動を実行するための技術の異なる選択など)。これは、コアと選択的な教材の割り当てに反映されており、コアのトピックと学習到達目標は、様々な選択肢の根底にある原則に焦点を当て、選択肢を決定するための様々な代替案の詳細は選択的な題材に割り当てられています。
 
-Further, there is increasing evidence that students learn to apply software engineering principles
-more effectively through an iterative approach, where students have the opportunity to work
-through a development cycle, assess their work, and then apply the knowledge gained through
-their assessment to another development cycle. Agile and iterative lifecycle models inherently
-afford such opportunities. 
+ソフトウェア工学の実践における別の分類は、システムが正確に必要な機能を実装するための基本的な必要性に関心があるか、システムの他の品質やそれらの品質をバランスさせるためのトレードオフに関心があるかです。この区分もまた、コアと選択的な題材の割り当てに反映されており、そのようなシステムを開発するための基本的な方法に関心を持つトピックと学習到達目標はコアに、他の品質やそれらの間のトレードオフに関心を持つものは選択的な題材に割り当てられます。
 
-Software lifecycle terminology in this document is based on that used in earlier sources, such as
-the Software Engineering Body of Knowledge (SWEBOK) and the ACM/IEEE-CS Software
-Engineering 2004 Curriculum Guidelines (SE2004). While some terms were originally defined
-in the context of plan-driven development processes, they are treated here as generic, and thus
-equally applicable to agile processes.
+一般的に、学生がこのソフトウェア工学の知識領域で定義された題材の多くを使用する最善の方法は、プロジェクトに参加することです。学生はチームで作業し、ソフトウェアシステムのライフサイクルを可能な限り幅広く開発し経験するべきです。ソフトウェア開発の大部分は、チームメンバーやステークホルダーとの効果的なコミュニケーションに費やされます。プロジェクトチームを通じることで、プロジェクトは学生が効果的なソフトウェア工学の技術を使用し、コミュニケーションスキルを開発し実践するという十分な挑戦を与えることができます。効果的なプロジェクトを学術的な枠組みの中で組織し運営することは困難かもしれませんが、プロジェクトの実践環境こそがソフトウェア工学の理論と知識の適用を学ぶ最善の方法です。本文書でいくつかの知識単位に指定されている最小時間は、関連する応用レベルの学習成果を達成するには不十分に見えるかもしれません。これらの成果は、知識単位内のトピックが紹介されるよりも後のカリキュラムでさえ、プロジェクトの経験を通じて達成されるべきであると理解すべきです。
 
-Note: The SDF/Development Methods knowledge unit includes 9 Core-Tier1 hours that
-constitute an introduction to certain aspects of software engineering. The knowledge units,
-topics and core hour specifications in this Software Engineering Knowledge Area must be
-understood as assuming previous exposure to the material described in SDF/Development
-Methods.
+さらに、学生がソフトウェア工学の本質をより効果的に適用する方法を学ぶ上で、反復的なアプローチが有効であるという証拠が増えています。このアプローチでは、学生は開発サイクルを経験し、自分たちの仕事を評価し、その評価を通じて得た知識を別の開発サイクルに適用する機会があります。アジャイルおよび反復的なライフサイクルモデルは、本質的にそのような機会を提供します。
+
+本文書におけるソフトウェアライフサイクルの用語は、Software Engineering Body of Knowledge (SWEBOK) や ACM/IEEE-CS Software Engineering 2004 Curriculum Guidelines (SE2004) などの早期の資料で使用されているものに基づいています。いくつかの用語はもともと計画主導型の開発プロセスの文脈で定義されましたが、ここでは一般的な用語として扱い、アジャイルなプロセスにも等しく適用します。
+
+
+注意: [SDF/開発方法](./z_appendix_A_SDF.md#sdf開発方法) の知識単位には、ソフトウェア工学の特定の側面を紹介するための9時間の必修が含まれています。このソフトウェア工学の知識領域の知識単位、トピック、およびコア時間の仕様は、[SDF/開発方法](./z_appendix_A_SDF.md#sdf開発方法)で説明されている題材はすでに履修済みと前提しています。
+
 
 **SE. ソフトウェア工学 (必修 6時間, 選択必修 21時間)**
 
@@ -114,57 +58,49 @@ Methods.
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Systems level considerations, i.e., the interaction of software with its intended environment (crossreference IAS/Secure Software Engineering)
-* Introduction to software process models (e.g., waterfall, incremental, agile)
- * Activities within software lifecycles
-* Programming in the large vs. individual programming
+* システムレベルの考慮事項、つまり、ソフトウェアと想定環境との相互作用 (相互参照: [IAS/安全なソフトウェア工学](./z_appendix_A_IAS.md#ias安全なソフトウェア工学))
+* ソフトウェアプロセスモデルの紹介 (例: ウォーターフォール, インクリメンタル, アジャイル)
+ * ソフトウェアライフサイクル内の活動
+* 大人数でのプログラミングと個人のプログラミング
 
-[Core-Tier2]
+[選択必修]
 
-* Evaluation of software process models
+* ソフトウェアプロセスモデルの評価
 
-[Elective]
+[選択科目]
 
-* Software quality concepts
-* Process improvement
-* Software process capability maturity models
-* Software process measurements
+* ソフトウェア品質の概念
+* プロセス改善
+* ソフトウェアプロセス能力成熟度モデル
+* ソフトウェアプロセスの測定
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Describe how software can interact with and participate in various systems including information
-management, embedded, process control, and communications systems. [Familiarity]
-2. Describe the relative advantages and disadvantages among several major process models (e.g., waterfall,
-iterative, and agile). [Familiarity]
-3. Describe the different practices that are key components of various process models. [Familiarity]
-4. Differentiate among the phases of software development. [Familiarity]
-5. Describe how programming in the large differs from individual efforts with respect to understanding a large
-code base, code reading, understanding builds, and understanding context of changes. [Familiarity]
+1. ソフトウェアがさまざまなシステム (情報管理、組み込み、工程管理、通信システムなど)とどのように関わり相互作用するかを説明する。[知識]
+2. ウォーターフォール、イテレーティブ、アジャイルなど、いくつかの主要なプロセスモデルの相対的な利点と欠点を説明する。[知識]
+3. さまざまなプロセスモデルの主要な構成要素である異なる実践を説明する。[知識]
+4. ソフトウェア開発のフェーズを区別する。[知識]
+5. 大規模なコードベースの理解、コードの読み取り、ビルドの理解、変更の文脈の理解について、大規模なプログラミングが個人開発とどのように異なるかを説明する。[知識]
 
-[Core-Tier2]
+[選択必修]
 
-6. Explain the concept of a software lifecycle and provide an example, illustrating its phases including the
-deliverables that are produced. [Familiarity]
-7. Compare several common process models with respect to their value for development of particular classes
-of software systems taking into account issues such as requirement stability, size, and non-functional
-characteristics. [Usage]
+6. ソフトウェアライフサイクルの概念を説明し、その例を挙げ、各フェーズをフェーズ毎の成果物を含めて説明する。[知識]
+7. 要求の安定性、サイズ、非機能特性などの問題を考慮に入れて、特定の種類のソフトウェアシステムの開発に対するいくつかの一般的なプロセスモデルの価値を比較する。[使用]
 
-[Elective]
+[選択科目]
 
-8. Define software quality and describe the role of quality assurance activities in the software process.
-[Familiarity]
-9. Describe the intent and fundamental similarities among process improvement approaches. [Familiarity]
-10. Compare several process improvement models such as CMM, CMMI, CQI, Plan-Do-Check-Act, or
-ISO9000. [Assessment]
-11. Assess a development effort and recommend potential changes by participating in process improvement
-(using a model such as PSP) or engaging in a project retrospective. [Usage]
-12. Explain the role of process maturity models in process improvement. [Familiarity]
-13. Describe several process metrics for assessing and controlling a project. [Familiarity]
-14. Use project metrics to describe the current state of a project. [Usage]
+8. ソフトウェア品質を定義し、品質保証活動がソフトウェアプロセスにおいて果たす役割を説明する。[知識]
+9. 複数のプロセス改善アプローチの目的と基本的な類似点を説明する。[知識]
+10. CMM、CMMI、CQI、Plan-Do-Check-Act、ISO9000などのいくつかのプロセス改善モデルを比較する。[評価]
+11. プロセス改善（PSPなどのモデルを使用）やプロジェクトの振り返りを通じて、開発の取り組みを評価し、取りうる変更を推奨する。[使用]
+12. プロセス改善におけるプロセス成熟度モデルの役割を説明する。[知識]
+13. プロジェクトを評価し、制御するためのいくつかのプロセス指標を説明する。[知識]
+14. プロジェクト指標を使用してプロジェクトの現状を説明する。[使用]
+
 
 
 ## SE/ソフトウェアプロジェクトマネジメント
@@ -172,80 +108,69 @@ ISO9000. [Assessment]
 
 **トピック:**
 
-[Core-Tier2]
+[選択必修]
 
-* Team participation
- * Team processes including responsibilities for tasks, meeting structure, and work schedule
- * Roles and responsibilities in a software team
- * Team conflict resolution
- * Risks associated with virtual teams (communication, perception, structure)
-* Effort Estimation (at the personal level)
-* Risk (cross reference IAS/Secure Software Engineering)
- * The role of risk in the lifecycle
- * Risk categories including security, safety, market, financial, technology, people, quality, structure
-and process
+* チーム参加
+ * タスクの責任、ミーティング構造、および作業スケジュールに関するチームプロセス
+ * ソフトウェアチームにおける役割と責任
+ * チームの対立解決
+ * 仮想チームに関連するリスク（コミュニケーション、認識、構造）
+* 工数見積もり（個人レベルで）
+* リスク（[IAS/安全なソフトウェア工学](./z_appendix_A_IAS.md#ias安全なソフトウェア工学)を参照）
+ * ライフサイクルにおけるリスクの役割
+ * セキュリティ、安全性、市場、財務、技術、人々、品質、構造、プロセスを含むリスクカテゴリー
 
-[Elective]
+[選択科目]
 
-* Team management
- * Team organization and decision-making
- * Role identification and assignment
- * Individual and team performance assessment
-* Project management
- * Scheduling and tracking
- * Project management tools
- * Cost/benefit analysis
-* Software measurement and estimation techniques
-* Software quality assurance and the role of measurements
-* Risk
- * Risk identification and management
- * Risk analysis and evaluation
- * Risk tolerance (e.g., risk-adverse, risk-neutral, risk-seeking)
- * Risk planning
-* System-wide approach to risk including hazards associated with tools
+* チームマネジメント
+ * チーム組織と意思決定
+ * 役割の識別と割り当て
+ * 個人とチームのパフォーマンス評価
+* プロジェクトマネジメント
+ * スケジューリングと追跡
+ * プロジェクトマネジメントツール
+ * 費用便益分析
+* ソフトウェアの測定と見積もり技術
+* ソフトウェア品質保証と測定の役割
+* リスク
+ * リスクの識別と管理
+ * リスク分析と評価
+ * リスク許容度（例えば、リスク回避、リスク中立、リスク追求）
+ * リスクプランニング
+* ツールに潜む危険を含む、システム全体観点からのリスクへのアプローチ
 
 **学習到達目標:**
 
-[Core-Tier2]
+[選択必修]
 
-1. Discuss common behaviors that contribute to the effective functioning of a team. [Familiarity]
-2. Create and follow an agenda for a team meeting. [Usage]
-3. Identify and justify necessary roles in a software development team. [Usage]
-4. Understand the sources, hazards, and potential benefits of team conflict. [Usage]
-5. Apply a conflict resolution strategy in a team setting. [Usage]
-6. Use an ad hoc method to estimate software development effort (e.g., time) and compare to actual effort
-required. [Usage]
-7. List several examples of software risks. [Familiarity]
-8. Describe the impact of risk in a software development lifecycle. [Familiarity]
-9. Describe different categories of risk in software systems. [Familiarity]
+1. チームの効果的な機能に寄与する一般的な行動を議論する。[知識]
+2. チームミーティングの議題を作成し、それに従う。[使用]
+3. ソフトウェア開発チームに必要な役割を特定し、その理由を示す。[使用]
+4. チームの対立の源泉、危険性、および潜在的な利点を理解する。[使用]
+5. チームの状況で対立解決戦略を適用する。[使用]
+6. アドホックな方法を使用してソフトウェア開発の工数 (例えば、時間) を見積もり、実際に必要な工数と比較する。[使用]
+7. ソフトウェアリスクのいくつかの例を挙げる。[知識]
+8. ソフトウェア開発ライフサイクルにおけるリスクの影響を説明する。[知識]
+9. ソフトウェアシステムのリスクの異なるカテゴリーを説明する。[知識]
 
-[Elective]
+[選択科目]
 
-10. Demonstrate through involvement in a team project the central elements of team building and team
-management. [Usage]
-11. Describe how the choice of process model affects team organizational structures and decision-making
-processes. [Familiarity]
-12. Create a team by identifying appropriate roles and assigning roles to team members. [Usage]
-13. Assess and provide feedback to teams and individuals on their performance in a team setting. [Usage]
-14. Using a particular software process, describe the aspects of a project that need to be planned and monitored,
-(e.g., estimates of size and effort, a schedule, resource allocation, configuration control, change
-management, and project risk identification and management). [Familiarity]
-15. Track the progress of some stage in a project using appropriate project metrics. [Usage]
-16. Compare simple software size and cost estimation techniques. [Usage]
-17. Use a project management tool to assist in the assignment and tracking of tasks in a software development
-project. [Usage]
-18. Describe the impact of risk tolerance on the software development process. [Assessment]
-19. Identify risks and describe approaches to managing risk (avoidance, acceptance, transference, mitigation),
-and characterize the strengths and shortcomings of each. [Familiarity]
-20. Explain how risk affects decisions in the software development process. [Usage]
-21. Identify security risks for a software system. [Usage]
-22. Demonstrate a systematic approach to the task of identifying hazards and risks in a particular situation.
-[Usage]
-23. Apply the basic principles of risk management in a variety of simple scenarios including a security
-situation. [Usage]
-24. Conduct a cost/benefit analysis for a risk mitigation approach. [Usage]
-25. Identify and analyze some of the risks for an entire system that arise from aspects other than the software.
-[Usage]
+10. チームプロジェクトに参加することにより、チームビルディングとチーム管理の中心的な要素を実演する。[使用]
+11. プロセスモデルの選択がチーム組織構造と意思決定プロセスにどのように影響するか説明する。[知識]
+12. 適切な役割を特定し、チームメンバーに役割を割り当てることでチームを組成する。[使用]
+13. チームのおかれた環境で、チームや個々のパフォーマンスを評価し、フィードバックを提供する。[使用]
+14. 特定のソフトウェアプロセスを使用して、計画および監視が必要なプロジェクトの側面（例えば、規模と工数の見積もり、スケジュール、リソースの割り当て、構成管理、変更管理、プロジェクトのリスクの特定と管理）を説明する。[知識]
+15. 適切なプロジェクトの測定基準を使用して、プロジェクトのある段階の進行状況を追跡する。[使用]
+16. 単純なソフトウェアの規模とコストの見積もり技術を比較する。[使用]
+17. プロジェクト管理ツールを使用して、ソフトウェア開発プロジェクトでのタスクの割り当てと追跡を支援する。[使用]
+18. リスク許容度がソフトウェア開発プロセスにどのように影響するか説明する。[評価]
+19. リスクを特定し、リスク管理のアプローチ（回避、受け入れ、転嫁、軽減）を説明し、それぞれの長所と短所を特徴づける。[知識]
+20. リスクがソフトウェア開発プロセス上の意思決定にどのように影響するか説明する。[使用]
+21. ソフトウェアシステムのセキュリティリスクを特定する。[使用]
+22. 特定の状況での危険の原因と可能性の特定に系統的なアプローチを示す。[使用]
+23. セキュリティの状況を含むさまざまな単純なシナリオでリスク管理の基本的な原則を適用する。[使用]
+24. リスク軽減アプローチのための費用便益分析を行う。[使用]
+25. ソフトウェア以外の側面から生じる全体のシステムのリスクを特定し、分析する。[使用]
 
 
 
@@ -254,98 +179,74 @@ situation. [Usage]
 
 **トピック:**
 
-* Software configuration management and version control
-* Release management
-* Requirements analysis and design modeling tools
-* Testing tools including static and dynamic analysis tools
-* Programming environments that automate parts of program construction processes (e.g., automated builds)
- * Continuous integration
-* Tool integration concepts and mechanisms
+* ソフトウェア構成管理とバージョン管理
+* リリース管理
+* 要求分析と設計モデリングツール
+* 静的および動的解析ツールを含むテストツール
+* プログラム構築プロセスの一部を自動化するプログラミング環境 (例: 自動ビルド)
+ * 継続的インテグレーション
+* ツール統合の概念とメカニズム
 
 **学習到達目標:**
 
-1. Describe the difference between centralized and distributed software configuration management.
-[Familiarity]
-2. Describe how version control can be used to help manage software release management. [Familiarity]
-3. Identify configuration items and use a source code control tool in a small team-based project. [Usage]
-4. Describe how available static and dynamic test tools can be integrated into the software development
-environment. [Familiarity]
-5. Describe the issues that are important in selecting a set of tools for the development of a particular software
-system, including tools for requirements tracking, design modeling, implementation, build automation, and
-testing. [Familiarity]
-6. Demonstrate the capability to use software tools in support of the development of a software product of
-medium size. [Usage]
+1. 集中型と分散型のソフトウェア管理の違いを説明する。[知識]
+2. バージョン管理がソフトウェアのリリース管理をどのように支援するかを説明する。[知識]
+3. 小規模チームのプロジェクトで、構成品目を特定し、ソースコード管理ツールを使用する。[使用]
+4. 利用可能な静的・動的テストツールがどのようにソフトウェア開発環境に統合されるかを説明する。[知識]
+5. 特定のソフトウェアシステムの開発に必要なツールセットを選択する際の重要な論点を説明する。これには、要求追跡、設計モデリング、実装、ビルド自動化、およびテストのツールが含まれる。[知識]
+6. 中規模のソフトウェア製品の開発を支援するためのソフトウェアツールを使用する能力を示す。[使用]
 
 
 
 ## SE/要求工学
 *[必修 1時間, 選択必修 3時間]*
 
-The purpose of requirements engineering is to develop a common understanding of the needs,
-priorities, and constraints relevant to a software system. Many software failures arise from an
-incomplete understanding of requirements for the software to be developed or inadequate
-management of those requirements.
+ソフトウェアシステムに関連するニーズ、優先事項、制約についての共通の理解を醸成することが要求工学の目的です。多くのソフトウェアの失敗は、開発すべきソフトウェアの要求の理解が不完全であるか、またはそれらの要求の管理が不適切であるために発生します。
 
-Specifications of requirements range in formality from completely informal (e.g., spoken) to
-rigorously mathematical (e.g., written in a formal specification language such as Z or first-order
-logic). In practice, successful software engineering efforts use requirements specifications to
-reduce ambiguity and improve the consistency and completeness of the development team’s
-understanding of the vision of the intended software. Plan-driven approaches tend to produce
-formal documents with numbered requirements. Agile approaches tend to favor less formal
-specifications that include user stories, use cases, and test cases.
+要求仕様は、完全に非公式 (たとえば、話し言葉) から厳密に数学的 (たとえば、Z言語や一階述語論理のような仕様記述言語) までの形式で範囲が異なります。実際には、成功したソフトウェア開発の取り組みでは、要求仕様を用いて曖昧さを減らし、開発チームのソフトウェアの展望についての理解の一貫性と完全性を向上させます。計画主導のアプローチでは、番号付きの要件を含む公式のドキュメントを作成する傾向があります。アジャイルなアプローチでは、ユーザーストーリー、ユースケース、テストケースを含む、あまり公式でない仕様を好む傾向があります。
 
 **トピック:**
 
-[Core-Tier1]
-* Describing functional requirements using, for example, use cases or users stories
-* Properties of requirements including consistency, validity, completeness, and feasibility
+[必修]
+* 例えば、ユースケースやユーザーストーリーを使用した機能要件の記述
+* 要件の特性、つまり一貫性、妥当性、完全性、実現可能性
 
-[Core-Tier2]
-* Software requirements elicitation
-* Describing system data using, for example, class diagrams or entity-relationship diagrams
-* Non-functional requirements and their relationship to software quality (cross-reference IAS/Secure
-Software Engineering)
-* Evaluation and use of requirements specifications
+[選択必修]
+* ソフトウェアの要求抽出
+* 例えば、クラス図や実体関連図 (ER図) を使用したシステムデータの記述
+* 非機能要件とソフトウェア品質との関係（相互参照: [IAS/安全なソフトウェア工学](./z_appendix_A_IAS.md#ias安全なソフトウェア工学))
+* 要求仕様の評価と使用
 
-[Elective]
-* Requirements analysis modeling techniques
-* Acceptability of certainty / uncertainty considerations regarding software / system behavior
-* Prototyping
-* Basic concepts of formal requirements specification
-* Requirements specification
-* Requirements validation
-* Requirements tracing
+[選択科目]
+* 要求分析モデリング技術
+* ソフトウェア/システムの動作に関する確実性/不確実性の受け入れ可能性
+* プロトタイピング
+* 形式的な要求仕様の基本概念
+* 要求仕様
+* 要求の検証
+* 要求追跡
 
 **学習到達目標:**
 
-[Core-Tier1]
-1. List the key components of a use case or similar description of some behavior that is required for a system.
-[Familiarity]
-2. Describe how the requirements engineering process supports the elicitation and validation of behavioral
-requirements. [Familiarity]
-3. Interpret a given requirements model for a simple software system. [Familiarity]
+[必修]
+1. システムに要求される振る舞いの説明やユースケースから、主要な構成要素をリストアップする。[知識]
+2. 要求工学のプロセスが、システムに要求される振る舞いの抽出と検証をどのようにサポートするか説明する。[知識]
+3. 単純なソフトウェアシステムに関する与えられた要求モデルを解釈する。[知識]
 
-[Core-Tier2]
-4. Describe the fundamental challenges of and common techniques used for requirements elicitation.
-[Familiarity]
-5. List the key components of a data model (e.g., class diagrams or ER diagrams). [Familiarity]
-6. Identify both functional and non-functional requirements in a given requirements specification for a
-software system. [Usage]
-7. Conduct a review of a set of software requirements to determine the quality of the requirements with
-respect to the characteristics of good requirements. [Usage]
+[選択必修]
+4. 要件抽出の基本的な課題と一般的に使用される技術を説明する。[知識]
+5. データモデル（例：クラス図やER図）の主要な要素をリストアップする。[知識]
+6. 与えられたソフトウェアシステムの要求仕様において、機能要件と非機能要件の両方を特定する。[使用]
+7. 良い要求が備える特徴を鑑み、ソフトウェアの要求セットのレビューを実施して要求の品質を決定する。[使用]
 
-[Elective]
-8. Apply key elements and common methods for elicitation and analysis to produce a set of software
-requirements for a medium-sized software system. [Usage]
-9. Compare the plan-driven and agile approaches to requirements specification and validation and describe the
-benefits and risks associated with each. [Familiarity]
-10. Use a common, non-formal method to model and specify the requirements for a medium-size software
-system. [Usage]
-11. Translate into natural language a software requirements specification (e.g., a software component contract)
-written in a formal specification language. [Usage]
-12. Create a prototype of a software system to mitigate risk in requirements. [Usage]
-13. Differentiate between forward and backward tracing and explain their roles in the requirements validation
-process. [Familiarity]
+[選択科目]
+
+8. 中規模のソフトウェアシステムの要求仕様を作成するために、要求抽出と分析のための主要な要素と一般的な方法を適用する。[使用]
+9. 計画駆動型とアジャイル型について、要求仕様や検証のアプローチを比較し、それぞれの利点と関連するリスクを説明する。[知識]
+10. 一般的な非形式的な方法を使用して、中規模のソフトウェアシステムの要求をモデル化し、仕様を定義する。[使用]
+11. 使用記述言語で書かれたソフトウェア要求仕様（例えば、ソフトウェアコンポーネント契約）を自然言語に翻訳する。[使用]
+12. 要求におけるリスクを軽減するために、ソフトウェアシステムのプロトタイプを作成する。[使用]
+13. 前方追跡と後方追跡の違いを明確にし、要求検証プロセスにおけるそれらの役割を説明する。[知識]
 
 
 
@@ -354,83 +255,65 @@ process. [Familiarity]
 
 **トピック:**
 
-[Core-Tier1]
-* System design principles: levels of abstraction (architectural design and detailed design), separation of
-concerns, information hiding, coupling and cohesion, re-use of standard structures
-* Design Paradigms such as structured design (top-down functional decomposition), object-oriented analysis
-and design, event driven design, component-level design, data-structured centered, aspect oriented,
-function oriented, service oriented
-* Structural and behavioral models of software designs
-* Design patterns
+[必修]
+* システムデザインの原則: 抽象化のレベル (アーキテクチャ設計と詳細設計)、関心の分離、情報隠蔽、結合度と凝集度、標準構造の再利用
+* デザインパラダイム、たとえば構造化デザイン (トップダウンの機能分解)、オブジェクト指向分析と設計、イベント駆動設計、コンポーネントレベル設計、データ中心設計、アスペクト指向、関数指向、サービス指向
+* ソフトウェアデザインの構造および動作モデル
+* デザインパターン
 
-[Core-Tier2]
-* Relationships between requirements and designs: transformation of models, design of contracts, invariants
-* Software architecture concepts and standard architectures (e.g. client-server, n-layer, transform centered,
-pipes-and-filters)
-* Refactoring designs using design patterns
-* The use of components in design: component selection, design, adaptation and assembly of components,
-components and patterns, components and objects (for example, building a GUI using a standard widget
-set)
+[選択必修]
 
-[Elective]
-* Internal design qualities, and models for them: efficiency and performance, redundancy and fault
-tolerance, traceability of requirements
-* External design qualities, and models for them: functionality, reliability, performance and efficiency,
-usability, maintainability, portability
-* Measurement and analysis of design quality
-* Tradeoffs between different aspects of quality
-* Application frameworks
-* Middleware: the object-oriented paradigm within middleware, object request brokers and marshalling,
-transaction processing monitors, workflow systems
-* Principles of secure design and coding (cross-reference IAS/Principles of Secure Design)
- * Principle of least privilege
- * Principle of fail-safe defaults
- * Principle of psychological acceptability
+* 要求と設計の関係: モデル変換・契約設計・不変性
+* ソフトウェアアーキテクチャの概念と標準アーキテクチャ (例えば、クライアントサーバー、n層、変換中心、パイプとフィルタ)
+* デザインパターンを使用した設計のリファクタリング
+* 設計におけるコンポーネントの用途: コンポーネントの選択、適用、設計や、複数のコンポーネントやパターン、オブジェクトを用いた構築（例えば、標準ウィジェット群を使用したGUIの構築）
+
+[選択科目]
+
+* 内部設計品質とそれらのモデル: 効率性と性能、冗長性と耐障害性、要求の追跡可能性
+* 外部設計品質とそれらのモデル: 機能性、信頼性、性能と効率性、使いやすさ、保守性、移植性
+* 設計品質の測定と分析
+* 品質の異なる側面間のトレードオフ
+* アプリケーションフレームワーク
+* ミドルウェア: ミドルウェア内のオブジェクト指向パラダイム、オブジェクトリクエストブローカとマーシャリング、トランザクション処理モニター、ワークフローシステム
+* 安全な設計とコーディングの原則 (相互参照: [IAS/設計の原則](./z_appendix_A_IAS.md#ias設計の原則))
+ * 最小特権の原則
+ * フェイルセーフデフォルトの原則
+ * 心理的受容性の原則
 
 **学習到達目標:**
 
-[Core-Tier1]
-1. Articulate design principles including separation of concerns, information hiding, coupling and cohesion,
-and encapsulation. [Familiarity]
-2. Use a design paradigm to design a simple software system, and explain how system design principles have
-been applied in this design. [Usage]
-3. Construct models of the design of a simple software system that are appropriate for the paradigm used to
-design it. [Usage]
-4. Within the context of a single design paradigm, describe one or more design patterns that could be
-applicable to the design of a simple software system. [Familiarity]
+[必修]
+1. 関心の分離、情報の隠蔽、結合度と凝集度、カプセル化などの設計原則を明確に述べる。[知識]
+2. 設計パラダイムを使用して簡単なソフトウェアシステムを設計し、この設計においてシステム設計原則がどのように適用されたか説明する。[使用]
+3. パラダイム沿って設計された簡単なソフトウェアシステムの設計モデルを作成する。[使用]
+4. 単一の設計パラダイムの文脈内で、単純なソフトウェアシステムの設計に適用可能な1つ以上のデザインパターンを説明する。[知識]
 
-[Core-Tier2]
-5. For a simple system suitable for a given scenario, discuss and select an appropriate design paradigm.
-[Usage]
-6. Create appropriate models for the structure and behavior of software products from their requirements
-specifications. [Usage]
-7. Explain the relationships between the requirements for a software product and its design, using appropriate
-models. [Assessment]
-8. For the design of a simple software system within the context of a single design paradigm, describe the
-software architecture of that system. [Familiarity]
-9. Given a high-level design, identify the software architecture by differentiating among common software
-architectures such as 3-tier, pipe-and-filter, and client-server. [Familiarity]
-10. Investigate the impact of software architectures selection on the design of a simple system. [Assessment]
-11. Apply simple examples of patterns in a software design. [Usage]
-12. Describe a form of refactoring and discuss when it may be applicable. [Familiarity]
-13. Select suitable components for use in the design of a software product. [Usage]
-14. Explain how suitable components might need to be adapted for use in the design of a software product.
-[Familiarity]
-15. Design a contract for a typical small software component for use in a given system. [Usage]
+[選択必修]
+5. 与えられたシナリオに沿った簡単なシステムのために、適切な設計パラダイムを議論し、選択する。[使用]
+6. 要求仕様からソフトウェア製品の構造と振る舞いの適切なモデルを作成する。[使用]
+7. 適切なモデルを使用して、ソフトウェア製品の要求とその設計との関係を説明する。[評価]
+8. 単一の設計パラダイムの文脈内で設計された簡単なソフトウェアシステムについて、そのシステムのソフトウェアアーキテクチャを説明する。[知識]
+9. 高レベルの設計が与えられた場合、一般的なソフトウェアアーキテクチャ (3層、パイプ・アンド・フィルタ、クライアント・サーバなど) の違いを考慮して、ソフトウェアアーキテクチャを割り出す。[知識]
+10. ソフトウェアアーキテクチャの選択が簡単なシステムの設計にどのような影響を及ぼすか調査する。[評価]
+11. パターンの簡単な実用例をソフトウェア設計に適用する。[使用]
+12. リファクタリングの類型を説明し、それが適用可能な場合を議論する。[知識]
+13. ソフトウェア製品の設計に使用する適切なコンポーネントを選択する。[使用]
+14. 適切なコンポーネントをソフトウェア製品の設計に使用するために、どのように改修する必要があるかを説明する。[知識]
+15. システムで使用されている典型的な小規模ソフトウェアコンポーネントに対して、契約を設計する。[使用]
 
-[Elective]
-16. Discuss and select appropriate software architecture for a simple system suitable for a given scenario.
-[Usage]
-17. Apply models for internal and external qualities in designing software components to achieve an acceptable
-tradeoff between conflicting quality aspects. [Usage]
-18. Analyze a software design from the perspective of a significant internal quality attribute. [Assessment]
-19. Analyze a software design from the perspective of a significant external quality attribute. [Assessment]
-20. Explain the role of objects in middleware systems and the relationship with components. [Familiarity]
-21. Apply component-oriented approaches to the design of a range of software, such as using components for
-concurrency and transactions, for reliable communication services, for database interaction including
-services for remote query and database management, or for secure communication and access. [Usage]
-22. Refactor an existing software implementation to improve some aspect of its design. [Usage]
-23. State and apply the principles of least privilege and fail-safe defaults. [Familiarity]
+
+[選択科目]
+16. 与えられたシナリオに沿った簡単なシステムのために、適切なソフトウェアアーキテクチャについて議論し、選択する。[使用]
+17. ソフトウェアコンポーネントの設計における内部・外部品質のモデルを適用し、品質の相反する側面間で許容可能なトレードオフを達成する。[使用]
+18. 重要な内部品質特性の視点からソフトウェア設計を分析する。[評価]
+19. 重要な外部品質特性の視点からソフトウェア設計を分析する。[評価]
+20. ミドルウェアシステムにおけるオブジェクトの役割と、コンポーネントとの関係を説明する。[知識]
+21. コンポーネントを使用した並行処理やトランザクション、高信頼通信サービス、リモートクエリやデータベース管理などデータベースとの相互作用、または安全な通信とアクセスなど、さまざまなソフトウェアの設計にコンポーネント指向のアプローチを適用する。[使用]
+22. 設計のある側面を改善するために、既存のソフトウェア実装をリファクタリングする。[使用]
+23. 最小特権の原則とフェールセーフデフォルトの原則を明示し、適用する。[知識]
+
+
 
 
 ## SE/ソフトウェアの構築
@@ -438,46 +321,40 @@ services for remote query and database management, or for secure communication a
 
 **トピック:**
 
-[Core-Tier2]
-* Coding practices: techniques, idioms/patterns, mechanisms for building quality programs (cross-reference
-IAS/Defensive Programming; SDF/Development Methods)
- * Defensive coding practices
- * Secure coding practices
- * Using exception handling mechanisms to make programs more robust, fault-tolerant
-* Coding standards
-* Integration strategies
-* Development context: “green field” vs. existing code base
- * Change impact analysis
- * Change actualization
+[選択必修]
+* コーディングの実践: 高品質なプログラムを作るための技術、イディオム/パターン、メカニズム ( 相互参考: [IAS/防御プログラミング](./z_appendix_A_IAS.md#ias防御プログラミング); [SDF/開発方法](./z_appendix_A_SDF.md#sdf開発方法))
+ * 防御的コーディングの実践
+ * 安全なコーディングの実践
+ * プログラムをより頑健で耐障害性のあるものにするための例外処理メカニズムの使用
+* コーディング標準
+* 統合戦略
+* 開発文脈: 新規 vs 既存のコードベース
+ * 変更の影響分析
+ * 変更の実現化
 
-[Elective]
-* Potential security problems in programs
- * Buffer and other types of overflows
- * Race conditions
- * Improper initialization, including choice of privileges
- * Checking input
- * Assuming success and correctness
- * Validating assumptions
+[選択科目]
+* プログラムにおける潜在的なセキュリティ問題
+ * バッファオーバーフローやその他の種類のオーバーフロー
+ * 競合状態
+ * 権限の選択を含む不適切な初期化
+ * 入力のチェック
+ * 仮定された成功と正確さ
+ * 仮定の検証
 
 **学習到達目標:**
 
-[Core-Tier2]
-1. Describe techniques, coding idioms and mechanisms for implementing designs to achieve desired
-properties such as reliability, efficiency, and robustness. [Familiarity]
-2. Build robust code using exception handling mechanisms. [Usage]
-3. Describe secure coding and defensive coding practices. [Familiarity]
-4. Select and use a defined coding standard in a small software project. [Usage]
-5. Compare and contrast integration strategies including top-down, bottom-up, and sandwich integration.
-[Familiarity]
-6. Describe the process of analyzing and implementing changes to code base developed for a specific project.
-[Familiarity]
-7. Describe the process of analyzing and implementing changes to a large existing code base. [Familiarity]
+[選択必修]
+1. 信頼性、効率性、堅牢性など、求められる特性を実装するための技術、コーディングイディオム、メカニズムを説明する。[知識]
+2. 例外処理メカニズムを使用して堅牢なコードを構築する。[使用]
+3. セキュアコーディングと防御的コーディングの実践を説明する。[知識]
+4. 小規模なソフトウェアプロジェクトにおいて、確立されたコーディング標準を選択し使用する。[使用]
+5. トップダウン、ボトムアップ、サンドイッチインテグレーションを含む統合戦略を比較対比する。[知識]
+6. 特定のプロジェクトで開発されたコードベースへの変更の分析と実装のプロセスを説明する。[知識]
+7. 大規模な既存のコードベースへの変更の分析と実装のプロセスを説明する。[知識]
 
-[Elective]
-8. Rewrite a simple program to remove common vulnerabilities, such as buffer overflows, integer overflows
-and race conditions. [Usage]
-9. Write a software component that performs some non-trivial task and is resilient to input and run-time
-errors. [Usage]
+[選択科目]
+8. バッファオーバーフロー、整数オーバーフロー、競合状態などの一般的な脆弱性を除去するために、単純なプログラムを書き直す。[使用]
+9. 入力エラーやランタイムエラーに対して回復力のある、何か非自明なタスクを実行するソフトウェアコンポーネントを書く。[使用]
 
 
 
@@ -486,55 +363,50 @@ errors. [Usage]
 
 **トピック:**
 
-[Core-Tier2]
-* Verification and validation concepts
-* Inspections, reviews, audits
-* Testing types, including human computer interface, usability, reliability, security, conformance to
-specification (cross-reference IAS/Secure Software Engineering)
-* Testing fundamentals (cross-reference SDF/Development Methods)
- * Unit, integration, validation, and system testing
- * Test plan creation and test case generation
- * Black-box and white-box testing techniques
- * Regression testing and test automation
-* Defect tracking
-* Limitations of testing in particular domains, such as parallel or safety-critical systems
+[選択必修]
+* 検証と確認の概念
+* 検査、レビュー、監査
+* 人間とコンピュータのインターフェース、使いやすさ、信頼性、セキュリティ、仕様への適合性などのテスト種別 (相互参照: [IAS/安全なソフトウェア工学](./z_appendix_A_IAS.md#ias安全なソフトウェア工学))
+* テストの基礎 (相互参照: [SDF/開発方法](./z_appendix_A_SDF.md#sdf開発方法)）
+ * 単体試験、結合試験、妥当性確認試験、システムテスト
+ * テスト計画作成とテストケース生成
+ * ブラックボックステストとホワイトボックステスト技術
+ * 回帰テストとテスト自動化
+* 欠陥追跡
+* 並行システムやセーフティクリティカルシステムなど、特定のドメインでのテストの限界
 
-[Elective]
-* Static approaches and dynamic approaches to verification
-* Test-driven development
-* Validation planning; documentation for validation
-* Object-oriented testing; systems testing
-* Verification and validation of non-code artifacts (documentation, help files, training materials)
-* Fault logging, fault tracking and technical support for such activities
-* Fault estimation and testing termination including defect seeding
+[選択科目]
+* 検証の静的アプローチと動的アプローチ
+* テスト駆動開発
+* 検証計画; 検証のための文書化
+* オブジェクト指向テスト; システムテスト
+* コード以外の成果物（ドキュメンテーション、ヘルプファイル、トレーニングマテリアル）の検証と確認
+* 欠陥の記録と追跡、そのような活動のための技術サポート
+* 欠陥数の見積もりとテストの終了。エラー埋込法を含む。
 
 **学習到達目標:**
 
-[Core-Tier2]
-1. Distinguish between program validation and verification. [Familiarity]
-2. Describe the role that tools can play in the validation of software. [Familiarity]
-3. Undertake, as part of a team activity, an inspection of a medium-size code segment. [Usage]
-4. Describe and distinguish among the different types and levels of testing (unit, integration, systems, and
-acceptance). [Familiarity]
-5. Describe techniques for identifying significant test cases for integration, regression and system testing.
-[Familiarity]
-6. Create and document a set of tests for a medium-size code segment. [Usage]
-7. Describe how to select good regression tests and automate them. [Familiarity]
-8. Use a defect tracking tool to manage software defects in a small software project. [Usage]
-9. Discuss the limitations of testing in a particular domain. [Familiarity]
+[選択必修]
+1. プログラムの妥当性確認と検証の違いを説明する。[知識]
+2. ツールがソフトウェアの妥当性確認にどのような役割を果たすことができるか説明する。[知識]
+3. チーム活動の一部として、中規模のコードセグメントの検査を行う。[使用]
+4. テストの異なる種類とレベル (単体試験、結合試験、システムテスト、受け入れ試験) を説明し、区別する。[知識]
+5. 結合試験、回帰テスト、システムテストに対する重要なテストケースを特定する技術を説明する。[知識]
+6. 中規模のコードセグメントに対する一連のテストを作成し、文書化する。[使用]
+7. 優れた回帰テストを選択し、自動化する方法を説明する。[知識]
+8. 小規模のソフトウェアプロジェクトでソフトウェアの欠陥を管理するために欠陥追跡ツールを使用する。[使用]
+9. 特定の領域でのテストの限界について議論する。[知識]
 
-[Elective]
-10. Evaluate a test suite for a medium-size code segment. [Usage]
-11. Compare static and dynamic approaches to verification. [Familiarity]
-12. Identify the fundamental principles of test-driven development methods and explain the role of automated
-testing in these methods. [Familiarity]
-13. Discuss the issues involving the testing of object-oriented software. [Usage]
-14. Describe techniques for the verification and validation of non-code artifacts. [Familiarity]
-15. Describe approaches for fault estimation. [Familiarity]
-16. Estimate the number of faults in a small software application based on fault density and fault seeding.
-[Usage]
-17. Conduct an inspection or review of software source code for a small or medium sized software project.
-[Usage]
+[選択科目]
+10. 中規模のコードセグメントに対するテストスイートを評価する。[使用]
+11. 妥当性確認に対する静的なアプローチと動的なアプローチを比較する。[知識]
+12. テスト駆動開発方法の基本的な原則を特定し、これらの方法における自動テストの役割を説明する。[知識]
+13. オブジェクト指向ソフトウェアのテストに関わる問題を議論する。[使用]
+14. 非コード成果物の検証と妥当性確認のための技術を説明する。[知識]
+15. 欠陥数の見積りのためのアプローチを説明する。[知識]
+16. 欠陥密度とエラー埋込法に基づいて小規模なソフトウェアアプリケーションの欠陥数を推定する。[使用]
+17. 小規模または中規模のソフトウェアプロジェクトのソフトウェアソースコードの検査またはレビューを行う。[使用]
+
 
 
 ## SE/ソフトウェア進化・発展
@@ -542,28 +414,27 @@ testing in these methods. [Familiarity]
 
 **トピック:**
 
-* Software development in the context of large, pre-existing code bases
- * Software change
- * Concerns and concern location
- * Refactoring
-* Software evolution
-* Characteristics of maintainable software
-* Reengineering systems
-* Software reuse
- * Code segments
- * Libraries and frameworks
- * Components
- * Product lines
+* 既存の大規模なコードベースにおいてのソフトウェア開発
+ * ソフトウェアの変更
+ * 複数の関心と、関心の実装位置特定
+ * リファクタリング
+* ソフトウェアの進化・発展
+* 保守可能なソフトウェアの特性
+* システムの再構築
+* ソフトウェアの再利用
+ * コードセグメント
+ * ライブラリとフレームワーク
+ * コンポーネント
+ * 製品種目
 
 **学習到達目標:**
 
-1. Identify the principal issues associated with software evolution and explain their impact on the software
-lifecycle. [Familiarity]
-2. Estimate the impact of a change request to an existing product of medium size. [Usage]
-3. Use refactoring in the process of modifying a software component. [Usage]
-4. Discuss the challenges of evolving systems in a changing environment. [Familiarity]
-5. Outline the process of regression testing and its role in release management. [Familiarity]
-6. Discuss the advantages and disadvantages of different types of software reuse. [Familiarity]
+1. ソフトウェアの進化に関する主要な問題を特定し、ソフトウェアライフサイクルに与える影響を説明する。[知識]
+2. 中規模の既存の製品への変更要求の影響を推定する。[使用]
+3. ソフトウェアコンポーネントの修正プロセスにリファクタリングを使用する。[使用]
+4. 変化する環境でのシステムの進化の課題を議論する。[知識]
+5. 回帰テストのプロセスとリリース管理におけるその役割を概説する。[知識]
+6. ソフトウェアの再利用のさまざまな種別の利点と欠点を議論する。[知識]
 
 
 
@@ -572,59 +443,51 @@ lifecycle. [Familiarity]
 
 **トピック:**
 
-[Core-Tier2]
-* Software reliability engineering concepts
-* Software reliability, system reliability and failure behavior (cross-reference SF/Reliability Through
-Redundancy)
-* Fault lifecycle concepts and techniques
+[選択必修]
+* ソフトウェア信頼性工学の概念
+* ソフトウェアの信頼性、システムの信頼性、および障害の挙動 (相互参照: [SF/冗長化による信頼性向上](./z_appendix_A_SF.md#sf冗長化による信頼性向上))
+* 障害ライフサイクルの概念と手法
 
-[Elective]
-* Software reliability models
-* Software fault tolerance techniques and models
-* Software reliability engineering practices
-* Measurement-based analysis of software reliability
+[選択科目]
+* ソフトウェア信頼性モデル
+* ソフトウェア耐障害性の手法とモデル
+* ソフトウェア信頼性工学の実践
+* ソフトウェア信頼性の測定に基づく分析
 
 **学習到達目標:**
 
-[Core-Tier2]
-1. Explain the problems that exist in achieving very high levels of reliability. [Familiarity]
-2. Describe how software reliability contributes to system reliability. [Familiarity]
-3. List approaches to minimizing faults that can be applied at each stage of the software lifecycle.
-[Familiarity]
-[Elective]
-4. Compare the characteristics of three different reliability modeling approaches. [Familiarity]
-5. Demonstrate the ability to apply multiple methods to develop reliability estimates for a software system.
-[Usage]
-6. Identify methods that will lead to the realization of a software architecture that achieves a specified level of
-reliability. [Usage]
-7. Identify ways to apply redundancy to achieve fault tolerance for a medium-sized application. [Usage
+[選択必修]
+1. 非常に高い信頼性を達成する上で存在する問題を説明する。[知識]
+2. ソフトウェアの信頼性がシステムの信頼性にどのように貢献するかを説明する。[知識]
+3. ソフトウェアライフサイクルの各段階で適用可能な、障害を最小限に抑えるアプローチをリストアップする。[知識]
+
+[選択科目]
+4. 三つの異なる信頼性モデリングアプローチの特性を比較する。[知識]
+5. ソフトウェアシステムの信頼性推定を行うための複数の方法を適用できる。[使用]
+6. 指定されたレベルの信頼性を達成するために、ソフトウェアアーキテクチャに実現可能な方法を特定する。[使用]
+7. 中規模のアプリケーションで冗長性を適用し、耐障害性を得る方法を特定する。[使用]
 
 
 
 ## SE/形式手法
 *[選択科目]*
 
-The topics listed below have a strong dependency on core material from the Discrete Structures
-(DS) Knowledge Area, particularly knowledge units DS/Functions Relations and Sets, DS/Basic
-Logic and DS/Proof Techniques.
+以下に示すトピックは、特に[DS/集合・関係・函数](./z_appendix_A_DS.md#ds集合関係函数)、[DS/論理の基礎](./z_appendix_A_DS.md#ds論理の基礎)、[DS/論証の技法](./z_appendix_A_DS.md#ds論証の技法) といった知識単位を含む、[離散構造(DS)](./z_appendix_A_DS.md)知識領域のコア題材に強い依存性を持っています。
 
 **トピック:**
 
-* Role of formal specification and analysis techniques in the software development cycle
-* Program assertion languages and analysis approaches (including languages for writing and analyzing preand post-conditions, such as OCL, JML)
-* Formal approaches to software modeling and analysis
- * Model checkers
- * Model finders
-* Tools in support of formal methods
+* ソフトウェア開発サイクルにおける形式的な仕様と分析手法の役割
+* プログラムのアサーション言語と分析アプローチ（OCL、JMLなどの事前・事後条件を記述・分析する言語を含む）
+* ソフトウェアのモデリングと分析に対する形式的なアプローチ
+ * モデルチェッカー
+ * モデルファインダー
+* 形式手法を支援するツール
+
 
 **学習到達目標:**
 
-1. Describe the role formal specification and analysis techniques can play in the development of complex
-software and compare their use as validation and verification techniques with testing. [Familiarity]
-2. Apply formal specification and analysis techniques to software designs and programs with low complexity.
-[Usage]
-3. Explain the potential benefits and drawbacks of using formal specification languages. [Familiarity]
-4. Create and evaluate program assertions for a variety of behaviors ranging from simple through complex.
-[Usage]
-5. Using a common formal specification language, formulate the specification of a simple software system
-and derive examples of test cases from the specification. [Usage]
+1. 複雑なソフトウェアの開発において、形式的な仕様と分析技術が果たす役割を説明し、それらを検証と妥当性確認の技術としてテストと比較する。[知識]
+2. 低複雑度のソフトウェア設計とプログラムに形式的な仕様と分析技術を適用する。[使用]
+3. 仕様記述言語の使用による潜在的な利点と欠点を説明する。[知識]
+4. 単純なものから複雑なものまで、さまざまな振る舞いに対するプログラムのアサーションを作成し、評価する。[使用]
+5. 一般的な仕様記述言語を使用して、単純なソフトウェアシステムの仕様を整理し、その仕様からテストケースの例を導き出す。[使用]
