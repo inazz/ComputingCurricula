@@ -1,16 +1,8 @@
 
 # システム基礎 (SF)
 
-The underlying hardware and software infrastructure upon which applications are constructed is
-collectively described by the term "computer systems." Computer systems broadly span the subdisciplines of operating systems, parallel and distributed systems, communications networks, and
-computer architecture. Traditionally, these areas are taught in a non-integrated way through
-independent courses. However these sub-disciplines increasingly share important common
-fundamental concepts within their respective cores. These concepts include computational
-paradigms, parallelism, cross-layer communications, state and state transition, resource
-allocation and scheduling, and so on. The Systems Fundamentals Knowledge Area is designed
-to present an integrative view of these fundamental concepts in a unified albeit simplified
-fashion, providing a common foundation for the different specialized mechanisms and policies
-appropriate to the particular domain area.
+アプリケーション構築の基礎となるハードウェアとソフトウェアのインフラストラクチャは、まとめて "コンピュータシステム"という用語で記述されます。
+コンピュータシステムは、オペレーティングシステム、並列・分散システム、通信ネットワーク、コンピュータアーキテクチャといった副領域を広範にカバーします。伝統的に、これらの領域は独立した講座を通じて非統合的な方法で教えられます。しかし、これらの副領域は、各々のコアで重要な共通の基本概念をますます共有しています。これらの概念には、計算パラダイム、並列性、レイヤ間通信、状態と状態遷移、リソースの割り当てとスケジューリングなどが含まれます。システム基礎知識領域は、これらの基本的な概念を単純化はされているが統合的に見せることを目指して設計されており、特定のドメイン領域に適用される異なる特殊なメカニズムやポリシーのための共通の基盤を提供します。
 
 
 **SF. システム基礎 [必修 18時間, 選択必修 9時間]**
@@ -33,149 +25,122 @@ appropriate to the particular domain area.
 ## SF/計算パラダイム
 *[必修 3時間]*
 
-The view presented here is the multiple representations of a system across layers, from hardware
-building blocks to application components, and the parallelism available in each representation.
-Cross-reference PD/Parallelism Fundamentals. 
+ここで提示されている視点は、ハードウェアの構成要素からアプリケーションのコンポーネントまでの各レイヤにおけるシステムの複数の表現と、各表現で利用可能な並列性です。(相互参照: [PD/並列性の基礎](./z_appendix_A_PD.md#pd並列性の基礎))
 
 
 **トピック:**
 
-* Basic building blocks and components of a computer (gates, flip-flops, registers, interconnections;
-Datapath + Control + Memory)
-* Hardware as a computational paradigm: Fundamental logic building blocks; Logic expressions,
-minimization, sum of product forms
-* Application-level sequential processing: single thread
-* Simple application-level parallel processing: request level (web services/client-server/distributed), single
-thread per server, multiple threads with multiple servers
-* Basic concept of pipelining, overlapped processing stages
-* Basic concept of scaling: going faster vs. handling larger problems
+* コンピュータの基本的な構成要素とコンポーネント (ゲート、フリップフロップ、レジスター、配線; データパス + 制御 + メモリ）
+* ハードウェアという計算パラダイム: 基本的な論理構成要素; 論理式、最小化、積和形
+* アプリケーションレベルの逐次処理: シングルスレッド
+* 単純なアプリケーションレベルの並列処理: リクエストレベル (Webサービス/クライアントサーバー/分散) 、サーバーごとに1つのスレッド、複数のスレッドと複数のサーバー
+* パイプライン処理の基本概念、重なり合って実行される処理ステージ
+* スケーリングの基本概念: 速度を上げること vs より大きな問題を扱うこと
+
 
 **学習到達目標:**
 
-1. List commonly encountered patterns of how computations are organized. [Familiarity]
-2. Describe the basic building blocks of computers and their role in the historical development of computer
-architecture. [Familiarity]
-3. Articulate the differences between single thread vs. multiple thread, single server vs. multiple server
-models, motivated by real world examples (e.g., cooking recipes, lines for multiple teller machines and
-couples shopping for food). [Familiarity]
-4. Articulate the concept of strong vs. weak scaling, i.e., how performance is affected by scale of problem vs.
-scale of resources to solve the problem. This can be motivated by the simple, real-world examples.
-[Familiarity]
-5. Design a simple logic circuit using the fundamental building blocks of logic design. [Usage]
-6. Use tools for capture, synthesis, and simulation to evaluate a logic design. [Usage]
-7. Write a simple sequential problem and a simple parallel version of the same program. [Usage]
-8. Evaluate performance of simple sequential and parallel versions of a program with different problem sizes,
-and be able to describe the speed-ups achieved. [Assessment]
+1. 計算がどのように構成されるか一般的に遭遇するパターンを羅列する。[知識]
+2. コンピュータの基本的な構成要素について説明し、コンピュータアーキテクチャの発展の歴史における各構成要素の役割を述べる。[知識]
+3. 実世界の例 (例えば、料理のレシピ、複数の窓口機での行列、食料を買いに行くカップル) を用いて、シングルスレッドとマルチスレッド、シングルサーバーとマルチサーバーのモデルの違いを明確にする。[知識]
+4. 強いスケーリングと弱いスケーリングの概念を明確にする。つまり、問題の規模や、問題解決のリソースの規模が、性能がにどう影響を及ぼすか。これは、単純な実世界の例に適用可能です。[知識]
+5. 回路設計の基本的な構成要素を使用して、簡単な論理回路を設計する。[使用]
+6. 回路設計を評価するためのキャプチャ、合成、シミュレーションのツールを使用する。[使用]
+7. 単純で逐次的なプログラムと、それの並列版を書く。[使用]
+8. 異なる問題サイズに対して単純逐次的および並列版のプログラムの性能を評価し、達成された速度向上を説明する。[評価]
 
 
 
 ## SF/レイヤ間通信
 *[必修 3時間]*
 
-Cross-reference NC/Introduction, OS/Operating Systems Principles
+相互参照: [NC/導入](./z_appendix_NC.md#nc導入), [OS/オペレーティングシステムの原理](./z_appendix_A_OS.md#osオペレーティングシステムの原理)
 
 **トピック:**
 
-* Programming abstractions, interfaces, use of libraries
-* Distinction between Application and OS services, Remote Procedure Call
-* Application-Virtual Machine Interaction
-* Reliability
+* プログラミングの抽象化、インターフェイス、ライブラリの使用
+* アプリケーションとOSサービスの区別、リモートプロシージャコール
+* アプリケーション-仮想マシン間の相互作用
+* 信頼性
 
 **学習到達目標:**
 
-1. Describe how computing systems are constructed of layers upon layers, based on separation of concerns,
-with well-defined interfaces, hiding details of low layers from the higher layers. [Familiarity]
-2. Describe how hardware, VM, OS, and applications are additional layers of interpretation/processing.
-[Familiarity]
-3. Describe the mechanisms of how errors are detected, signaled back, and handled through the layers.
-[Familiarity]
-4. Construct a simple program using methods of layering, error detection and recovery, and reflection of error
-status across layers. [Usage]
-5. Find bugs in a layered program by using tools for program tracing, single stepping, and debugging. [Usage]
+1. コンピューティングシステムが、関心の分離に基づいて、明確に定義されたインターフェースを持ち、下位レイヤの詳細を上位レイヤから隠すことで、レイヤを重ねて構築される方法を説明する。[知識]
+2. ハードウェア、VM、OS、およびアプリケーションが、追加の解釈/処理のレイヤであることを説明する。[知識]
+3. エラーがどのように検出され、伝えられ、レイヤを通じて処理されるか仕組みを説明する。[知識]
+4. レイヤ化、エラーの検出と回復、レイヤを跨ぐエラー状態の伝搬、といった手法を用いて単純なプログラムを構築する。[使用]
+5. プログラムのトレース、ステップ実行、デバッグのツールを使用して、レイヤ化されたプログラムのバグを見つける。[使用]
+
 
 
 ## SF/状態と状態機械
 *[必修 6時間]*
 
-Cross-reference AL/Basic Computability and Complexity, OS/State and State Diagrams,
-NC/Protocols
+相互参照: [AL/計算可能性・計算量の基礎](./z_appendix_A_AL.md#al形式言語計算可能性計算量の基礎), [OS/状態と状態遷移図](./z_appendix_A_OS.md#os並行性), [NC/プロトコル](./z_appendix_A_NC.md#nc信頼性のあるデータ配信)
+
 
 **トピック:**
 
-* Digital vs. Analog/Discrete vs. Continuous Systems
-* Simple logic gates, logical expressions, Boolean logic simplification
-* Clocks, State, Sequencing
-* Combinational Logic, Sequential Logic, Registers, Memories
-* Computers and Network Protocols as examples of state machines
+* デジタル vs アナログ / 離散 vs 連続システム
+* 単純な論理ゲート、論理式、ブール論理の簡約化
+* クロック、状態、シーケンシング
+* 組合せ回路、順序回路、レジスタ、メモリ
+* 状態機械の例: コンピュータやネットワークプロトコル
 
 **学習到達目標:**
 
-1. Describe computations as a system characyterized by a known set of configurations with transitions from
-one unique configuration (state) to another (state). [Familiarity]
-2. Describe the distinction between systems whose output is only a function of their input (Combinational)
-and those with memory/history (Sequential). [Familiarity]
-3. Describe a computer as a state machine that interprets machine instructions. [Familiarity]
-4. Explain how a program or network protocol can also be expressed as a state machine, and that alternative
-representations for the same computation can exist. [Familiarity]
-5. Develop state machine descriptions for simple problem statement solutions (e.g., traffic light sequencing,
-pattern recognizers). [Usage]
-6. Derive time-series behavior of a state machine from its state machine representation. [Assessment]
+
+1. 計算を、既知の状態の集合と、状態から別の状態への一意な遷移により特徴付けられるシステムとして説明する。[知識]
+2. 出力が入力のみの関数であるシステム (組合せ) と、メモリ/履歴を持つシステム (順序) との区別を説明する。[知識]
+3. コンピュータを、機械命令を解釈する状態機械として説明する。[知識]
+4. プログラムやネットワークプロトコルは状態機械としても表現でき、同じ計算に対して複数の異なる表現が可能であることを説明する。[知識]
+5. 単純な問題の解答（例えば、信号機の順番、パターン認識器など）を状態機械として記述する。[使用]
+6. 状態機械の表現から状態機械の時系列挙動を導き出します。[評価]
 
 
 
 ## SF/並列処理
 *[必修 3時間]*
 
-Cross-reference PD/Parallelism Fundamentals.
+相互参照: [PD/並列性の基礎](./z_appendix_A_PD.md#pd並列性の基礎)
 
 **トピック:**
 
-* Sequential vs. parallel processing
-* Parallel programming vs. concurrent programming
-* Request parallelism vs. Task parallelism
-* Client-Server/Web Services, Thread (Fork-Join), Pipelining
-* Multicore architectures and hardware support for synchronization
+* 逐次処理 vs 並列処理
+* 並列プログラミング vs 並行プログラミング
+* リクエスト並列性 vs タスク並列性
+* クライアント-サーバー / Web サービス、スレッド (fork-join)、パイプライン処理
+* マルチコアアーキテクチャと同期のためのハードウェア支援
 
 **学習到達目標:**
 
-1. For a given program, distinguish between its sequential and parallel execution, and the performance
-implications thereof. [Familiarity]
-2. Demonstrate on an execution time line that parallelism events and operations can take place simultaneously
-(i.e., at the same time). Explain how work can be performed in less elapsed time if this can be exploited.
-[Familiarity]
-3. Explain other uses of parallelism, such as for reliability/redundancy of execution. [Familiarity]
-4. Define the differences between the concepts of Instruction Parallelism, Data Parallelism, Thread
-Parallelism/Multitasking, Task/Request Parallelism. [Familiarity]
-5. Write more than one parallel program (e.g., one simple parallel program in more than one parallel
-programming paradigm; a simple parallel program that manages shared resources through synchronization
-primitives; a simple parallel program that performs simultaneous operation on partitioned data through task
-parallel (e.g., parallel search terms; a simple parallel program that performs step-by-step pipeline
-processing through message passing). [Usage]
-6. Use performance tools to measure speed-up achieved by parallel programs in terms of both problem size
-and number of resources. [Assessment]
+1. 与えられたプログラムについて、その逐次的実行と並列実行の違いと、それらのパフォーマンスへの影響を説明します。[知識]
+2. 実行時間軸上で、並列処理のイベントや操作を一斉に同時に行なえることを示し、これを利用すると処理時間を短縮できることを説明する。[知識]
+3. 信頼性/冗長性の実行のような、並列処理の他の用途を説明します。[知識]
+4. 命令並列性、データ並列性、スレッド並列性/マルチタスキング、タスク/リクエスト並列性の概念の違いを定義する。[知識]
+5. 複数の並列プログラムを書く (例えば、複数の並列プログラミングパラダイムを使用した単純な並列プログラム; 同期プリミティブを通じて共有リソースを管理する単純な並列プログラム; タスク並列性を利用して分割されたデータ上で同時に操作を行う単純な並列プログラム (例: 並列検索)；メッセージパッシングを通じて段階的なパイプライン処理をメ行う単純な並列プログラム) 。[使用]
+6. 性能測定ツールを使用して、並列プログラムによって達成される速度向上を、問題のサイズとリソース量の両方の観点から測定します。[評価]
 
 
 
 ## SF/性能評価
 *[必修 3時間]*
 
-Cross-reference PD/Parallel Performance.
+相互参照: [PD/並列性能](./z_appendix_A_PD.md#pd並列性能)
 
 **トピック:**
 
-* Performance figures of merit
-* Workloads and representative benchmarks, and methods of collecting and analyzing performance figures of
-merit
-* CPI (Cycles per Instruction) equation as tool for understanding tradeoffs in the design of instruction sets,
-processor pipelines, and memory system organizations.
-* Amdahl’s Law: the part of the computation that cannot be sped up limits the effect of the parts that can
+* 性能評価指標
+* ワークロードと代表的なベンチマーク、そして性能評価指標を収集し分析する方法
+* 命令セット、プロセッサのパイプライン、メモリシステム構成などの設計におけるトレードオフを理解するためのツールとしてのCPI（Cycles Per Instruction: 命令あたりのサイクル数) の式
+* アムダールの法則: 計算の加速ができない部分が、加速可能な部分の効果を制限する
 
 **学習到達目標:**
 
-1. Explain how the components of system architecture contribute to improving its performance. [Familiarity]
-2. Describe Amdahl’s law and discuss its limitations. [Familiarity]
-3. Design and conduct a performance-oriented experiment. [Usage]
-4. Use software tools to profile and measure program performance. [Assessment]
+1. システムアーキテクチャの各構成要素が性能向上にどのように寄与するかを説明する。[知識]
+2. アムダールの法則を説明し、その限界について議論する。[知識]
+3. 性能志向の実験を設計し、実施する。[使用]
+4. プログラムの性能をプロファイリングし、測定するためのソフトウェアツールを使用する。[評価]
 
 
 
@@ -184,42 +149,36 @@ processor pipelines, and memory system organizations.
 
 **トピック:**
 
-* Kinds of resources (e.g., processor share, memory, disk, net bandwidth)
-* Kinds of scheduling (e.g., first-come, priority)
-* Advantages of fair scheduling, preemptive scheduling
+* リソースの種類 (例: プロセッサのシェア、メモリ、ディスク、ネットワーク帯域)
+* スケジューリングの種類 (例: 先着順、優先度)
+* 公平なスケジューリング、横取りスケジューリングの利点
 
 **学習到達目標:**
 
-1. Define how finite computer resources (e.g., processor share, memory, storage and network bandwidth) are
-managed by their careful allocation to existing entities. [Familiarity]
-2. Describe the scheduling algorithms by which resources are allocated to competing entities, and the figures
-of merit by which these algorithms are evaluated, such as fairness. [Familiarity]
-3. Implement simple schedule algorithms. [Usage]
-4. Use figures of merit of alternative scheduler implementations. [Assessment]
+1. 有限なコンピュータリソース（例：プロセッサの共有、メモリ、ストレージ、ネットワーク帯域）を、存在するエンティティに対して慎重に割り当てて管理する手法を定義する。[知識]
+2. リソースが競合するエンティティに割り当てられるスケジューリングアルゴリズムと、それらアルゴリズムの評価指標 (例: 公平性) を説明する。[知識]
+3. 簡単なスケジュールアルゴリズムを実装する。[使用]
+4. 更に異なるスケジューラ実装の評価指標を使用する。[評価]
 
 
 
 ## SF/近接と性能向上
 *[選択必修 3時間]*
 
-Cross-reference AR/Memory Management, OS/Virtual Memory
+相互参照: [AR/メモリ管理](./z_appendix_AR.md#arメモリシステムの構成とアーキテクチャ), [OS/仮想メモリ](./z_appendix_A_OS.md#os仮想マシン)
 
 **トピック:**
 
-* Speed of light and computers (one foot per nanosecond vs. one GHz clocks)
-* Latencies in computer systems: memory vs. disk latencies vs. across the network memory
-* Caches and the effects of spatial and temporal locality on performance in processors and systems
-* Caches and cache coherency in databases, operating systems, distributed systems, and computer
-architecture
-* Introduction into the processor memory hierarchy and the formula for average memory access time
+* 光速とコンピュータ（1ナノ秒あたり1フィート vs 1GHzのクロック）
+* コンピュータシステムの遅延: メモリとディスクの遅延とネットワークを介したメモリの遅延
+* プロセッサとシステムの性能に対する空間的および時間的な局所性の影響とキャッシュ
+* データベース、オペレーティングシステム、分散システム、コンピュータアーキテクチャにおけるキャッシュとキャッシュの一貫性
+* プロセッサメモリ階層の導入と平均メモリアクセス時間の計算式
 
 **学習到達目標:**
-
-学習到達目標:
-1. Explain the importance of locality in determining performance. [Familiarity]
-2. Describe why things that are close in space take less time to access. [Familiarity]
-3. Calculate average memory access time and describe the tradeoffs in memory hierarchy performance in
-terms of capacity, miss/hit rate, and access time. [Assessment]
+1. パフォーマンスを決定する上で局所性の重要性を説明する。[知識]
+2. 空間的に近いものはアクセスに時間がかからない理由を説明する。[知識]
+3. 平均メモリアクセス時間を計算し、容量、ミス/ヒット率、アクセス時間の観点からメモリ階層の性能のトレードオフを説明する。[評価]
 
 
 
@@ -228,19 +187,15 @@ terms of capacity, miss/hit rate, and access time. [Assessment]
 
 **トピック:**
 
-* Rationale for protection and predictable performance
-* Levels of indirection, illustrated by virtual memory for managing physical memory resources
-* Methods for implementing virtual memory and virtual machines
+* 保護の原理と予測可能な性能
+* 複数レベルの間接化。例: 物理メモリリソースの管理における仮想メモリ
+* 仮想メモリと仮想マシンを実装する方法
 
 **学習到達目標:**
 
-1. Explain why it is important to isolate and protect the execution of individual programs and environments
-that share common underlying resources. [Familiarity]
-2. Describe how the concept of indirection can create the illusion of a dedicated machine and its resources
-even when physically shared among multiple programs and environments. [Familiarity]
-3. Measure the performance of two application instances running on separate virtual machines, and determine
-the effect of performance isolation. [Assessment]
-
+1. 共通の基礎的なリソースを共有する個々のプログラム実行や環境を分離し保護することが重要である理由を説明する。[知識]
+2. 間接性の概念によって、物理的には複数のプログラムと環境の間で共有されているにもかかわらず、専用のマシンとリソースがあるかのような錯覚が作り出される方法を説明する。[知識]
+3. 別々の仮想マシン上で実行される2つのアプリケーションインスタンスの性能を測定し、パフォーマンスの分離が及ぼす影響を測定する。
 
 
 ## SF/冗長化による信頼性向上
@@ -248,23 +203,19 @@ the effect of performance isolation. [Assessment]
 
 **トピック:**
 
-* Distinction between bugs and faults
-* Redundancy through check and retry
-* Redundancy through redundant encoding (error correcting codes, CRC, FEC)
-* Duplication/mirroring/replicas
-* Other approaches to fault tolerance and availability
+* バグと障害の区別
+* 検出と再試行による冗長性
+* 冗長な符号化による冗長性（エラー訂正コード、CRC、FEC）
+* 複製/ミラーリング/レプリカ
+* その他の耐障害性と可用性に対するアプローチ
 
 **学習到達目標:**
 
-1. Explain the distinction between program errors, system errors, and hardware faults (e.g., bad memory) and
-exceptions (e.g., attempt to divide by zero). [Familiarity]
-2. Articulate the distinction between detecting, handling, and recovering from faults, and the methods for their
-implementation. [Familiarity]
-3. Describe the role of error correcting codes in providing error checking and correction techniques in
-memories, storage, and networks. [Familiarity]
-4. Apply simple algorithms for exploiting redundant information for the purposes of data correction. [Usage]
-5. Compare different error detection and correction methods for their data overhead, implementation
-complexity, and relative execution time for encoding, detecting, and correcting errors. [Assessment]
+1. プログラムエラー、システムエラー、ハードウェア障害 (例えば、メモリの不良) および例外 (例えば、ゼロ除算の試み) との区別を説明する。[知識]
+2. 故障の検出、処理、回復を区別し、その実装方法を明示する。[知識]
+3. メモリ、ストレージ、ネットワークでのエラー検出や修正の技術を提供する上で、エラー訂正符号の役割を説明する。[知識]
+4. データ修正の目的で冗長な情報を利用する単純なアルゴリズムを使用する。[使用]
+5. データのオーバーヘッド、実装の複雑さ、符号化、エラーの検出、修正の相対実行時間について、異なるエラー検出および修正方法を比較する。[評価]
 
 
 
@@ -273,19 +224,17 @@ complexity, and relative execution time for encoding, detecting, and correcting 
 
 **トピック:**
 
-* Analytical tools to guide quantitative evaluation
-* Order of magnitude analysis (Big-Oh notation)
-* Analysis of slow and fast paths of a system
-* Events on their effect on performance (e.g., instruction stalls, cache misses, page faults)
-* Understanding layered systems, workloads, and platforms, their implications for performance, and the
-challenges they represent for evaluation
-* Microbenchmarking pitfalls
+* 定量評価を導くための分析ツール
+* オーダーの大きさの分析（ビッグO記法）
+* システムの遅いパスと速いパスの分析
+* 性能に影響を及ぼすイベントの分析（例：命令ストール、キャッシュミス、ページフォルト）
+* 階層構造、ワークロード、プラットフォーム、それらが性能に及ぼす影響、評価における課題に対する理解
+* マイクロベンチマーキングの落とし穴
 
 **学習到達目標:**
 
-1. Explain the circumstances in which a given figure of system performance metric is useful. [Familiarity]
-2. Explain the inadequacies of benchmarks as a measure of system performance. [Familiarity]
-3. Use limit studies or simple calculations to produce order-of-magnitude estimates for a given performance
-metric in a given context. [Usage]
-4. Conduct a performance experiment on a layered system to determine the effect of a system parameter on
-figure of system performance. [Assessment]
+1. システムの性能指標が役立つ状況を説明する。[知識]
+2. ベンチマークがシステム性能の尺度として不十分であることを説明する。[知識]
+3. 極限の分析または単純な計算を使用して、特定の状況・性能指標のオーダーの大きさを見積もる。[使用]
+4. 階層構造上で性能試験を実施し、システムパラメータがシステムの性能指標に与える影響を確認する。[評価]
+
