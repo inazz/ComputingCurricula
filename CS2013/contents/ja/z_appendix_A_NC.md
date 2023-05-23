@@ -1,28 +1,15 @@
 
 # ネットワークと通信 (NC)
 
-The Internet and computer networks are now ubiquitous and a growing number of computing
-activities strongly depend on the correct operation of the underlying network. Networks, both
-fixed and mobile, are a key part of the computing environment of today and tomorrow. Many
-computing applications that are used today would not be possible without networks. This
-dependency on the underlying network is likely to increase in the future.
+インターネットとコンピュータネットワークは現在、至るところに存在し、増え続ける数のコンピューティング活動は、基礎となるネットワークの正常動作に強く依存しています。固定ネットワークとモバイルネットワークの両方が、今日と明日のコンピューティング環境の重要な部分です。現在使用されている多くのコンピューティングアプリケーションは、ネットワークがなければ実現できません。この基礎となるネットワークへの依存性は、将来的にはさらに増すでしょう。
 
-The high-level learning objective of this module can be summarized as follows:
-* Thinking in a networked world. The world is more and more interconnected and the use
-of networks will continue to increase. Students must understand how the networks
-behave and the key principles behind the organization and operation of the networks.
-* Continued study. The networking domain is rapidly evolving and a first networking
-course should be a starting point to other more advanced courses on network design,
-network management, sensor networks, etc.
-* Principles and practice interact. Networking is real and many of the design choices that
-involve networks also depend on practical constraints. Students should be exposed to
-these practical constraints by experimenting with networking, using tools, and writing
-networked software. 
+大まかに学習目標は次のように纏められます:
+* ネットワーク化された世界での思考。世界はますます相互に結びつき、ネットワークの使用は今後も増え続けるでしょう。学生はネットワークがどのように振る舞うのか、ネットワークの構成と運用の背後にある主要な原則を理解しなければなりません。
+* 継続的な学習。ネットワークの領域は急速に進化しており、ネットワークのはじめの講座はネットワーク設計、ネットワーク管理、センサーネットワークなど、他のより高度なコースへの出発点となるべきです。
+* 原則と実践の相互作用。ネットワークは現実的で、ネットワークに関連する設計選択の多くも、現実的な制約に依存しています。学生は、ネットワークの実験をし、ツールを使用し、ネットワーク化されたソフトウェアを作成することによって、これらの実践的な制約にさらされるべきです。
 
-There are different ways of organizing a networking course. Some educators prefer a top-down
-approach, i.e., the course starts from the applications and then explains reliable delivery, routing
-and forwarding. Other educators prefer a bottom-up approach where the students start with the
-lower layers and build their understanding of the network, transport and application layers later.
+ネットワークの講座を組成する方法はいくつかあります。一部の教育者はトップダウンのアプローチを好みます。つまり、講座はアプリケーションから始まり、信頼性の高い配信、ルーティング、転送について説明します。他の教育者はボトムアップのアプローチを好み、学生はより低いレイヤーから始め、後でネットワーク、トランスポート、アプリケーションレイヤーについての理解を深めます。
+
 
 **NC. ネットワークと通信 (必修 3時間, 選択必修 7時間)**
 
@@ -42,23 +29,22 @@ lower layers and build their understanding of the network, transport and applica
 ## NC/導入
 *[必修 1.5時間]*
 
-Cross-reference IAS/Network Security, which discusses network security and its applications.
+相互参照: [IAS/ネットワークセキュリティ](./z_appendix_A_IAS.md#iasネットワークセキュリティ)ではネットワークセキュリティとその応用についての議論されています。
 
 **トピック:**
 
-* Organization of the Internet (Internet Service Providers, Content Providers, etc.)
-* Switching techniques (e.g., circuit, packet)
-* Physical pieces of a network, including hosts, routers, switches, ISPs, wireless, LAN, access point, and
-firewalls
-* Layering principles (encapsulation, multiplexing)
-* Roles of the different layers (application, transport, network, datalink, physical)
+* インターネットの構成 (インターネットサービスプロバイダー、コンテンツプロバイダーなど)
+* スイッチング技術 (例: 回路、パケット)
+* ネットワークの物理的な構成要素。ホスト、ルーター、スイッチ、ISP、無線、LAN、アクセスポイント、ファイアウォールを含む
+* レイヤーの原則（カプセル化、多重化）
+* 異なるレイヤーの役割（アプリケーション、トランスポート、ネットワーク、データリンク、物理）
 
 **学習到達目標:**
 
-1. Articulate the organization of the Internet. [Familiarity]
-2. List and define the appropriate network terminology. [Familiarity]
-3. Describe the layered structure of a typical networked architecture. [Familiarity]
-4. Identify the different types of complexity in a network (edges, core, etc.). [Familiarity]
+1. インターネットの構成を明確に述べる。 [知識]
+2. 適切なネットワーク用語を一覧にし定義する。 [知識]
+3. 典型的なネットワークアーキテクチャのレイヤー構造を説明する。 [知識]
+4. ネットワークにおける異なる種類の複雑性（エッジ、コアなど）を特定する。 [知識]
 
 
 
@@ -67,38 +53,39 @@ firewalls
 
 **トピック:**
 
-* Naming and address schemes (DNS, IP addresses, Uniform Resource Identifiers, etc.)
-* Distributed applications (client/server, peer-to-peer, cloud, etc.)
-* HTTP as an application layer protocol
-* Multiplexing with TCP and UDP
-* Socket APIs
+* 名前付けとアドレス指定スキーム（DNS、IPアドレス、Uniform Resource Identifiersなど）
+* 分散アプリケーション（クライアント/サーバー、ピアツーピア、クラウドなど）
+* HTTPというアプリケーション層プロトコル
+* TCPおよびUDPによる多重化
+* ソケットAPI
+
 
 **学習到達目標:**
 
-1. List the differences and the relations between names and addresses in a network. [Familiarity]
-2. Define the principles behind naming schemes and resource location. [Familiarity]
-3. Implement a simple client-server socket-based application. [Usage]
+1. ネットワークにおける名前とアドレスの違いとその関係を一覧化する。 [知識]
+2. 命名スキームとリソース位置の裏側にある原則を明確に述べる。 [知識]
+3. ソケットを使用した単純なクライアント-サーバー型アプリケーションを実装する。 [使用]
 
 
 
 ## NC/信頼性のあるデータ配信
 *[選択必修 2時間]*
 
-This knowledge unit is related to Systems Fundamentals (SF). Cross-reference SF/State and
-State Machines and SF/Reliability through Redundancy.
+この知識単位は[システム基礎 (SF)](./z_appendix_A_SF.md) と関連しています。
+相互参照: [SF/状態と状態機械](./z_appendix_A_SF.md#sf状態と状態機械), [SF/冗長化による信頼性向上](./z_appendix_A_SF.md#sf冗長化による信頼性向上)
 
 **トピック:**
 
-* Error control (retransmission techniques, timers)
-* Flow control (acknowledgements, sliding window)
-* Performance issues (pipelining)
+* エラー制御 (再送技術、タイマー)
+* フロー制御 (確認応答、スライディングウィンドウ)
+* 性能問題 (パイプライニング)
 * TCP
 
 **学習到達目標:**
 
-1. Describe the operation of reliable delivery protocols. [Familiarity]
-2. List the factors that affect the performance of reliable delivery protocols. [Familiarity]
-3. Design and implement a simple reliable protocol. [Usage] 
+1. 信頼性のある配信プロトコルの手順を説明する。 [知識]
+2. 信頼性のある配信プロトコルの性能に影響を与える要素を一覧化する。 [知識]
+3. 単純な信頼性のあるプロトコルを設計し、実装する。 [使用]
 
 
 
@@ -107,16 +94,16 @@ State Machines and SF/Reliability through Redundancy.
 
 **トピック:**
 
-* Routing versus forwarding
-* Static routing
-* Internet Protocol (IP)
-* Scalability issues (hierarchical addressing)
+* ルーティングとフォワーディングの違い
+* 静的ルーティング
+* インターネットプロトコル (IP)
+* スケーラビリティの問題 (階層型アドレッシング)
 
 **学習到達目標:**
 
-1. Describe the organization of the network layer. [Familiarity]
-2. Describe how packets are forwarded in an IP network. [Familiarity]
-3. List the scalability benefits of hierarchical addressing. [Familiarity]
+1. ネットワーク層の構造を説明する。 [知識]
+2. IPネットワークでパケットがどのように転送されるか説明する。 [知識]
+3. 階層型アドレッシングがスケーラビリティに与える利益を一覧化する。 [知識]
 
 
 
@@ -125,18 +112,19 @@ State Machines and SF/Reliability through Redundancy.
 
 **トピック:**
 
-* Multiple Access Problem
-* Common approaches to multiple access (exponential-backoff, time division multiplexing, etc)
-* Local Area Networks
-* Ethernet
-* Switching
+
+* 多元接続の問題
+* 多元接続に対する一般的なアプローチ (指数バックオフ、時分割多重化など)
+* ローカルエリアネットワーク
+* イーサネット (Ethernet)
+* スイッチ
 
 **学習到達目標:**
 
-1. Describe how frames are forwarded in an Ethernet network. [Familiarity]
-2. Describe the differences between IP and Ethernet. [Familiarity]
-3. Describe the interrelations between IP and Ethernet. [Familiarity]
-4. Describe the steps used in one common approach to the multiple access problem. [Familiarity]
+1. イーサネットネットワークでフレームがどのように転送されるかを説明する。 [知識]
+2. IPとイーサネットの違いを説明する。 [知識]
+3. IPとイーサネットの相互関係について説明する。 [知識]
+4. 多元接続問題に対する一般的なアプローチの手順を説明する。 [知識]
 
 
 
@@ -145,19 +133,19 @@ State Machines and SF/Reliability through Redundancy.
 
 **トピック:**
 
-* Need for resource allocation
-* Fixed allocation (TDM, FDM, WDM) versus dynamic allocation
-* End-to-end versus network assisted approaches
-* Fairness
-* Principles of congestion control
-* Approaches to Congestion (e.g., Content Distribution Networks)
+* リソース割り当ての必要性
+* 固定割り当て (TDM, FDM, WDM) vs 動的割り当て
+* エンドツーエンド vs ネットワーク支援アプローチ
+* 公平性
+* 輻輳制御の原則
+* 輻輳へのアプローチ（例えば、コンテンツ配信ネットワーク）
 
 **学習到達目標:**
 
-1. Describe how resources can be allocated in a network. [Familiarity]
-2. Describe the congestion problem in a large network. [Familiarity]
-3. Compare and contrast fixed and dynamic allocation techniques. [Assessment]
-4. Compare and contrast current approaches to congestion. [Assessment]
+1. ネットワークでどのようにリソースが割り当てられるかを説明する。 [知識]
+2. 大規模ネットワークでの輻輳問題を説明する。 [知識]
+3. 固定割り当て技術と動的割り当て技術を比較対比する。 [評価]
+4. 現行の輻輳へのアプローチを比較対比する。 [評価]
 
 
 
@@ -166,14 +154,14 @@ State Machines and SF/Reliability through Redundancy.
 
 **トピック:**
 
-* Principles of cellular networks
-* 802.11 networks
-* Issues in supporting mobile nodes (home agents)
+1. セルラーネットワークの原則
+2. 802.11ネットワーク
+3. モバイルノード対応に関する問題（ホームエージェント）
 
 **学習到達目標:**
 
-1. Describe the organization of a wireless network. [Familiarity]
-2. Describe how wireless networks support mobile users. [Familiarity]
+1. 無線ネットワークの構成を説明する。[知識]
+2. 無線ネットワークがモバイルユーザーにどう対応しているかを説明する。[知識]
 
 
 
@@ -182,15 +170,15 @@ State Machines and SF/Reliability through Redundancy.
 
 **トピック:**
 
-* Social networks overview
-* Example social network platforms
-* Structure of social network graphs
-* Social network analysis
+* ソーシャルネットワークの概要
+* ソーシャルネットワークプラットフォームの例
+* ソーシャルネットワークグラフの構造
+* ソーシャルネットワーク分析
 
 **学習到達目標:**
 
-1. Discuss the key principles (such as membership, trust) of social networking. [Familiarity]
-2. Describe how existing social networks operate. [Familiarity]
-3. Construct a social network graph from network data. [Usage]
-4. Analyze a social network to determine who the key people are. [Usage]
-5. Evaluate a given interpretation of a social network question with associated data. [Assessment]
+1. ソーシャルネットワークの主要な原則 (例えば、会員、信頼) について説明する。[知識]
+2. 既存のソーシャルネットワークがどのように機能しているかを説明する。[知識]
+3. ネットワークデータからソーシャルネットワークグラフを作成する。[使用]
+4. ソーシャルネットワークを分析して、重要な人物が誰であるかを判断する。[使用]
+5. ソーシャルネットワークに関する質問に対して、与えられた解釈を関連するデータとともに評価する。[評価]
