@@ -1,19 +1,9 @@
 
 # オペレーティングシステム (OS)
 
-An operating system defines an abstraction of hardware and manages resource sharing among
-the computer’s users. The topics in this area explain the most basic knowledge of operating
-systems in the sense of interfacing an operating system to networks, teaching the difference
-between the kernel and user modes, and developing key approaches to operating system design
-and implementation. This knowledge area is structured to be complementary to the Systems
-Fundamentals (SF), Networking and Communication (NC), Information Assurance and Security
-(IAS), and the Parallel and Distributed Computing (PD) knowledge areas. The Systems
-Fundamentals and Information Assurance and Security knowledge areas are the new ones to
-include contemporary issues. For example, Systems Fundamentals includes topics such as
-performance, virtualization and isolation, and resource allocation and scheduling; Parallel and
-Distributed Systems includes parallelism fundamentals; and and Information Assurance and
-Security includes forensics and security issues in depth. Many courses in Operating Systems
-will draw material from across these knowledge areas.
+オペレーティングシステムはハードウェアの抽象化層を定義し、コンピュータのユーザー間でのリソースの共有を管理します。この領域のトピックは、以下の観点でのオペレーティングシステムの最も基本的な知識について説明しています。(オペレーティングシステムとネットワークの接続、カーネルとユーザーモードの違い、オペレーティングシステムの設計と実装に対する主要なアプロ―チ)
+この知識領域は、[システム基礎 (SF)](./z_appendix_A_SF.md)、[ネットワークと通信 (NC)](./z_appendix_A_NC.md)、[情報セキュリティ (IAS)](./z_appendix_A_IAS.md)、[並列分散処理 (PD)](./z_appendix_A_PD.md)の知識領域と補完的な構造になっています。システム基礎と情報セキュリティは、現代の問題を含む新たな知識領域です。たとえば、システム基礎には性能、仮想化と分離、リソース割り当てとスケジューリングなどのトピックが含まれています。並列分散処理には並列性の基礎が含まれています。情報セキュリティには、フォレンジックとセキュリティ問題が深く含まれています。オペレーティングシステムの多くの講義は、これらの知識領域全体から題材を引き出します。
+
 
 **OS. オペレーティングシステム (必修 4時間, 選択必修 11時間)**
 
@@ -39,22 +29,19 @@ will draw material from across these knowledge areas.
 
 **トピック:**
 
-* Role and purpose of the operating system
-* Functionality of a typical operating system
-* Mechanisms to support client-server models, hand-held devices
-* Design issues (efficiency, robustness, flexibility, portability, security, compatibility)
-* Influences of security, networking, multimedia, windowing systems
+* オペレーティングシステムの役割と目的
+* 典型的なオペレーティングシステムが備える機能
+* クライアント-サーバーモデルやハンドヘルド機器に対応する仕組み
+* 設計上の問題 (効率性、堅牢性、柔軟性、移植性、セキュリティ、互換性)
+* セキュリティ、ネットワーク、マルチメディア、ウィンドウシステムの影響
 
 **学習到達目標:**
 
-1. Explain the objectives and functions of modern operating systems. [Familiarity]
-2. Analyze the tradeoffs inherent in operating system design. [Usage]
-3. Describe the functions of a contemporary operating system with respect to convenience, efficiency, and the
-ability to evolve. [Familiarity]
-4. Discuss networked, client-server, distributed operating systems and how they differ from single user
-operating systems. [Familiarity]
-5. Identify potential threats to operating systems and the security features design to guard against them.
-[Familiarity]
+1. 現代のオペレーティングシステムの目的と機能を説明する。 [知識]
+2. オペレーティングシステムの設計に固有のトレードオフを分析する。 [使用]
+3. 現代のオペレーティングシステムの利便性、効率性、進化能力に関する機能を説明する。 [知識]
+4. ネットワーク対応 / クライアント-サーバー型 / 分散オペレーティングシステムを説明し、それが単一ユーザーオペレーティングシステムとどう異なるか議論する。 [知識]
+5. オペレーティングシステムに対する潜在的な脅威とそれらに対抗するためのセキュリティ機能の設計を明らかにする。 [知識]
 
 
 ## OS/オペレーティングシステムの原理
@@ -62,24 +49,24 @@ operating systems. [Familiarity]
 
 **トピック:**
 
-* Structuring methods (monolithic, layered, modular, micro-kernel models)
-* Abstractions, processes, and resources
-* Concepts of application program interfaces (APIs)
-* The evolution of hardware/software techniques and application needs
-* Device organization
-* Interrupts: methods and implementations
-* Concept of user/system state and protection, transition to kernel mode
+* 構造化手法 (モノリシック、レイヤード、モジュール型、マイクロカーネルモデル）
+* 抽象化、プロセス、リソース
+* アプリケーションプログラムインターフェース（API）の概念
+* ハードウェア/ソフトウェア技術やアプリケーションニーズの進化
+* デバイス構成
+* 割り込み: 手法と実装
+* ユーザー/システム状態と保護、カーネルモードへの移行の概念
 
 **学習到達目標:**
 
-1. Explain the concept of a logical layer. [Familiarity]
-2. Explain the benefits of building abstract layers in hierarchical fashion. [Familiarity]
-3. Describe the value of APIs and middleware. [Assessment]
-4. Describe how computing resources are used by application software and managed by system software.
-[Familiarity]
-5. Contrast kernel and user mode in an operating system. [Usage]
-6. Discuss the advantages and disadvantages of using interrupt processing. [Familiarity]
-7. Explain the use of a device list and driver I/O queue. [Familiarity]
+1. 論理層の概念を説明する。 [理解]
+2. 階層的に抽象層を構築する利点を説明する。 [理解]
+3. APIとミドルウェアの価値を説明する。 [評価]
+4. 計算資源がアプリケーションソフトウェアにどう使用され、システムソフトウェアにどう管理されるか説明する。 [理解]
+5. オペレーティングシステムにおけるカーネルモードとユーザーモードを対比する。 [使用]
+6. 割り込み処理を使用する利点と欠点を議論する。 [理解]
+7. デバイスリストとドライバーI/Oキューの利用法を説明する。 [理解]
+
 
 
 ## OS/並行性
@@ -87,28 +74,25 @@ operating systems. [Familiarity]
 
 **トピック:**
 
-* States and state diagrams (cross-reference SF/State and State Machines)
-* Structures (ready list, process control blocks, and so forth)
-* Dispatching and context switching
-* The role of interrupts
-* Managing atomic access to OS objects
-* Implementing synchronization primitives
-* Multiprocessor issues (spin-locks, reentrancy) (cross-reference SF/Parallelism)
+
+* 状態と状態遷移図 (相互参照: [SF/状態と状態機械](./z_appendix_A_SF.md#sf状態と状態機械))
+* 構造体 (実行可能リスト、プロセス制御ブロックなど)
+* ディスパッチとコンテキストスイッチ
+* 割り込みの役割
+* OSオブジェクトへの不可分操作の管理
+* 同期プリミティブの実装
+* マルチプロセッサの問題 (スピンロック、再入可能性) (相互参照: [SF/並列処理](./z_appendix_A_SF.md#sf並列処理))
 
 **学習到達目標:**
 
-1. Describe the need for concurrency within the framework of an operating system. [Familiarity]
-2. Demonstrate the potential run-time problems arising from the concurrent operation of many separate tasks.
-[Usage]
-3. Summarize the range of mechanisms that can be employed at the operating system level to realize
-concurrent systems and describe the benefits of each. [Familiarity]
-4. Explain the different states that a task may pass through and the data structures needed to support the
-management of many tasks. [Familiarity]
-5. Summarize techniques for achieving synchronization in an operating system (e.g., describe how to
-implement a semaphore using OS primitives). [Familiarity]
-6. Describe reasons for using interrupts, dispatching, and context switching to support concurrency in an
-operating system. [Familiarity]
-7. Create state and transition diagrams for simple problem domains. [Usage]
+1. オペレーティングシステムの枠組み内での並行性の必要性を説明する。 [知識]
+2. 多くの別々のタスクの並行動作から生じる可能性のある実行時の問題を示す。 [使用]
+3. オペレーティングシステムレベルで実現可能な並行システムのための複数の仕組みについてまとめ、それぞれの利点を説明する。 [知識]
+4. タスクが取りうる異なる状態と、多くのタスクの管理のために必要なデータ構造を説明する。 [知識]
+5. オペレーティングシステムで同期を達成するための手法をまとめる (例えば、OSのプリミティブを使用してセマフォを実装する方法を説明する)。 [知識]
+6. オペレーティングシステムでの並行性をサポートするために、割り込み、ディスパッチ、コンテキストスイッチを使用する理由を説明する。 [知識]
+7. 単純な問題領域に対して、状態と遷移図を作成する。 [使用]
+
 
 
 ## OS/スケジューリングとディスパッチ
@@ -116,25 +100,21 @@ operating system. [Familiarity]
 
 **トピック:**
 
-* Preemptive and non-preemptive scheduling (cross-reference SF/Resource Allocation and Scheduling,
-PD/Parallel Performance)
-* Schedulers and policies (cross-reference SF/Resource Allocation and Scheduling, PD/Parallel
-Performance)
-* Processes and threads (cross-reference SF/Computational paradigms)
-* Deadlines and real-time issues
+* プリエンプティブ(非協調的)とノンプリエンプティブ(協調的)スケジューリング (相互参照: [SF/リソース割当てとスケジューリング](./z_appendix_A_SF.md#sfリソース割当てとスケジューリング)、[PD/並列性能](./z_appendix_A_PD.md#pd並列性能))
+* スケジューラーとポリシー (相互参照: [SF/リソース割当てとスケジューリング](./z_appendix_A_SF.md#sfリソース割当てとスケジューリング)、[PD/並列性能](./z_appendix_A_PD.md#pd並列性能))
+* プロセスとスレッド (相互参照: [SF/計算パラダイム](./z_appendix_A_SF.md#sf計算パラダイム))
+* デッドラインとリアルタイムの問題点
+
 
 **学習到達目標:**
 
-1. Compare and contrast the common algorithms used for both preemptive and non-preemptive scheduling of
-tasks in operating systems, such as priority, performance comparison, and fair-share schemes. [Usage]
-2. Describe relationships between scheduling algorithms and application domains. [Familiarity]
-3. Discuss the types of processor scheduling such as short-term, medium-term, long-term, and I/O.
-[Familiarity]
-4. Describe the difference between processes and threads. [Usage]
-5. Compare and contrast static and dynamic approaches to real-time scheduling. [Usage]
-6. Discuss the need for preemption and deadline scheduling. [Familiarity]
-7. Identify ways that the logic embodied in scheduling algorithms are applicable to other domains, such as
-disk I/O, network scheduling, project scheduling, and problems beyond computing. [Usage]
+1. オペレーティングシステムの非協調的・協調的タスクスケジューリングにおいて使用される、優先度順、性能比較、公平割り当てなどの一般的なアルゴリズムを比較し対比する。[使用]
+2. スケジューリングアルゴリズムとアプリケーションドメイン間の関係を説明する。[知識]
+3. 短期、中期、長期、およびI/Oといったプロセッサのスケジューリングの種類について議論する。[知識]
+4. プロセスとスレッドの違いを説明する。[使用]
+5. リアルタイムスケジューリングの静的アプローチと動的アプローチを比較対比する。[使用]
+6. プリエンプションとデッドラインスケジューリングの必要性について議論する。[知識]
+7. スケジューリングアルゴリズムに組み込まれたロジックが、ディスクI/O、ネットワークスケジューリング、プロジェクトスケジューリング、そしてコンピューティングを超えた問題など、他の領域にどのように適用可能であるかを特定する。[使用]
 
 
 
@@ -143,21 +123,18 @@ disk I/O, network scheduling, project scheduling, and problems beyond computing.
 
 **トピック:**
 
-* Review of physical memory and memory management hardware
-* Working sets and thrashing
-* Caching (cross-reference AR/Memory System Organization and Architecture)
+* 物理メモリとメモリ管理ハードウェアのレビュー
+* ワーキングセットとスラッシング
+* キャッシュ (相互参照: [AR/メモリシステムの構成とアーキテクチャ](./z_appendix_A_AR.md#arメモリシステムの構成とアーキテクチャ))
 
 **学習到達目標:**
 
-1. Explain memory hierarchy and cost-performance trade-offs. [Familiarity]
-2. Summarize the principles of virtual memory as applied to caching and paging. [Familiarity]
-3. Evaluate the trade-offs in terms of memory size (main memory, cache memory, auxiliary memory) and
-processor speed. [Assessment]
-4. Defend the different ways of allocating memory to tasks, citing the relative merits of each. [Assessment]
-5. Describe the reason for and use of cache memory (performance and proximity, different dimension of how
-caches complicate isolation and VM abstraction). [Familiarity]
-6. Discuss the concept of thrashing, both in terms of the reasons it occurs and the techniques used to recognize
-and manage the problem. [Familiarity]
+1. メモリ階層と費用対効果のトレードオフを説明する。[知識]
+2. キャッシュとページングに適用される仮想メモリの原則をまとめる。[知識]
+3. メモリサイズ (主メモリ、キャッシュメモリ、補助記憶) とプロセッサ速度のトレードオフを評価する。[評価]
+4. タスクにメモリを割り当てるさまざまな方法について、それぞれの長所を引用し必要性を主張する。[評価]
+5. キャッシュメモリの存在理由と使用法を説明する（性能と近接性、キャッシュにより生じる隔離とVM抽象化の複雑さ）。[知識]
+6. スラッシングの概念について、それが発生する理由と、問題を認識し管理するための技術の両方の観点から議論する。[知識]
 
 
 ## OS/セキュリティと保護
@@ -165,24 +142,18 @@ and manage the problem. [Familiarity]
 
 **トピック:**
 
-* Overview of system security
-* Policy/mechanism separation
-* Security methods and devices
-* Protection, access control, and authentication
-* Backups
+* システムセキュリティの概要
+* ポリシーと仕組みの分離
+* セキュリティの手法とデバイス
+* 保護、アクセス制御、認証
+* バックアップ
 
 **学習到達目標:**
 
-1. Articulate the need for protection and security in an OS (cross-reference IAS/Security Architecture and
-Systems Administration/Investigating Operating Systems Security for various systems). [Assessment]
-2. Summarize the features and limitations of an operating system used to provide protection and security
-(cross-reference IAS/Security Architecture and Systems Administration). [Familiarity]
-3. Explain the mechanisms available in an OS to control access to resources (cross-reference IAS/Security
-Architecture and Systems Administration/Access Control/Configuring systems to operate securely as an IT
-system). [Familiarity]
-4. Carry out simple system administration tasks according to a security policy, for example creating accounts,
-setting permissions, applying patches, and arranging for regular backups (cross-reference IAS/Security
-Architecture and Systems Administration). [Usage]
+1. OSでの保護とセキュリティの必要性を明確に説明する (相互参照 ([IAS](./z_appendix_A_IAS.md)): セキュリティアーキテクチャとシステム管理/さまざまなシステムのオペレーティングシステムセキュリティの調査）。[評価]
+2. 保護とセキュリティを提供するために使用されるオペレーティングシステムの機能と制限事項をまとめる (相互参照 ([IAS](./z_appendix_A_IAS.md)): セキュリティアーキテクチャとシステム管理）。[評価]
+3. OSで利用可能なリソースへのアクセス制御の仕組みを説明する (相互参照 ([IAS](./z_appendix_A_IAS.md)): セキュリティアーキテクチャとシステム管理/アクセス制御/ITシステムとして安全に運用するためのシステムの設定) 。[知識]
+4. セキュリティポリシーに従って簡単なシステム管理タスクを実行する。例えばアカウントの作成、権限の設定、パッチの適用、定期的なバックアップの手配など（相互参照 ([IAS](./z_appendix_A_IAS.md)): セキュリティアーキテクチャとシステム管理) 。[使用]
 
 
 
@@ -191,19 +162,20 @@ Architecture and Systems Administration). [Usage]
 
 **トピック:**
 
-* Types of virtualization (including Hardware/Software, OS, Server, Service, Network)
-* Paging and virtual memory
-* Virtual file systems
-* Hypervisors
-* Portable virtualization; emulation vs. isolation
-* Cost of virtualization
+* 仮想化の種類 (ハードウェア/ソフトウェア、OS、サーバー、サービス、ネットワークを含む)
+* ページングと仮想メモリ
+* 仮想ファイルシステム
+* ハイパーバイザ
+* 移植可能な仮想化; エミュレーション vs 隔離
+* 仮想化のコスト
 
 **学習到達目標:**
 
-1. Explain the concept of virtual memory and how it is realized in hardware and software. [Familiarity]
-5. Differentiate emulation and isolation. [Familiarity]
-6. Evaluate virtualization trade-offs. [Assessment]
-2. Discuss hypervisors and the need for them in conjunction with different types of hypervisors. [Usage]
+1. 仮想メモリの概念とそれがハードウェアとソフトウェアでどのように実現されるかを説明する。[知識]
+2. エミュレーションと隔離の違いを説明する。[知識]
+3. 仮想化のトレードオフを評価する。[評価]
+4. ハイパーバイザについてと、それが異なる種類のハイパーバイザと同時に必要である理由を議論する。[使用]
+
 
 
 ## OS/デバイス管理
@@ -211,66 +183,62 @@ Architecture and Systems Administration). [Usage]
 
 **トピック:**
 
-* Characteristics of serial and parallel devices
-* Abstracting device differences
-* Buffering strategies
-* Direct memory access
-* Recovery from failures
+* シリアルデバイスとパラレルデバイスの特性
+* デバイスの違いの抽象化
+* バッファリング戦略
+* ダイレクトメモリアクセス
+* 障害からの復旧
 
 **学習到達目標:**
 
-1. Explain the key difference between serial and parallel devices and identify the conditions in which each is
-appropriate. [Familiarity]
-2. Identify the relationship between the physical hardware and the virtual devices maintained by the operating
-system. [Usage]
-3. Explain buffering and describe strategies for implementing it. [Familiarity]
-4. Differentiate the mechanisms used in interfacing a range of devices (including hand-held devices,
-networks, multimedia) to a computer and explain the implications of these for the design of an operating
-system. [Usage]
-5. Describe the advantages and disadvantages of direct memory access and discuss the circumstances in
-which its use is warranted. [Usage]
-6. Identify the requirements for failure recovery. [Familiarity]
-7. Implement a simple device driver for a range of possible devices. [Usage]
+1. シリアルデバイスとパラレルデバイスの主な違いを説明し、それぞれが適している状況を特定する。[知識]
+2. 物理ハードウェアと、オペレーティングシステムが管理する仮想デバイスとの関係を明らかにする。[使用]
+3. バッファリングを説明し、それを実装する戦略を説明する。[知識]
+4. さまざまなデバイス (ハンドヘルドデバイス、ネットワーク、マルチメディアを含む) をコンピュータに接続するために使用される仕組みを区別し、これらがオペレーティングシステムの設計においてどのような意味を持つかを説明する。[使用]
+5. ダイレクトメモリアクセスの利点と欠点を説明し、その使用が正当化される状況を議論する。[使用]
+6. 障害からの復旧の要件を特定する。[知識]
+7. 可能なさまざまなデバイスに対して単純なデバイスドライバーを実装する。[使用]
+
 
 ## OS/ファイルシステム
 *[選択科目]*
 
 **トピック:**
 
-* Files: data, metadata, operations, organization, buffering, sequential, nonsequential
-* Directories: contents and structure
-* File systems: partitioning, mount/unmount, virtual file systems
-* Standard implementation techniques
-* Memory-mapped files
-* Special-purpose file systems
-* Naming, searching, access, backups
-* Journaling and log-structured file systems
+* ファイル: データ、メタデータ、操作、構造、バッファリング、シーケンシャル、非シーケンシャル
+* ディレクトリ: 内容と構造
+* ファイルシステム: パーティション、マウント/アンマウント、仮想ファイルシステム
+* 標準的な実装手法
+* メモリマップドファイル
+* 特殊用途のファイルシステム
+* 名前付け、検索、アクセス、バックアップ
+* ジャーナリングやログ構造ファイルシステム
 
 **学習到達目標:**
 
-1. Describe the choices to be made in designing file systems. [Familiarity]
-2. Compare and contrast different approaches to file organization, recognizing the strengths and weaknesses
-of each. [Usage]
-3. Summarize how hardware developments have led to changes in the priorities for the design and the
-management of file systems. [Familiarity]
-4. Summarize the use of journaling and how log-structured file systems enhance fault tolerance. [Familiarity]
+1. ファイルシステムの設計における選択肢を説明する。[知識]
+2. ファイルの構造に対する異なるアプローチを比較し、それぞれの強みと弱みを認識する。[使用]
+3. ハードウェアの発展が、ファイルシステムの設計と管理の優先順位をどう変化させたか要約する。[知識]
+4. ジャーナリングの使用と、ログ構造ファイルシステムがどのように耐障害性を強化するかを要約する。[知識]
+
+
 
 ## OS/リアルタイムおよび組込みシステム
 *[選択科目]*
 
 **トピック:**
 
-* Process and task scheduling
-* Memory/disk management requirements in a real-time environment
-* Failures, risks, and recovery
-* Special concerns in real-time systems
+* プロセスとタスクのスケジューリング
+* リアルタイム環境におけるメモリ/ディスク管理の要件
+* 障害、リスク、復旧
+* リアルタイムシステムにおける特別な懸念事項
 
 **学習到達目標:**
 
-1. Describe what makes a system a real-time system. [Familiarity]
-2. Explain the presence of and describe the characteristics of latency in real-time systems. [Familiarity]
-3. Summarize special concerns that real-time systems present, including risk, and how these concerns are
-addressed. [Familiarity]
+1. システムが何をもってリアルタイムシステムとされるのかを説明する。[知識]
+2. リアルタイムシステムにおける遅延の存在と特性を説明する。[知識]
+3. リアルタイムシステムが産むリスクを含む特別な懸念事項と、その対処法を要約する。[知識]
+
 
 
 ## OS/耐故障性
@@ -278,17 +246,17 @@ addressed. [Familiarity]
 
 **トピック:**
 
-* Fundamental concepts: reliable and available systems (cross-reference SF/Reliability through Redundancy)
-* Spatial and temporal redundancy (cross-reference SF/Reliability through Redundancy)
-* Methods used to implement fault tolerance
-* Examples of OS mechanisms for detection, recovery, restart to implement fault tolerance, use of these
-techniques for the OS’s own services
+* 基本的な概念: 信頼性と可用性のあるシステム (相互参照: [SF/冗長化による信頼性向上](./z_appendix_A_SF.md#sf冗長化による信頼性向上)
+* 空間的および時間的冗長性 (相互参照: [SF/冗長化による信頼性向上](./z_appendix_A_SF.md#sf冗長化による信頼性向上)
+* 耐故障性を実現するための手法
+* 耐故障性を実現するための検知・回復・再起動といったOSの機構の例と、これらの手法のOS自身のサービスへの適用
 
 **学習到達目標:**
 
-1. Explain the relevance of the terms fault tolerance, reliability, and availability. [Familiarity]
-2. Outline the range of methods for implementing fault tolerance in an operating system. [Familiarity]
-3. Explain how an operating system can continue functioning after a fault occurs. [Familiarity]
+1. 耐故障性、信頼性、可用性という用語の関連性を説明する。[知識]
+2. オペレーティングシステムで耐故障性を実装するための様々な手法を概説する。[知識]
+3. オペレーティングシステムがどのようにして障害発生後も機能し続けるのか説明する。[知識]
+
 
 
 ## OS/システムの性能評価
@@ -296,14 +264,13 @@ techniques for the OS’s own services
 
 **トピック:**
 
-* Why system performance needs to be evaluated (cross-reference SF/Performance/Figures of performance
-merit)
-* What is to be evaluated (cross-reference SF/Performance/Figures of performance merit)
-* Systems performance policies, e.g., caching, paging, scheduling, memory management, and security
-* Evaluation models: deterministic, analytic, simulation, or implementation-specific
-* How to collect evaluation data (profiling and tracing mechanisms)
+* システム性能の評価が必要である理由 (相互参照: [SF/性能評価](./z_appendix_A_SF.md#sf性能評価)の性能評価指標)
+* 評価指標 (相互参照: [SF/性能評価](./z_appendix_A_SF.md#sf性能評価)の性能評価指標)
+* システムの性能ポリシー (キャッシュ、ページング、スケジューリング、メモリ管理、セキュリティ)
+* 評価モデル: 決定的、解析的、シミュレーション、または実装固有
+* 評価データの収集方法（プロファイリングとトレーシングの仕組み）
 
 **学習到達目標:**
 
-1. Describe the performance measurements used to determine how a system performs. [Familiarity]
-2. Explain the main evaluation models used to evaluate a system. [Familiarity]
+1. システムの性能を判断するための性能測定について説明する。[知識]
+2. システムを評価するために使用される主な評価モデルを説明する。[知識]
