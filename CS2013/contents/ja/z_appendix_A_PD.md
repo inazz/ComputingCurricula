@@ -1,76 +1,27 @@
 
 # 並列分散処理 (PD)
 
-The past decade has brought explosive growth in multiprocessor computing, including multi-core
-processors and distributed data centers. As a result, parallel and distributed computing has
-moved from a largely elective topic to become more of a core component of undergraduate
-computing curricula. Both parallel and distributed computing entail the logically simultaneous
-execution of multiple processes, whose operations have the potential to interleave in complex
-ways. Parallel and distributed computing builds on foundations in many areas, including an
-understanding of fundamental systems concepts such as concurrency and parallel execution,
-consistency in state/memory manipulation, and latency. Communication and coordination
-among processes is rooted in the message-passing and shared-memory models of computing and
-such algorithmic concepts as atomicity, consensus, and conditional waiting. Achieving speedup
-in practice requires an understanding of parallel algorithms, strategies for problem
-decomposition, system architecture, detailed implementation strategies, and performance
-analysis and tuning. Distributed systems highlight the problems of security and fault tolerance,
-emphasize the maintenance of replicated state, and introduce additional issues that bridge to
-computer networking. 
+過去10年間で、マルチプロセッサコンピューティング、つまり、マルチコアプロセッサや分散データセンターの爆発的な成長が見られました。その結果、並列分散処理は、従来は幅広く選択科目とされていましたが、現在は学部のコンピューティングカリキュラムのコアな部分となりました。並列処理・分散処理の両方とも、複数のプロセスが論理的に同時に実行され、その操作が複雑な方法で交錯する可能性があります。並列分散処理は、並行性や並列実行、状態/メモリ操作の一貫性、遅延といった基礎的なシステム概念の理解を含む多くの領域の基礎に基づいています。プロセス間の通信と協調は、メッセージパッシングと共有メモリといった計算モデル、そして原子性、合意、条件付き待機といったアルゴリズム概念に根ざしています。実際に速度向上を達成するためには、並列アルゴリズム、問題分解の戦略、システムアーキテクチャ、詳細な実装戦略、性能分析とチューニングの理解が必要です。分散システムは、セキュリティと耐障害性の問題を強調し、複製状態の維持を重視し、コンピュータネットワークへと繋がる追加の課題を導入します。
 
-Because parallelism interacts with so many areas of computing, including at least algorithms,
-languages, systems, networking, and hardware, many curricula will put different parts of the
-knowledge area in different courses, rather than in a dedicated course. While we acknowledge
-that computer science is moving in this direction and may reach that point, in 2013 this process is
-still in flux and we feel it provides more useful guidance to curriculum designers to aggregate the
-fundamental parallelism topics in one place. Note, however, that the fundamentals of
-concurrency and mutual exclusion appear in the Systems Fundamentals (SF) Knowledge Area.
-Many curricula may choose to introduce parallelism and concurrency in the same course (see
-below for the distinction intended by these terms). Further, we note that the topics and learning
-outcomes listed below include only brief mentions of purely elective coverage. At the present
-time, there is too much diversity in topics that share little in common (including for example,
-parallel scientific computing, process calculi, and non-blocking data structures) to recommend
-particular topics be covered in elective courses.
 
-Because the terminology of parallel and distributed computing varies among communities, we
-provide here brief descriptions of the intended senses of a few terms. This list is not exhaustive
-or definitive, but is provided for the sake of clarity.
+並列性は、少なくともアルゴリズム、言語、システム、ネットワーク、ハードウェアを含むコンピューティングの多くの領域と相互作用しますので、多くのカリキュラムでは、専用の講座ではなく、様々な講座でこの知識領域の様々な部分を教えることになります。我々は、コンピュータ科学が並列分散処理の専門講座を持つ方向に進んでおり、すでにそうなっているかもしれないと認識していますが、2013年現在、このプロセスはまだ変動しています。我々は、基本的な並列性のトピックを一か所にまとめることで、カリキュラム設計者により有用な指針を提供できると考えています。ただし、並列性と相互排他の基本的な内容は、[システム基礎 (SF)](./z_appendix_A_SF.md)知識領域に含まれていることに注意してください。多くのカリキュラムは、並行性と並列性を同じ講座で導入するでしょう (これらの用語の区別については下記を参照してください）。さらに、下記に一覧化されているトピックと学習到達目標には、純粋に選択科目の範囲についての簡単な言及のみが含まれています。現時点では、共通点が少ないトピック (例えば、並列科学計算、プロセス計算、ノンブロッキングデータ構造など)の多様性がありすぎて、特定のトピックを選択科目でカバーすべきと推奨することはできません。
 
-* Parallelism: Using additional computational resources simultaneously, usually for
-speedup.
-* Concurrency: Efficiently and correctly managing concurrent access to resources.
-* Activity: A computation that may proceed concurrently with others; for example a
-program, process, thread, or active parallel hardware component.
-* Atomicity: Rules and properties governing whether an action is observationally
-indivisible; for example, setting all of the bits in a word, transmitting a single packet, or
-completing a transaction.
-* Consensus: Agreement among two or more activities about a given predicate; for
-example, the value of a counter, the owner of a lock, or the termination of a thread.
-* Consistency: Rules and properties governing agreement about the values of variables
-written, or messages produced, by some activities and used by others (thus possibly
-exhibiting a data race); for example, sequential consistency, stating that the values of all
-variables in a shared memory parallel program are equivalent to that of a single program
-performing some interleaving of the memory accesses of these activities.
-* Multicast: A message sent to possibly many recipients, generally without any constraints
-about whether some recipients receive the message before others. An event is a multicast
-message sent to a designated set of listeners or subscribers.
+並列分散処理の用語はコミュニティによって異なるため、ここではいくつかの用語の意図された意味について簡単な説明を提供します。このリストは包括的でも決定的なものでもなく、明確さのために提供されています。
 
-As multi-processor computing continues to grow in the coming years, so too will the role of
-parallel and distributed computing in undergraduate computing curricula. In addition to the
-guidelines presented here, we also direct the interested reader to the document entitled
-"NSF/TCPP Curriculum Initiative on Parallel and Distributed Computing - Core Topics for
-Undergraduates", available from the website: http://www.cs.gsu.edu/~tcpp/curriculum/
+* 並列性(Parallelism): 通常は速度向上のために、追加の計算リソースを同時に使用すること。
+* 並行性(Concurrency): リソースへの並行アクセスを効率的かつ正しく管理すること。
+* アクティビティ(Activity): 他と並行して進行可能な計算。例えば、プログラム、プロセス、スレッド、またはアクティブな並列ハードウェアコンポーネント。
+* 原子性(Atomicity): 動作が観察上不可分であるかに影響する規則と特性; 例えば、ワード内の全ビットの設定、単一パケットの送信、またはトランザクションの完了。
+* 合意(Consensus): 特定の述語についての2つ以上のアクティビティ間の合意; 例えば、カウンターの値、ロックの所有者、またはスレッドの終了。
+* 一貫性(Consistency): 一部のアクティビティによって書き込まれた変数の値や生成されたメッセージについて、他のアクティビティが使用する（つまり潜在的なデータ競合がある）際の合意に影響する規則と特性; 例えば逐次一貫性とは、共有メモリ並列プログラム内の全ての変数の値が、メモリアクセスを各アクティビティ内での順序を崩さない形で一つにまぜこんだ単一プログラムにおける変数の値と等価になることを意味しています。
+* マルチキャスト(Multicast): 多数の受信者に送信可能なメッセージで、一部の受信者が他の受信者よりも先にメッセージを受信するかどうかについての制約は一般的にありません。イベントは指定されたリスナーや購読者のセットに送信されるマルチキャストメッセージです。
 
-**General cross-referencing note:** Systems Fundamentals also contains an introduction to
-parallelism (SF/Computational Paradigms, SF/System Support for Parallelism, SF/Performance).
+マルチプロセッサでの計算が今後数年でさらに利用されるにつれ、並列分散処理が計算機科学の学部カリキュラムで果たす役割も増すことでしょう。ここで提示したガイドラインに加えて、興味のある読者は、"NSF/TCPP Curriculum Initiative on Parallel and Distributed Computing - Core Topics for Undergraduates"も参照ください。この文書は以下のウェブサイトから入手できます: https://tcpp.cs.gsu.edu/curriculum/
 
-The introduction to parallelism in SF complements the one here and there is no ordering
-constraint between them. In SF, the idea is to provide a unified view of the system support for
-simultaneous execution at multiple levels of abstraction (parallelism is inherent in gates,
-processors, operating systems, and servers), whereas here the focus is on a preliminary
-understanding of parallelism as a computing primitive and the complications that arise in parallel
-and concurrent programming. Given these different perspectives, the hours assigned to each are
-not redundant: the layered systems view and the high-level computing concepts are accounted
-for separately in terms of the core hours.
+**全般的な相互参照についての注意:** [システム基礎](./z_appendix_A_SF.md)には、並列化への導入([SF/計算パラダイム](./z_appendix_A_SF.md#sf計算パラダイム)、[SF/並列処理](./z_appendix_A_SF.md#sf並列処理)、[SF/性能評価](./z_appendix_A_SF.md#sf性能評価)）も含まれています。
+
+[SF](./z_appendix_A_SF.md)における並列化の導入は、ここでのものと補完的であり、間に順序の制約はありません。SFでは、複数の抽象化レベルにおけるシステムの同時実行の支援について、統一的な視点を提供することが目的です（並列化はゲート、プロセッサ、オペレーティングシステム、サーバーにつきものです）。一方、ここでは、並列化を計算の基本要素として初歩的に理解し、並列および並行プログラミングで生じる複雑さに焦点を当てています。これらの異なる視点を考慮に入れると、各々に割り当てられた時間は重複していません: システムを層状とみる視点と、計算の高レベルな概念は、コア時間の観点から別々に考慮されます。
+
 
 **PD. 並列分散処理 (必修 5時間, 選択必修 10時間)**
 
@@ -91,126 +42,122 @@ for separately in terms of the core hours.
 ## PD/並列性の基礎
 *[必修 2時間]*
 
-Build upon students’ familiarity with the notion of basic parallel execution—a concept addressed
-in Systems Fundamentals—to delve into the complicating issues that stem from this notion, such
-as race conditions and liveness.
+システム基礎で取り上げられる基本的な並列実行の概念に対する学生の理解を深め、その概念から生じる複雑な問題、例えば競合状態 (race condition) や生存性 (liveness)について掘り下げます。
 
-Cross-reference SF/Computational Paradigms and SF/System Support for Parallelism. 
+相互参照: [SF/計算パラダイム](./z_appendix_A_SF.md#sf計算パラダイム)、[SF/並列処理](./z_appendix_A_SF.md#sf並列処理)
+
 
 **トピック:**
 
-* Multiple simultaneous computations
-* Goals of parallelism (e.g., throughput) versus concurrency (e.g., controlling access to shared resources)
-* Parallelism, communication, and coordination
- * Programming constructs for coordinating multiple simultaneous computations
- * Need for synchronization
-* Programming errors not found in sequential programming
- * Data races (simultaneous read/write or write/write of shared state)
- * Higher-level races (interleavings violating program intention, undesired non-determinism)
- * Lack of liveness/progress (deadlock, starvation)
+* 複数の同時計算
+* 並列性（例えば、スループット）と並行性（例えば、共有リソースへのアクセス制御）の目標
+* 並列性、通信、協調
+ * 複数の同時計算を協調させるためのプログラミング構造
+ * 同期の必要性
+* 逐次プログラミングにはないプログラミングエラー
+ * データ競合 (共有状態の同時読み書き、同時書き込み)
+ * ハイレベルの競合 (プログラムの意図しないインターリーブ、望ましくない非決定性)
+ * 生存性/進行性の欠如 (デッドロック、スターベーション)
 
 **学習到達目標:**
 
-1. Distinguish using computational resources for a faster answer from managing efficient access to a shared
-resource. (Cross-reference GV/Fundamental Concepts, outcome 5.) [Familiarity]
-2. Distinguish multiple sufficient programming constructs for synchronization that may be interimplementable but have complementary advantages. [Familiarity]
-3. Distinguish data races from higher level races. [Familiarity]
+1. 高速性の為の計算リソースの使用と、共有リソースへの効率的なアクセス管理を区別する。 [知識]
+2. 十分な数の同期のためのプログラミング構造を区別する。これらは相互に実装可能だが、補完的な利点がある。 [知識]
+3. データ競合とハイレベルの競合を区別する。 [知識]
+
 
 
 ## PD/並列処理への分割
 *[必修 1時間, 選択必修 3時間]*
 
-(Cross-reference SF/System Support for Parallelism)
+(相互参照: [SF/並列処理](./z_appendix_A_SF.md#sf並列処理))
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Need for communication and coordination/synchronization
-* Independence and partitioning
+* 通信と強調/同期の必要性
+* 独立性と分割
 
-[Core-Tier2]
 
-* Basic knowledge of parallel decomposition concepts (cross-reference SF/System Support for Parallelism)
-* Task-based decomposition
- * Implementation strategies such as threads
-* Data-parallel decomposition
- * Strategies such as SIMD and MapReduce
-* Actors and reactive processes (e.g., request handlers)
+[選択必修]
+
+* 並列分解の概念についての基礎知識 (相互参照: [SF/並列処理](./z_appendix_A_SF.md#sf並列処理))
+* タスクベースの分解
+ * スレッドなどの実装戦略
+* データ並列分解
+ * SIMDやMapReduceなどの戦略
+* アクターと応答型プロセス（例えば、リクエストハンドラー）
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Explain why synchronization is necessary in a specific parallel program. [Usage]
-2. Identify opportunities to partition a serial program into independent parallel modules. [Familiarity]
+1. 特定の並列プログラムについて、同期が必要な理由を説明する。 [使用]
+2. 逐次プログラムをどのように分割して独立した並列モジュールにできるか割り出す。 [知識]
 
-[Core-Tier2]
+[選択必修]
 
-3. Write a correct and scalable parallel algorithm. [Usage]
-4. Parallelize an algorithm by applying task-based decomposition. [Usage]
-5. Parallelize an algorithm by applying data-parallel decomposition. [Usage]
-6. Write a program using actors and/or reactive processes. [Usage]
+3. 正確でスケーラブルな並列アルゴリズムを記述する。 [使用]
+4. タスクベースの分解を適用してアルゴリズムを並列化する。 [使用]
+5. データ並列分解を適用してアルゴリズムを並列化する。 [使用]
+6. アクターや応答型プロセスを使用したプログラムを記述する。 [使用]
 
 
 ## PD/通信と協調
 *[必修 1時間, 選択必修 3時間]*
 
-Cross-reference OS/Concurrency for mechanism implementation issues.
+実装上の課題について [OS/並行性](./z_appendix_A_OS.md#os並行性)と相互参照。
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Shared Memory
-* Consistency, and its role in programming language guarantees for data-race-free programs
+* 共有メモリ
+* 一貫性。データ競合のないプログラムに対し一貫性がプログラミング言語で果たす役割
 
-[Core-Tier2]
+[選択必修]
 
-* Message passing
- * Point-to-point versus multicast (or event-based) messages
- * Blocking versus non-blocking styles for sending and receiving messages
- * Message buffering (cross-reference PF/Fundamental Data Structures/Queues)
-* Atomicity
- * Specifying and testing atomicity and safety requirements
- * Granularity of atomic accesses and updates, and the use of constructs such as critical sections or
-transactions to describe them
- * Mutual Exclusion using locks, semaphores, monitors, or related constructs
-  * Potential for liveness failures and deadlock (causes, conditions, prevention)
- * Composition
-  * Composing larger granularity atomic actions using synchronization
-  * Transactions, including optimistic and conservative approaches
+* メッセージパッシング
+ * ポイントツーポイント vs マルチキャスト (またはイベントベース) メッセージ
+ * メッセージの送受信の様式。ブロッキング vs ノンブロッキング。
+ * メッセージバッファリング (相互参照: [SDF/基本データ構造](./z_appendix_A_SDF.md#sdf基本データ構造)のキュー)
+* 原子性
+ * 原子性や安全性要件の指定とテスト
+ * 不可分操作の粒度、およびそれらを記述するためのクリティカルセクションやトランザクションなどの構造の使用
+ * ロック、セマフォ、モニタ、または関連する構造を使用した相互排他
+  * 生存性の欠落とデッドロック (原因、条件、予防)
+ * 合成
+  * 同期を使用して大粒度の不可分操作を構成する
+  * トランザクション。楽観的および保守的なアプローチを含む。
 
-[Elective]
+[選択科目]
 
-* Consensus
- * (Cyclic) barriers, counters, or related constructs
-* Conditional actions
- * Conditional waiting (e.g., using condition variables)
+* 合意
+ * (循環式) バリア、カウンタ、または関連する構造
+* 条件付きアクション
+ * 条件付き待機（例えば、条件変数を使用）
 
 
 **学習到達目標:**
 
-[Core-Tier1]
-1. Use mutual exclusion to avoid a given race condition. [Usage]
-2. Give an example of an ordering of accesses among concurrent activities (e.g., program with a data race)
-that is not sequentially consistent. [Familiarity]
-[Core-Tier2]
-3. Give an example of a scenario in which blocking message sends can deadlock. [Usage]
-4. Explain when and why multicast or event-based messaging can be preferable to alternatives. [Familiarity]
-5. Write a program that correctly terminates when all of a set of concurrent tasks have completed. [Usage]
-6. Use a properly synchronized queue to buffer data passed among activities. [Usage]
-7. Explain why checks for preconditions, and actions based on these checks, must share the same unit of
-atomicity to be effective. [Familiarity]
-8. Write a test program that can reveal a concurrent programming error; for example, missing an update when
-two activities both try to increment a variable. [Usage]
-9. Describe at least one design technique for avoiding liveness failures in programs using multiple locks or
-semaphores. [Familiarity]
-10. Describe the relative merits of optimistic versus conservative concurrency control under different rates of
-contention among updates. [Familiarity]
-11. Give an example of a scenario in which an attempted optimistic update may never complete. [Familiarity]
-[Elective]
-12. Use semaphores or condition variables to block threads until a necessary precondition holds. [Usage]
+[必修]
+1. 与えられた競合状態に対して、相互排他を利用して解決する。[使用]
+2. 複数の並行アクティビティの資源アクセス順で、逐次一貫性の無い例を挙げる（例えば、データ競合のあるプログラム）[理解]
+
+[選択必修]
+3. メッセージのブロッキング送信がデッドロックを引き起こすシナリオの例を挙げる。[使用]
+4. マルチキャストやイベントベースのメッセージングが他の選択肢よりも好ましい場面と理由を説明する。[理解]
+5. 一連の並行タスクがすべて完了したときに正しく終了するプログラムを書く。[使用]
+6. 適切に同期化されたキューを使用して、アクティビティ間でデータをバッファリングする。[使用]
+7. 前提条件のチェックと、それに基づくアクションが実効的であるためには、同じ原子性の単位に属する必要がある理由を説明する。[理解]
+8. 並行プログラミングエラーを披露するテストプログラムを書く。例えば、2つのアクティビティが変数をインクリメントしようとしたときに更新が失われる。[使用]
+9. 複数のロックやセマフォを使用するプログラムで生存性を担保するための設計手法を少なくとも1つ説明する。[理解]
+10. 楽観的/保守的な並行性制御の相対的な利点について、更新頻度の度合いが異なる場面で説明する。[理解]
+11. 楽観的な更新の試みが完了しないシナリオの例を挙げる。[理解]
+
+[選択科目]
+12. セマフォや条件変数を使用して、必要な前提条件が満たされるまでスレッドをブロックする。[使用]
 
 
 
@@ -219,93 +166,90 @@ contention among updates. [Familiarity]
 
 **トピック:**
 
-[Core-Tier2]
+[選択必修]
 
-* Critical paths, work and span, and the relation to Amdahl’s law (cross-reference SF/Performance)
-* Speed-up and scalability
-* Naturally (embarrassingly) parallel algorithms
-* Parallel algorithmic patterns (divide-and-conquer, map and reduce, master-workers, others)
- * Specific algorithms (e.g., parallel MergeSort)
+* クリティカルパス、ワーク (work, 逐次実行時時間) と スパン (span, 限界並列時時間)、およびアムダールの法則との関係 (相互参照: [SF/性能評価](./z_appendix_A_SF.md#sf性能評価))
+* 速度向上とスケーラビリティ
+* 自明に並列化されたアルゴリズム
+* 並列アルゴリズムのパターン (分割統治、マップリデュース、マスター/ワーカー、他)
+ * 具体的アルゴリズム (例えば、並列マージソート)
 
-[Elective]
+[選択科目]
 
-* Parallel graph algorithms (e.g., parallel shortest path, parallel spanning tree) (cross-reference
-AL/Algorithmic Strategies/Divide-and-conquer)
-* Parallel matrix computations
-* Producer-consumer and pipelined algorithms
-* Examples of non-scalable parallel algorithms
+* 並列グラフアルゴリズム (例えば、並列最短経路、並列最小全域木) (相互参照: [AL/アルゴリズム設計の手法](./z_appendix_A_AL.md#alアルゴリズム設計の手法)の分割統治）
+* 並列行列計算
+* プロデューサー・コンシューマとパイプライン化されたアルゴリズム
+* スケーラブルでない並列アルゴリズムの例
+
 
 **学習到達目標:**
 
-[Core-Tier2]
+[選択必修]
 
-1. Define “critical path”, “work”, and “span”. [Familiarity]
-2. Compute the work and span, and determine the critical path with respect to a parallel execution diagram.
-[Usage]
-3. Define “speed-up” and explain the notion of an algorithm’s scalability in this regard. [Familiarity]
-4. Identify independent tasks in a program that may be parallelized. [Usage]
-5. Characterize features of a workload that allow or prevent it from being naturally parallelized. [Familiarity]
-6. Implement a parallel divide-and-conquer (and/or graph algorithm) and empirically measure its performance
-relative to its sequential analog. [Usage]
-7. Decompose a problem (e.g., counting the number of occurrences of some word in a document) via map and
-reduce operations. [Usage]
-[Elective]
-8. Provide an example of a problem that fits the producer-consumer paradigm. [Familiarity]
-9. Give examples of problems where pipelining would be an effective means of parallelization. [Familiarity]
-10. Implement a parallel matrix algorithm. [Usage]
-11. Identify issues that arise in producer-consumer algorithms and mechanisms that may be used for addressing
-them. [Familiarity]
+1. 「クリティカルパス」、「ワーク」、「スパン」を定義する。[知識]
+2. ワークとスパンを計算し、並行実行依存関係図に対するクリティカルパスを特定する。[使用]
+3.「速度向上」を定義し、この観点からのアルゴリズムのスケーラビリティについて説明する。[知識]
+4. 並列化可能なプログラム内の独立したタスクを特定する。[使用]
+5. ワークロードの特徴で、自然に並列化を可能するもの・不可能にするものを特定し、理由を説明する。[知識]
+6. 並列分割統治や並列グラフアルゴリズムを実装し、その性能を実際に測定し、逐次版と比較する。[使用]
+7. 問題 (例えば、ドキュメント内の特定の単語の出現数を数えるなど) をマップおよびリデュース操作に分解する。[使用]
+
+[選択科目]
+8. プロデューサーコンシューマーパラダイムに適合する問題の例を挙げる。[知識]
+9. パイプライン化が並列化の効果的な手段となる問題の例を挙げる。[知識]
+10. 並列行列アルゴリズムを実装する。[使用]
+11. プロデューサーコンシューマーアルゴリズム特有の問題点を特定し、それらに対処するための仕組みを認識する。[知識]
+
 
 
 ## PD/並列アーキテクチャ
 *[必修 1時間, 選択必修 1時間]*
 
-The topics listed here are related to knowledge units in the Architecture and Organization (AR)
-knowledge area (AR/Assembly Level Machine Organization and AR/Multiprocessing and
-Alternative Architectures). Here, we focus on parallel architecture from the standpoint of
-applications, whereas the Architecture and Organization knowledge area presents the topic from
-the hardware perspective.
+ここに記載されるトピックは、[アーキテクチャと構成 (AR)](./z_appendix_A_AR.md) の知識領域（[AR/アセンブリ言語レベルでのコンピュータの構成](./z_appendix_A_AR.md#arアセンブリ言語レベルでのコンピュータの構成)と[AR/マルチプロセッシングとその構成の選択肢](./z_appendix_A_AR.md#arマルチプロセッシングとその構成の選択肢)) の知識単位に関連しています。ここでは、アプリケーションの観点から並列アーキテクチャに焦点を当てていますが、アーキテクチャと構成の知識領域は、このトピックをハードウェアの観点から提示します。
+
 
 **トピック:**
 
-[Core-Tier1]
-* Multicore processors
-* Shared vs. distributed memory
-[Core-Tier2]
-* Symmetric multiprocessing (SMP)
-* SIMD, vector processing
-[Elective]
-* GPU, co-processing
-* Flynn’s taxonomy
-* Instruction level support for parallel programming
- * Atomic instructions such as Compare and Set
-* Memory issues
- * Multiprocessor caches and cache coherence
- * Non-uniform memory access (NUMA)
-* Topologies
- * Interconnects
- * Clusters
- * Resource sharing (e.g., buses and interconnects)
+[必修]
+* マルチコアプロセッサ
+* 共有メモリ vs 分散メモリ
+
+[選択必修]
+* 対称型マルチプロセッシング（SMP）
+* SIMD、ベクトル計算機
+
+[選択科目]
+* GPU、コプロセッサ
+* フリンの分類
+* 並列プログラミングのための命令レベルの支援
+ * Compare and Setのような不可分操作
+* メモリ問題
+ * マルチプロセッサキャッシュとキャッシュ一貫性
+ * 非一様メモリアクセス（NUMA）
+* トポロジー
+ * インターコネクト
+ * クラスタ
+ * リソース共有（例：バスとインターコネクト）
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Explain the differences between shared and distributed memory. [Familiarity]
+1. 共有メモリと分散メモリの違いを説明する。[知識]
 
-[Core-Tier2]
+[選択必修]
 
-2. Describe the SMP architecture and note its key features. [Familiarity]
-3. Characterize the kinds of tasks that are a natural match for SIMD machines. [Familiarity]
+2. SMPアーキテクチャを説明し、その主な特徴を述べる。[知識]
+3. SIMDマシンに自然にマッチするタスクの種類を特徴を述べる。[知識]
 
-[Elective]
 
-4. Describe the advantages and limitations of GPUs vs. CPUs. [Familiarity]
-5. Explain the features of each classification in Flynn’s taxonomy. [Familiarity]
-6. Describe assembly-level support for atomic operations. [Familiarity]
-7. Describe the challenges in maintaining cache coherence. [Familiarity]
-8. Describe the key performance challenges in different memory and distributed system topologies.
-[Familiarity]
+[選択科目]
+
+4. GPUとCPUの長所と短所を説明する。[知識]
+5. フリンの分類の各分類の特徴を説明する。[知識]
+6. 不可分操作のためのアセンブリレベルの支援について説明する。[知識]
+7. キャッシュの一貫性を維持する上での課題を説明する。[知識]
+8. 異なるメモリと分散システムのトポロジーにおいて主な性能上の課題を説明する。[知識]
 
 
 
@@ -314,26 +258,28 @@ the hardware perspective.
 
 **トピック:**
 
-* Load balancing
-* Performance measurement
-* Scheduling and contention (cross-reference OS/Scheduling and Dispatch)
-* Evaluating communication overhead
-* Data management
- * Non-uniform communication costs due to proximity (cross-reference SF/Proximity)
- * Cache effects (e.g., false sharing)
- * Maintaining spatial locality
-* Power usage and management
+* 負荷分散
+* 性能測定
+* スケジューリングと競合 (相互参照: [OS/スケジューリングとディスパッチ](./z_appendix_A_OS.md#osスケジューリングとディスパッチ))
+* 通信オーバーヘッドの評価
+* データ管理
+ * 近接性によって異なる通信コスト (相互参照: [SF/近接と性能向上](./z_appendix_A_SF.md#sf近接と性能向上))
+ * キャッシュの影響 (例: 偽共有)
+ * 空間局在性の維持
+* 電力使用量と管理
+
+
 
 **学習到達目標:**
 
-1. Detect and correct a load imbalance. [Usage]
-2. Calculate the implications of Amdahl’s law for a particular parallel algorithm (cross-reference
-SF/Evaluation for Amdahl’s Law). [Usage]
-3. Describe how data distribution/layout can affect an algorithm’s communication costs. [Familiarity]
-4. Detect and correct an instance of false sharing. [Usage]
-5. Explain the impact of scheduling on parallel performance. [Familiarity]
-6. Explain performance impacts of data locality. [Familiarity]
-7. Explain the impact and trade-off related to power usage on parallel performance. [Familiarity]
+1. 不均一な負荷を検出し、修正する。[使用]
+2. 特定の並列アルゴリズムに対するアムダールの法則の計算をする　(アムダールの法則については、[SF/性能評価] (./z_appendix_A_SF.md#sf性能評価)を参照)。[使用]
+3. データの分布・配置がアルゴリズムの通信コストにどのように影響するか説明する。[知識]
+4. 偽共有の事例を検出し、修正する。[使用]
+5. スケジューリングが並列性能に与える影響を説明する。[知識]
+6. データ局在性が性能に与える影響を説明する。[知識]
+7. 並列性能に対して、電力使用に関する影響とトレードオフについて説明する。[知識]
+
 
 
 
@@ -342,41 +288,35 @@ SF/Evaluation for Amdahl’s Law). [Usage]
 
 **トピック:**
 
-* Faults (cross-reference OS/Fault Tolerance)
- * Network-based (including partitions) and node-based failures
- * Impact on system-wide guarantees (e.g., availability)
-* Distributed message sending
- * Data conversion and transmission
- * Sockets
- * Message sequencing
- * Buffering, retrying, and dropping messages
-* Distributed system design tradeoffs
- * Latency versus throughput
- * Consistency, availability, partition tolerance
-* Distributed service design
- * Stateful versus stateless protocols and services
- * Session (connection-based) designs
- * Reactive (IO-triggered) and multithreaded designs
-* Core distributed algorithms
- * Election, discovery
-
+* 故障 (相互参照: [OS/耐故障性](./z_appendix_A_OS.md#os耐故障性))
+ * ネットワークの故障 (分断を含む) とノードの故障
+ * システム全体の保証 (例：可用性)への影響
+* 分散メッセージ送信
+ * データ変換と転送
+ * ソケット
+ * メッセージの順序付け
+ * メッセージのバッファリング、再試行、ドロップ
+* 分散システム設計のトレードオフ
+ * レイテンシー vs スループット
+ * 一貫性、可用性、分断耐性
+* 分散サービス設計
+ * ステートフル vs ステートレスのプロトコルとサービス
+ * セッション (接続ベース) 設計
+ * リアクティブ (IOトリガ) とマルチスレッド設計
+* 分散アルゴリズム
+ * 選出、発見
 
 **学習到達目標:**
 
-1. Distinguish network faults from other kinds of failures. [Familiarity]
-2. Explain why synchronization constructs such as simple locks are not useful in the presence of distributed
-faults. [Familiarity]
-3. Write a program that performs any required marshaling and conversion into message units, such as packets,
-to communicate interesting data between two hosts. [Usage]
-4. Measure the observed throughput and response latency across hosts in a given network. [Usage]
-5. Explain why no distributed system can be simultaneously consistent, available, and partition tolerant.
-[Familiarity]
-6. Implement a simple server -- for example, a spell checking service. [Usage]
-7. Explain the tradeoffs among overhead, scalability, and fault tolerance when choosing a stateful v. stateless
-design for a given service. [Familiarity]
-8. Describe the scalability challenges associated with a service growing to accommodate many clients, as well
-as those associated with a service only transiently having many clients. [Familiarity]
-9. Give examples of problems for which consensus algorithms such as leader election are required. [Usage] 
+1. ネットワークの故障を他の種類の障害と区別する。[知識]
+2. 分散環境において障害が発生する場合に、単純なロックのような同期構造がなぜ有用でないかを説明する。[知識]
+3. 必要なマーシャリングとメッセージ単位への変換 (パケットなど) を行い、2つのホスト間で意味あるデータを通信するプログラムを作成する。[使用]
+4. 与えられたネットワーク内のホスト間の、スループットと応答レイテンシーを測定する。[使用]
+5. どの分散システムも同時に一貫性、可用性、および分断耐性を持つことはできないと説明する。[知識]
+6. 単純なサーバーを実装する -- 例えば、スペルチェックサービス。[使用]
+7. ステートフル vs ステートレス設計を選択する際のオーバーヘッド、スケーラビリティ、耐故障性のトレードオフを説明する。[知識]
+8. サービスが成長し多くのクライアントに対応する際、または一時的に多くのクライアントを持つ際のスケーラビリティの課題を説明する。[知識]
+9. リーダー選出などの合意アルゴリズムが必要となる問題の例を挙げる。[使用]
 
 
 
@@ -385,58 +325,56 @@ as those associated with a service only transiently having many clients. [Famili
 
 **トピック:**
 
-* Internet-Scale computing
- * Task partitioning (cross-reference PD/Parallel Algorithms, Analysis, and Programming)
- * Data access
- * Clusters, grids, and meshes
-* Cloud services
- * Infrastructure as a service
-  * Elasticity of resources
-  * Platform APIs
- * Software as a service
- * Security
- * Cost management
-* Virtualization (cross-reference SF/Virtualization and Isolation and OS/Virtual Machines)
- * Shared resource management
- * Migration of processes
-* Cloud-based data storage
- * Shared access to weakly consistent data stores
- * Data synchronization
- * Data partitioning
- * Distributed file systems (cross-reference IM/Distributed Databases)
- * Replication
+* インターネットスケールの計算
+ * タスクの分割 ([PD/並列アルゴリズム・解析とプログラミング](./z_appendix_A_PD.md#pd並列アルゴリズム解析とプログラミング))
+ * データアクセス
+ * クラスタ、グリッド、メッシュ
+* クラウドサービス
+ * IaaS (Infrastructure as a Service)
+  * リソースの弾力性
+  * プラットフォームAPI
+ * SaaS (Software as a Service)
+ * セキュリティ
+ * コスト管理
+* 仮想化 (相互参照: SF/仮想化と分離](./z_appendix_A_SF.md#sf仮想化と分離)、[OS/仮想マシン](./z_appendix_A_OS.md#os仮想マシン)）
+ * 共有リソースの管理
+ * プロセスのマイグレーション
+* クラウド上のデータストレージ
+ * 弱一貫性データストアへの共有アクセス
+ * データ同期
+ * データの分割
+ * 分散ファイルシステム (相互参照: [IM/分散データベース](./z_appendix_A_IM.md#im分散データベース))
+ * レプリケーション
+
 
 **学習到達目標:**
 
-1. Discuss the importance of elasticity and resource management in cloud computing. [Familiarity]
-2. Explain strategies to synchronize a common view of shared data across a collection of devices.
-[Familiarity]
-3. Explain the advantages and disadvantages of using virtualized infrastructure. [Familiarity]
-4. Deploy an application that uses cloud infrastructure for computing and/or data resources. [Usage]
-5. Appropriately partition an application between a client and resources. [Usage]
+1. クラウドコンピューティングにおける弾力性とリソース管理の重要性を議論する。[知識]
+2. どのデバイスに対しても共有データの同じビューを提供するための同期戦略を説明する。[知識]
+3. 仮想化インフラストラクチャの使用に関する利点と欠点を説明する。[知識]
+4. クラウドインフラストラクチャ上に計算やデータリソースを使用するアプリケーションをデプロイする。[使用]
+5. クライアントとリソース間でアプリケーションを適切に分割する。[使用]
+
+
 
 ## PD/形式モデルと意味論
 *[選択科目]*
 
 **トピック:**
 
-* Formal models of processes and message passing, including algebras such as Communicating Sequential
-Processes (CSP) and pi-calculus
-* Formal models of parallel computation, including the Parallel Random Access Machine (PRAM) and
-alternatives such as Bulk Synchronous Parallel (BSP)
-* Formal models of computational dependencies
-* Models of (relaxed) shared memory consistency and their relation to programming language specifications
-* Algorithmic correctness criteria including linearizability
-* Models of algorithmic progress, including non-blocking guarantees and fairness
-* Techniques for specifying and checking correctness properties such as atomicity and freedom from data
-races
+* プロセスとメッセージパッシングの形式的モデル。Communicating Sequential Processes (CSP) やπ計算などの代数を含む
+* 並列計算の形式的モデル。並列ランダムアクセス機械 (PRAM) とBulk Synchronous Parallel（BSP）などを含む
+* 計算依存関係の形式的モデル
+ * (緩和された) 共有メモリ一貫性のモデルとそのプログラミング言語仕様との関係
+* 線形化可能性を含むアルゴリズムの正確性基準
+* ノンブロッキング保証や公平性を含むアルゴリズム進行のモデル
+* 不可分性や、データ競合が無いことなど、正確性に関する特性を記述し検証する技術
 
 **学習到達目標:**
 
-1. Model a concurrent process using a formal model, such as pi-calculus. [Usage]
-2. Explain the characteristics of a particular formal parallel model. [Familiarity]
-3. Formally model a shared memory system to show if it is consistent. [Usage]
-4. Use a model to show progress guarantees in a parallel algorithm. [Usage]
-5. Use formal techniques to show that a parallel algorithm is correct with respect to a safety or liveness
-property. [Usage]
-6. Decide if a specific execution is linearizable or not. [Usage]
+1. π計算などの形式的モデルを使用して並行プロセスをモデル化する。[使用]
+2. 特定の形式的並列モデルの特性を説明する。[知識]
+3. 共有メモリシステムに対して一貫性があるかを示すために形式的モデルを使用する。[使用]
+4. 並列アルゴリズムの進行保証を示すためのモデルを使用する。[使用]
+5. 安全性または生存性の観点で並列アルゴリズムが正しいことを示すための形式的技術を使用する。[使用]
+6. 特定の実行が線形化可能かどうかを判断する。[使用]
