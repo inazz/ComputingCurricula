@@ -1,16 +1,7 @@
 
 # プログラミング言語 (PL)
 
-Programming languages are the medium through which programmers precisely describe
-concepts, formulate algorithms, and reason about solutions. In the course of a career, a computer
-scientist will work with many different languages, separately or together. Software developers
-must understand the programming models underlying different languages and make informed
-design choices in languages supporting multiple complementary approaches. Computer
-scientists will often need to learn new languages and programming constructs, and must
-understand the principles underlying how programming language features are defined,
-composed, and implemented. The effective use of programming languages, and appreciation of
-their limitations, also requires a basic knowledge of programming language translation and static
-program analysis, as well as run-time components such as memory management.
+プログラミング言語は、プログラマーが概念を正確に記述し、アルゴリズムを定式化し、解決策について説明する伝達手段です。キャリアの過程で、コンピュータ科学者は多くの異なる言語を個別に、または同時に扱います。ソフトウェア開発者は、さまざまな言語の基礎となるプログラミングモデルを理解し、複数の補完的なアプローチを支援する言語についてよく知ったうえで設計上の選択を行う必要があります。コンピュータ科学者は頻繁に新しい言語とプログラミング構造を学び、プログラミング言語の機能がどのように定義され、構成され、実装されるかの基本原則を理解する必要があります。プログラミング言語を、その制約を理解しつつ効率的に使用するには、プログラミング言語の翻訳、静的プログラム解析、さらにはメモリ管理などの実行時コンポーネントについての基本知識が必要です。
 
 **PL. プログラミング言語 (必修 8時間, 選択必修 20時間)**
 
@@ -35,19 +26,10 @@ program analysis, as well as run-time components such as memory management.
 | PL/論理型プログラミング             |   |   | Y |
 
 
-Note:
-* Some topics from one or more of the first three Knowledge Units (Object-Oriented
-Programming, Functional Programming, Event-Driven and Reactive Programming) are
-likely to be integrated with topics in the SF-Software Development Fundamentals
-Knowledge Area in a curriculum’s introductory courses. Curricula will differ on which
-topics are integrated in this fashion and which are delayed until later courses on software
-development and programming languages.
-* Some of the most important core learning outcomes are relevant to object-oriented
-programming, functional programming, and, in fact, all programming. These learning
-outcomes are repeated in the Object-Oriented Programming and Functional
-Programming Knowledge Units, with a note to this effect. We do not intend that a
-curriculum necessarily needs to cover them multiple times, though some will. We repeat
-them only because they do not naturally fit in only one Knowledge Unit.
+注釈:
+* 最初の3つの知識単位 ([オブジェクト指向プログラミング](#plオブジェクト指向プログラミング)、 [関数型プログラミング](#pl関数型プログラミング)、[イベント駆動プログラミングとリアクティブプログラミング](#plイベント駆動プログラミングとリアクティブプログラミング)）のいくつかのトピックは、[SDF/ソフトウェア開発基礎](./z_appendix_A_SDF.md)の知識領域のトピックとともに入門講座のカリキュラムに統合される可能性があります。どのトピックが入門講座に統合され、どのトピックがソフトウェア開発やプログラミング言語の後段の講座まで遅延されるかは、カリキュラムにより異なります。
+* 最も重要なコアの学習到達目標のいくつかは、オブジェクト指向プログラミング、関数型プログラミング、実際には全てのプログラミングに関連しています。これらの学習到達目標は、オブジェクト指向プログラミングと関数型プログラミングの知識単位で繰り返され、注釈が付けられています。私たちは必ずしもカリキュラムがそれらを何度もカバーする必要があるとは意図していませんが、一部はそうなるでしょう。それらが繰り返されるのは、自然に一つの知識単位にだけ適合するわけではないからです。
+
 
 
 
@@ -56,49 +38,41 @@ them only because they do not naturally fit in only one Knowledge Unit.
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Object-oriented design
- * Decomposition into objects carrying state and having behavior
- * Class-hierarchy design for modeling
-* Definition of classes: fields, methods, and constructors
-* Subclasses, inheritance, and method overriding
-* Dynamic dispatch: definition of method-call
+* オブジェクト指向設計
+ * 状態や振る舞いを持つオブジェクトへの分解
+ * モデリングのためのクラス階層設計
+* クラスの定義: フィールド、メソッド、コンストラクタ
+* サブクラス、継承、およびメソッドのオーバーライド
+* 動的ディスパッチ: メソッド呼び出しの定義
 
-[Core-Tier2]
+[選択必修]
 
-* Subtyping (cross-reference PL/Type Systems)
- * Subtype polymorphism; implicit upcasts in typed languages
- * Notion of behavioral replacement: subtypes acting like supertypes
- * Relationship between subtyping and inheritance
-* Object-oriented idioms for encapsulation
- * Privacy and visibility of class members
- * Interfaces revealing only method signatures
- * Abstract base classes
-* Using collection classes, iterators, and other common library components
+* サブタイピング (相互参照: [PL/型システム](#pl型システム))
+ * サブタイプ多態性; 型付き言語における暗黙のアップキャスト
+ * 振る舞いの置き換えの概念: サブタイプがスーパータイプのように振る舞う
+ * サブタイピングと継承の関係
+* カプセル化のためのオブジェクト指向のイディオム
+ * クラスメンバーのプライバシーと可視性
+ * メソッドのシグネチャのみを公開するインターフェース
+ * 抽象基底クラス
+* コレクションクラス、イテレーター、およびその他の一般的なライブラリコンポーネントの使用
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Design and implement a class. [Usage]
-2. Use subclassing to design simple class hierarchies that allow code to be reused for distinct subclasses.
-[Usage]
-3. Correctly reason about control flow in a program using dynamic dispatch. [Usage]
-4. Compare and contrast (1) the procedural/functional approach (defining a function for each operation with
-the function body providing a case for each data variant) and (2) the object-oriented approach (defining a
-class for each data variant with the class definition providing a method for each operation). Understand
-both as defining a matrix of operations and variants. [Assessment] This outcome also appears in
-PL/Functional Programming.
+1. クラスを設計し、実装する。[使用]
+2. サブクラスを使用して簡単なクラス階層を設計し、コードを異なるサブクラスで再利用可能にする。[使用]
+3. 動的ディスパッチを使用したプログラムの制御フローを正しく説明する。[使用]
+4. (1)手続き型/関数型アプローチ (各操作に対応する関数を定義し、関数本体が各データ種別毎の実装を提供する) と、(2)オブジェクト指向アプローチ（各データ種別に対してクラスを定義し、クラス定義が各操作に対応するメソッドを提供する）を比較対比する。これらを操作とデータ種別のマトリックスを定義するものとして理解する。[評価] (この成果は[PL/関数型プログラミング](#pl関数型プログラミング)にも存在する)
 
-[Core-Tier2]
+[選択必修]
 
-5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping
-(the idea of a subtype being usable in a context that expects the supertype). [Familiarity]
-6. Use object-oriented encapsulation mechanisms such as interfaces and private members. [Usage]
-7. Define and use iterators and other operations on aggregates, including operations that take functions as
-arguments, in multiple programming languages, selecting the most natural idioms for each language.
-[Usage] This outcome also appears in PL/Functional Programming.
+5. オブジェクト指向継承 (コード共有とオーバーライド) とサブタイピング (サブタイプがスーパータイプを期待する文脈で使用可能とする考え) との関係を説明する。[知識]
+6. インターフェースやプライベートメンバーなどのオブジェクト指向のカプセル化メカニズムを使用する。[使用]
+7. 関数を引数として取る操作を含む、集合に対するイテレーターやその他の操作を定義し、使用する。複数のプログラミング言語において、最も自然なイディオムを選択して実装する。[使用] (この成果は[PL/関数型プログラミング](#pl関数型プログラミング)にも存在する)
 
 
 
@@ -107,131 +81,116 @@ arguments, in multiple programming languages, selecting the most natural idioms 
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* Effect-free programming
- * Function calls have no side effects, facilitating compositional reasoning
- * Variables are immutable, preventing unexpected changes to program data by other code
- * Data can be freely aliased or copied without introducing unintended effects from mutation
-* Processing structured data (e.g., trees) via functions with cases for each data variant
- * Associated language constructs such as discriminated unions and pattern-matching over them
- * Functions defined over compound data in terms of functions applied to the constituent pieces
-* First-class functions (taking, returning, and storing functions)
+* 副作用のないプログラミング
+ * 関数呼び出しは副作用がなく、構成的な推論を容易にします
+ * 変数は不変であり、他のコードによるプログラムデータへの予期せぬ変更を防ぎます
+ * データは自由にエイリアスを作成したり、複製したりすることができ、変更による意図せぬ効果は無い。
+* 各データ種別に対して異なる処理を行う関数を介した構造化データ (例えば、ツリー) の処理
+ * 関連する言語構造、例えば判別共用体やそれらに対するパターンマッチング
+ * 複合データに対する関数を、構成要素にその関数を適用することによる定義。
+* 第一級関数（関数は演算の対象や結果にでき、保存できる）
 
-[Core-Tier2]
+[選択必修]
 
-* Function closures (functions using variables in the enclosing lexical environment)
- * Basic meaning and definition -- creating closures at run-time by capturing the environment
- * Canonical idioms: call-backs, arguments to iterators, reusable code via function arguments
- * Using a closure to encapsulate data in its environment
- * Currying and partial application
-* Defining higher-order operations on aggregates, especially map, reduce/fold, and filter
+* 関数クロージャ (同梱されたレキシカル環境内の変数を使用する関数)
+ * 基本的な意味と定義 -- 実行時に環境を捕捉してクロージャを作成する
+ * 典型的なイディオム: コールバック、イテレータへの引数、関数引数を介した再利用可能なコード
+ * 環境内のデータをカプセル化するためのクロージャの使用
+ * カリー化と部分適用
+* 集合に対する高階操作の定義、特にmap、reduce/fold、filter
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. Write basic algorithms that avoid assigning to mutable state or considering reference equality. [Usage]
-2. Write useful functions that take and return other functions. [Usage]
-3. Compare and contrast (1) the procedural/functional approach (defining a function for each operation with
-the function body providing a case for each data variant) and (2) the object-oriented approach (defining a
-class for each data variant with the class definition providing a method for each operation). Understand
-both as defining a matrix of operations and variants. [Assessment] This outcome also appears in
-PL/Object-Oriented Programming.
+1. 可変状態への代入や複数の等価な参照を持たない基本的なアルゴリズムを書く。[使用]
+2. 引数と返り値が関数である有用な関数を書く。[使用]
+3. (1)手続き型/関数型アプローチ (各操作に対応する関数を定義し、関数本体が各データ種別毎の実装を提供する) と、(2)オブジェクト指向アプローチ（各データ種別に対してクラスを定義し、クラス定義が各操作に対応するメソッドを提供する）を比較対比する。これらを操作とデータ種別のマトリックスを定義するものとして理解する。[評価] (この成果は[PL/オブジェクト指向プログラミング](#plオブジェクト指向プログラミング)にも存在する)
 
-[Core-Tier2]
+[選択必修]
 
-4. Correctly reason about variables and lexical scope in a program using function closures. [Usage]
-5. Use functional encapsulation mechanisms such as closures and modular interfaces. [Usage]
-6. Define and use iterators and other operations on aggregates, including operations that take functions as
-arguments, in multiple programming languages, selecting the most natural idioms for each language.
-[Usage] This outcome also appears in PL/Object-Oriented Programming.
+4. 関数クロージャを使用したプログラムにおいて、変数とレキシカルスコープについて正しく認識する。[使用]
+5. クロージャやモジュールのインターフェースなどの関数型カプセル化機構を使用する。[使用]
+6. 関数を引数として取る操作を含む、集合に対するイテレーターやその他の操作を定義し、使用する。複数のプログラミング言語において、最も自然なイディオムを選択して実装する。[使用] (この成果は[PL/オブジェクト指向プログラミング](#plオブジェクト指向プログラミング)にも存在する)
+
 
 
 ## PL/イベント駆動プログラミングとリアクティブプログラミング
 *[選択必修 2時間]*
 
-This material can stand alone or be integrated with other knowledge units on concurrency,
-asynchrony, and threading to allow contrasting events with threads.
+この教材は単独で扱うことも、並行性、非同期性、スレッドに関する他の知識単位と統合して、イベントとスレッドの対比を扱うこともできます。
+
 
 **トピック:**
 
-* Events and event handlers
-* Canonical uses such as GUIs, mobile devices, robots, servers
-* Using a reactive framework
- * Defining event handlers/listeners
- * Main event loop not under event-handler-writer’s control
-* Externally-generated events and program-generated events
-* Separation of model, view, and controller
+* イベントとイベントハンドラ
+* 典型的な用途、例えばGUI、モバイルデバイス、ロボット、サーバー
+* リアクティブフレームワークの使用
+ * イベントハンドラ/リスナーの定義
+ * イベントハンドラ製作者の制御下にないメインイベントループ
+* 外部で生成されたイベントとプログラムで生成されたイベント
+* モデル、ビュー、コントローラーの分離
 
 **学習到達目標:**
 
-1. Write event handlers for use in reactive systems, such as GUIs. [Usage]
-2. Explain why an event-driven programming style is natural in domains where programs react to external
-events. [Familiarity]
-3. Describe an interactive system in terms of a model, a view, and a controller. [Familiarity]
+1. GUIなどのリアクティブシステムで使用するイベントハンドラを書く。[使用]
+2. プログラムが外部イベントに反応するドメインでは、イベント駆動のプログラミングスタイルが自然である理由を説明する。[知識]
+3. モデル、ビュー、コントローラーの観点から対話型システムを説明する。[知識]
 
 
 
 ## PL/型システムの基本
 *[必修 1時間, 選択必修 4時間]*
 
-The core-tier2 hours would be profitably spent both on the core-tier2 topics and on a less shallow
-treatment of the core-tier1 topics and learning outcomes. 
+選択必修に時間を割くことで、選択必修のトピックに加え、必修のトピックと学習成果をより深く学ぶことができます。
+
 
 **トピック:**
 
-[Core-Tier1]
+[必修]
 
-* A type as a set of values together with a set of operations
- * Primitive types (e.g., numbers, Booleans)
- * Compound types built from other types (e.g., records, unions, arrays, lists, functions, references)
-* Association of types to variables, arguments, results, and fields
-* Type safety and errors caused by using values inconsistently given their intended types
-* Goals and limitations of static typing
- * Eliminating some classes of errors without running the program
- * Undecidability means static analysis must conservatively approximate program behavior
+* 値の集合・操作の集合としての型
+ * プリミティブ型 (例: 数値、ブール値)
+ * 他の型から構築される複合型 (例: レコード、ユニオン、配列、リスト、関数、参照)
+* 変数、引数、結果、フィールドに型を関連付ける
+* 型安全性と、意図された型と一致しない値を使用することによるエラー
+* 静的型付けの目的と制限
+ * プログラムを実行せずに一部の種類のエラーを排除する
+ * 決定不能性により、静的解析はプログラムの挙動を保守的に近似しなければならない
 
-[Core-Tier2]
+[選択必修]
 
-* Generic types (parametric polymorphism)
- * Definition
- * Use for generic libraries such as collections
- * Comparison with ad hoc polymorphism (overloading) and subtype polymorphism
-* Complementary benefits of static and dynamic typing
- * Errors early vs. errors late/avoided
- * Enforce invariants during code development and code maintenance vs. postpone typing decisions
-while prototyping and conveniently allow flexible coding patterns such as heterogeneous
-collections
- * Avoid misuse of code vs. allow more code reuse
- * Detect incomplete programs vs. allow incomplete programs to run
-
+* ジェネリック型 (パラメトリック多相性)
+ * 定義
+ * 集合などのジェネリックライブラリの使用
+ * アドホック多相性 (オーバーロード) やサブタイプ多相性との比較
+* 静的型付けと動的型付けの相補的な利点
+ * 早期のエラー vs 遅延/回避されるエラー
+ * コード開発・保守中の不変性を強制する vs プロトタイプ時の型の決定を遅延し、異種集合などの柔軟なコーディングパターンを便利に許可する
+ * コードの誤用を避ける vs より多くのコードの再利用を許可する
+ * 不完全なプログラムを検出する vs 不完全なプログラムの実行を許可する
 
 **学習到達目標:**
 
-[Core-Tier1]
+[必修]
 
-1. For both a primitive and a compound type, informally describe the values that have that type. [Familiarity]
-2. For a language with a static type system, describe the operations that are forbidden statically, such as
-passing the wrong type of value to a function or method. [Familiarity]
-3. Describe examples of program errors detected by a type system. [Familiarity]
-4. For multiple programming languages, identify program properties checked statically and program
-properties checked dynamically. [Usage]
-5. Give an example program that does not type-check in a particular language and yet would have no error if
-run. [Familiarity]
-6. Use types and type-error messages to write and debug programs. [Usage]
+1. プリミティブ型と複合型の両方について、その型を持つ値にいて簡単に記述する。[知識]
+2. 静的型システムを持つ言語について、関数やメソッドに間違った型の値を渡すなど、静的に禁止される操作を説明する。[知識]
+3. 型システムによって検出されるプログラムエラーの例を説明する。[知識]
+4. 複数のプログラミング言語について、静的にチェックされるプログラムの性質と動的にチェックされるプログラムの性質を明らかにする。[使用]
+5. 特定の言語で型チェックを通らないは実行してもエラーにならないプログラムの例を挙げる。[知識]
+6. 型と型エラーメッセージを使用してプログラムを書き、デバッグする。[使用]
 
-[Core-Tier2]
+[選択必修]
 
-7. Explain how typing rules define the set of operations that are legal for a type. [Familiarity]
-8. Write down the type rules governing the use of a particular compound type. [Usage]
-9. Explain why undecidability requires type systems to conservatively approximate program behavior.
-[Familiarity]
-10. Define and use program pieces (such as functions, classes, methods) that use generic types, including for
-collections. [Usage]
-11. Discuss the differences among generics, subtyping, and overloading. [Familiarity]
-12. Explain multiple benefits and limitations of static typing in writing, maintaining, and debugging software.
-[Familiarity]
+7. 型規則が型に対して合法な操作の集合をどのように定義するかを説明する。[知識]
+8. 特定の複合型の使用を規定する型規則を記述する。[使用]
+9. なぜ型システムがプログラムの挙動を保守的に近似させる必要があるか、決定不能性が与える影響を説明する。[知識]
+10. 集合型を含む、ジェネリック型を使用するプログラムの断片 (関数、クラス、メソッドなど) を定義し、使用する。[使用]
+11. ジェネリクス、サブタイピング、オーバーロードの違いについて説明する。[知識]
+12. ソフトウェアの記述、保守、デバッグにおける静的型付けの複数の長所と短所を説明する。[知識]
 
 
 
@@ -240,19 +199,17 @@ collections. [Usage]
 
 **トピック:**
 
-* Programs that take (other) programs as input such as interpreters, compilers, type-checkers, documentation
-generators
-* Abstract syntax trees; contrast with concrete syntax
-* Data structures to represent code for execution, translation, or transmission
+* 他のプログラムを入力として受け取るプログラム (例: インタープリタ、コンパイラ、型チェッカー、ドキュメント生成器)
+* 抽象構文木; 具体構文との対比
+* 実行、翻訳、転送のために、コードを表現するデータ構造
+
 
 **学習到達目標:**
 
-1. Explain how programs that process other programs treat the other programs as their input data.
-[Familiarity]
-2. Describe an abstract syntax tree for a small language. [Usage]
-3. Describe the benefits of having program representations other than strings of source code. [Familiarity]
-4. Write a program to process some representation of code for some purpose, such as an interpreter, an
-expression optimizer, or a documentation generator. [Usage]
+1. 他のプログラムを処理するプログラムが、他のプログラムを入力データとしてどのように扱うかを説明する。[知識]
+2. 小さな言語の抽象構文木を説明する。[使用]
+3. プログラムをソースコード文字列以外でも表現する利点を説明する。[知識]
+4. インタープリタ、最適化器、ドキュメント生成器など、何らかの目的のために、何らかのコード表現を処理するプログラムを書く。[使用]
 
 
 
@@ -261,31 +218,25 @@ expression optimizer, or a documentation generator. [Usage]
 
 **トピック:**
 
-* Interpretation vs. compilation to native code vs. compilation to portable intermediate representation
-* Language translation pipeline: parsing, optional type-checking, translation, linking, execution
- * Execution as native code or within a virtual machine
- * Alternatives like dynamic loading and dynamic (or “just-in-time”) code generation
-* Run-time representation of core language constructs such as objects (method tables) and first-class
-functions (closures)
-* Run-time layout of memory: call-stack, heap, static data
- * Implementing loops, recursion, and tail calls
-* Memory management
- * Manual memory management: allocating, de-allocating, and reusing heap memory
- * Automated memory management: garbage collection as an automated technique using the notion
-of reachability
+* インタープリタ vs ネイティブコードへのコンパイル vs 移植可能な中間表現へのコンパイル
+* 言語翻訳パイプライン: パース、任意で型チェック、翻訳、リンク、実行
+ * ネイティブコードとしての実行、または仮想マシン内での実行
+ * 動的ロードや動的 (または「ジャストインタイム」) コード生成などの代替手段
+* 中心的言語機能の実行時表現。例えばオブジェクト (メソッドテーブル) や第一級関数 (クロージャ)
+* メモリの実行時レイアウト: コールスタック、ヒープ、静的データ
+ * ループ、再帰、末尾呼び出しの実装
+* メモリ管理
+ * 手動メモリ管理: ヒープメモリの割り当て、解放、再利用
+ * 自動メモリ管理: 到達可能性の概念を利用した自動化技術としてのガベージコレクション
 
 **学習到達目標:**
 
-1. Distinguish a language definition (what constructs mean) from a particular language implementation
-(compiler vs. interpreter, run-time representation of data objects, etc.). [Familiarity]
-2. Distinguish syntax and parsing from semantics and evaluation. [Familiarity]
-3. Sketch a low-level run-time representation of core language constructs, such as objects or closures.
-[Familiarity]
-4. Explain how programming language implementations typically organize memory into global data, text,
-heap, and stack sections and how features such as recursion and memory management map to this memory
-model. [Familiarity]
-5. Identify and fix memory leaks and dangling-pointer dereferences. [Usage]
-6. Discuss the benefits and limitations of garbage collection, including the notion of reachability. [Familiarity]
+1. 言語の定義 (機能の意味) と特定の言語実装 (コンパイラ vs インタープリタ、データオブジェクトの実行時表現など) を区別する。[知識]
+2. 構文、意味的構文解析、評価を区別する。[知識]
+3. オブジェクトやクロージャなどの中心的言語機能について低レベルな実行時表現の概略を説明する。[知識]
+4. プログラミング言語の実装において、通常どのようにメモリがグローバルデータ、テキスト、ヒープ、スタックセクションに整理され、再帰やメモリ管理などの機能がどのメモリモデルに対応するか説明する。[知識]
+5. メモリリークやダングリングポインタの参照を特定し、修正する。[使用]
+6. ガベージコレクションの利点と限界を、到達可能性の概念を含めて議論する。[知識]
 
 
 
@@ -294,16 +245,15 @@ model. [Familiarity]
 
 **トピック:**
 
-* Scanning (lexical analysis) using regular expressions
-* Parsing strategies including top-down (e.g., recursive descent, Earley parsing, or LL) and bottom-up (e.g.,
-backtracking or LR) techniques; role of context-free grammars
-* Generating scanners and parsers from declarative specifications
+* 正規表現を使用した字句解析
+* トップダウン (例えば、再帰下降法、アーリー法、LL) とボトムアップ (例えば、バックトラッキングやLR) の手法を含むパース戦略; 文脈自由文法の役割
+* 宣言的な仕様からの字句解析器とパーサの生成
 
 **学習到達目標:**
 
-1. Use formal grammars to specify the syntax of languages. [Usage]
-2. Use declarative tools to generate parsers and scanners. [Usage]
-3. Identify key issues in syntax definitions: ambiguity, associativity, precedence. [Familiarity]
+1. 言語の構文を指定するために形式文法を使用する。[使用]
+2. パーサと字句解析器を生成するための宣言的なツールを使用する。[使用]
+3. 構文定義の主要な問題を明らかにする: 曖昧性、結合性、優先順位。[知識]
 
 
 
@@ -312,16 +262,15 @@ backtracking or LR) techniques; role of context-free grammars
 
 **トピック:**
 
-* High-level program representations such as abstract syntax trees
-* Scope and binding resolution
-* Type checking
-* Declarative specifications such as attribute grammars
+* 抽象構文木などの高レベルのプログラム表現
+* スコープと束縛の解決
+* 型チェック
+* 属性文法などの宣言的仕様
 
 **学習到達目標:**
 
-1. Implement context-sensitive, source-level static analyses such as type-checkers or resolving identifiers to
-identify their binding occurrences. [Usage]
-2. Describe semantic analyses using an attribute grammar. [Usage]
+1. 文脈依存のソースレベルの静的解析を実装する。例えば、型チェッカーや、識別子を解決して束縛発生位置の特定。[使用]
+2. 属性文法を使用して意味解析を記述する。[使用]
 
 
 
@@ -330,23 +279,20 @@ identify their binding occurrences. [Usage]
 
 **トピック:**
 
-* Procedure calls and method dispatching
-* Separate compilation; linking
-* Instruction selection
-* Instruction scheduling
-* Register allocation
-* Peephole optimization
+* プロシージャ呼び出しとメソッドディスパッチ
+* 段階的コンパイル; リンク
+* 命令選択
+* 命令スケジューリング
+* レジスタ割り当て
+* 覗き穴最適化
 
 **学習到達目標:**
 
-1. Identify all essential steps for automatically converting source code into assembly or other low-level
-languages. [Familiarity]
-2. Generate the low-level code for calling functions/methods in modern languages. [Usage]
-3. Discuss why separate compilation requires uniform calling conventions. [Familiarity]
-4. Discuss why separate compilation limits optimization because of unknown effects of calls. [Familiarity]
-5. Discuss opportunities for optimization introduced by naive translation and approaches for achieving
-optimization, such as instruction selection, instruction scheduling, register allocation, and peephole
-optimization. [Familiarity]
+1. ソースコードをアセンブリや他の低レベル言語に自動的に変換するための全ての必要なステップを明らかにする。[知識]
+2. 現代的な言語で関数/メソッドを呼び出すための低レベルのコードを生成する。[使用]
+3. 分割コンパイルが一貫した呼び出し規約を必要とする理由を説明する。[知識]
+4. 分割コンパイルでは呼び出しによる影響がわからないことが、なぜ最適化の制限に繋がるか議論する。[知識]
+5. 素朴な翻訳により生まれる最適化の機会と、最適化のアプローチ (命令選択、命令スケジューリング、レジスタ割り当て、覗き穴最適化など)について議論する。[知識]
 
 
 
@@ -355,22 +301,18 @@ optimization. [Familiarity]
 
 **トピック:**
 
-* Dynamic memory management approaches and techniques: malloc/free, garbage collection (mark-sweep,
-copying, reference counting), regions (also known as arenas or zones)
-* Data layout for objects and activation records
-* Just-in-time compilation and dynamic recompilation
-* Other common features of virtual machines, such as class loading, threads, and security.
+* 動的メモリ管理のアプローチと手法: malloc/free、ガベージコレクション (マークスイープ、コピー、参照カウント)、領域 (region, arena, zoneとも呼ばれる)
+* オブジェクトや関数フレームのデータレイアウト
+* ジャストインタイムコンパイルと動的再コンパイル
+* 仮想マシンの他の一般的な特徴、例えばクラスロード、スレッド、セキュリティ。
 
 **学習到達目標:**
 
-1. Compare the benefits of different memory-management schemes, using concepts such as fragmentation,
-locality, and memory overhead. [Familiarity]
-2. Discuss benefits and limitations of automatic memory management. [Familiarity]
-3. Explain the use of metadata in run-time representations of objects and activation records, such as class
-pointers, array lengths, return addresses, and frame pointers. [Familiarity]
-4. Discuss advantages, disadvantages, and difficulties of just-in-time and dynamic recompilation.
-[Familiarity]
-5. Identify the services provided by modern language run-time systems. [Familiarity]
+1. 断片化、局所性、メモリオーバーヘッドなどの概念を用いて、異なるメモリ管理スキームの利点を比較する。[知識]
+2. 自動メモリ管理の利点と限界を議論する。[知識]
+3. クラスポインタ、配列の長さ、返りアドレス、フレームポインタなど、オブジェクトと関数フレームの実行時表現におけるメタデータの使用法を説明する。[知識]
+4. ジャストインタイムと動的再コンパイルの利点、欠点、困難を議論する。[知識]
+5. 現代的な言語の実行時システムが提供するサービスを特定する。[知識]
 
 
 
@@ -379,24 +321,24 @@ pointers, array lengths, return addresses, and frame pointers. [Familiarity]
 
 **トピック:**
 
-* Relevant program representations, such as basic blocks, control-flow graphs, def-use chains, and static
-single assignment
-* Undecidability and consequences for program analysis
-* Flow-insensitive analyses, such as type-checking and scalable pointer and alias analyses
-* Flow-sensitive analyses, such as forward and backward dataflow analyses
-* Path-sensitive analyses, such as software model checking
-* Tools and frameworks for defining analyses
-* Role of static analysis in program optimization
-* Role of static analysis in (partial) verification and bug-finding
+* 基本ブロック、制御フローグラフ、定義-使用連鎖、静的単一代入など、関連するプログラム表現
+* 決定不能性と、それがプログラム解析に与える影響
+* フローに依存しない解析。例えば型チェック、スケーラブルなポインタ解析やエイリアス解析
+* フローに依存する解析。例えば前方・後方データフロー解析
+* パスに依存する解析。例えばソフトウェアモデル検査
+* 解析を定義するためのツールやフレームワーク
+* プログラム最適化における静的解析の役割
+* (部分的な)検証とバグ探しにおける静的解析の役割
 
 **学習到達目標:**
 
-1. Define useful static analyses in terms of a conceptual framework such as dataflow analysis. [Usage]
-2. Explain why non-trivial sound static analyses must be approximate. [Familiarity]
-3. Communicate why an analysis is correct (sound and terminating). [Usage]
-4. Distinguish “may” and “must” analyses. [Familiarity]
-5. Explain why potential aliasing limits sound program analysis and how alias analysis can help. [Familiarity]
-6. Use the results of a static analysis for program optimization and/or partial program correctness. [Usage]
+1. データフロー解析のような概念的枠組みに基づいて有用な静的解析を定義する。[使用]
+2. 非自明で健全な静的解析は必ず近似でなければならない理由を説明する。[知識]
+3. 解析が正確 (健全で終了する) である理由を説明する。[使用]
+4. "may" 解析と "must" 解析を区別する。[知識]
+5. エイリアスの可能性が健全なプログラム解析がどのように制限されるか、そしてエイリアス解析がどのように助けるかを説明する。[知識]
+6. 静的解析の結果を、プログラム最適化や部分正当性検査のために使用する。[使用]
+
 
 
 ## PL/高度な言語機能
@@ -404,51 +346,45 @@ single assignment
 
 **トピック:**
 
-* Lazy evaluation and infinite streams
-* Control Abstractions: Exception Handling, Continuations, Monads
-* Object-oriented abstractions: Multiple inheritance, Mixins, Traits, Multimethods
-* Metaprogramming: Macros, Generative programming, Model-based development
-* Module systems
-* String manipulation via pattern-matching (regular expressions)
-* Dynamic code evaluation (“eval”)
-* Language support for checking assertions, invariants, and pre/post-conditions
+* 遅延評価と無限ストリーム
+* 制御抽象化: 例外処理、継続、モナド
+* オブジェクト指向の抽象化: 多重継承、ミックスイン、トレイト、マルチメソッド
+* メタプログラミング: マクロ、生成的プログラミング、モデルベース開発
+* モジュールシステム
+* パターンマッチング (正規表現) による文字列操作
+* 動的コード評価 (eval)
+* アサーション、不変条件、事前/事後条件のチェックのための言語サポート
 
 **学習到達目標:**
 
-1. Use various advanced programming constructs and idioms correctly. [Usage]
-2. Discuss how various advanced programming constructs aim to improve program structure, software
-quality, and programmer productivity. [Familiarity]
-3. Discuss how various advanced programming constructs interact with the definition and implementation of
-other language features. [Familiarity]
+1. 様々な高度な言語機能とイディオムを正しく使用する。[使用]
+2. 様々な高度な言語機能がどのようにプログラムの構造、ソフトウェア品質、プログラマの生産性を向上させることを目指しているかを議論する。[知識]
+3. 様々な高度な言語機能が他の言語機能の定義や実装とどのように相互作用するかを議論する。[知識]
+
 
 
 ## PL/並行処理と並列処理
 *[選択科目]*
 
-Support for concurrency is a fundamental programming-languages issue with rich material in
-programming language design, language implementation, and language theory. Due to coverage
-in other Knowledge Areas, this elective Knowledge Unit aims only to complement the material
-included elsewhere in the Body of Knowledge. Courses on programming languages are an
-excellent place to include a general treatment of concurrency including this other material.
+並行性のサポートは、プログラミング言語の根本的な課題であり、プログラミング言語の設計、実装、および理論における豊富な題材を含んでいます。他の知識領域でもカバーされているため、この選択的な知識単位では、知識体系の他の部分に含まれる題材を補完することを目指しています。プログラミング言語に関する講座は、一般的な並行性に加え、この科目のその他の題材を含める絶好の場所です。
 
-Cross-reference PD/Parallel and Distributed Computing, SF/Parallelism.
+相互参照: [並列分散処理(PD)](./z_appendix_A_PD.md), [SF/並列処理](./z_appendix_A_SF.md#sf並列処理)
 
 **トピック:**
 
-* Constructs for thread-shared variables and shared-memory synchronization
-* Actor models
-* Futures
-* Language support for data parallelism
-* Models for passing messages between sequential processes
-* Effect of memory-consistency models on language semantics and correct code generation
+* スレッド間共有変数と共有メモリ同期のための構造
+* アクターモデル
+* フューチャー
+* データ並列性の言語サポート
+* 逐次プロセス間でメッセージを渡すモデル
+* メモリ一貫性モデルが言語の意味論と正しいコード生成に与える影響
 
 **学習到達目標:**
 
-1. Write correct concurrent programs using multiple programming models, such as shared memory, actors,
-futures, and data-parallelism primitives. [Usage]
-2. Use a message-passing model to analyze a communication protocol. [Usage]
-3. Explain why programming languages do not guarantee sequential consistency in the presence of data races
-and what programmers must do as a result. [Familiarity]
+1. 共有メモリ、アクター、フューチャー、データ並列性のプリミティブなど、複数のプログラミングモデルを使用して正しい並行プログラムを作成する。[使用]
+2. メッセージパッシングモデルを使用して通信プロトコルを分析する。[使用]
+3. プログラミング言語がデータ競合の存在下で逐次一貫性を保証しない理由と、その結果プログラマが何をしなければならないかを説明する。[知識]
+
 
 
 ## PL/型システム
@@ -456,23 +392,21 @@ and what programmers must do as a result. [Familiarity]
 
 **トピック:**
 
-* Compositional type constructors, such as product types (for aggregates), sum types (for unions), function
-types, quantified types, and recursive types
-* Type checking
-* Type safety as preservation plus progress
-* Type inference
-* Static overloading
+1. 合成型のコンストラクタ(積型、共用体用の和型、関数型、量化型、再帰型など)
+2. 型チェック
+3. 保存と進行による型の安全性
+4. 型推論
+5. 静的オーバーロード
 
 **学習到達目標:**
 
-1. Define a type system precisely and compositionally. [Usage]
-2. For various foundational type constructors, identify the values they describe and the invariants they
-enforce. [Familiarity]
-3. Precisely specify the invariants preserved by a sound type system. [Familiarity]
-4. Prove type safety for a simple language in terms of preservation and progress theorems. [Usage]
-5. Implement a unification-based type-inference algorithm for a simple language. [Usage]
-6. Explain how static overloading and associated resolution algorithms influence the dynamic behavior of
-programs. [Familiarity]
+1. 型システムを正確かつ構成的に定義する。[使用]
+2. 各種の基礎的な型コンストラクタについて、それらが記述する値と強制する不変性を明らかにする。[知識]
+3. 健全な型システムが保持する不変性を正確に明記する。[知識]
+4. 保存と進行の定理に基づいて、単純な言語の型安全性を証明する。[使用]
+5. 単純な言語に対する単一化ベースの型推論アルゴリズムを実装する。[使用]
+6. 静的オーバーロードと、それを解決アルゴリズムがプログラムの動的な振る舞いにどのように影響するかを説明する。[理解]
+
 
 
 ## PL/形式意味論
@@ -480,25 +414,24 @@ programs. [Familiarity]
 
 **トピック:**
 
-* Syntax vs. semantics
-* Lambda Calculus
-* Approaches to semantics: Operational, Denotational, Axiomatic
-* Proofs by induction over language semantics
-* Formal definitions and proofs for type systems (cross-reference PL/Type Systems)
-* Parametricity (cross-reference PL/Type Systems)
-* Using formal semantics for systems modeling
+1. 構文 vs. 意味論
+2. ラムダ計算
+3. 意味論のアプローチ: 操作的、表示的、公理的
+4. 言語意味論に対する帰納法による証明	
+5. 型システムの公式定義と証明 (相互参照: [PL/型システム](#pl型システム))
+6. パラメトリシティ (相互参照: [PL/型システム](#pl型システム))
+7. システムモデリングにおける形式的意味論の利用
 
 **学習到達目標:**
 
-1. Give a formal semantics for a small language. [Usage]
-2. Write a lambda-calculus program and show its evaluation to a normal form. [Usage]
-3. Discuss the different approaches of operational, denotational, and axiomatic semantics. [Familiarity]
-4. Use induction to prove properties of all programs in a language. [Usage]
-5. Use induction to prove properties of all programs in a language that are well-typed according to a formally
-defined type system. [Usage]
-6. Use parametricity to establish the behavior of code given only its type. [Usage]
-7. Use formal semantics to build a formal model of a software system other than a programming language.
-[Usage]
+1. 小さな言語の形式的な意味論を提供する。[使用]
+2. ラムダ計算プログラムを作成し、正規形に評価した結果を示す。[使用]
+3. 操作的、表示的、公理的意味論の異なるアプローチについて議論する。[知識]
+4. 帰納法を用いてある言語の全てのプログラムが持つ性質を証明する。[使用]
+5. 形式的に定義された型システムに従って型付けされる言語において、全てのプログラムが持つ性質を証明するために帰納法を使用する。[使用]
+6. パラメトリシティを利用して、その型だけからコードの振る舞いを規定する。[使用]
+7. プログラミング言語以外のソフトウェアシステムの形式的なモデルを構築するために形式的意味論を使用する。[使用]
+
 
 
 ## PL/言語設計の実際
@@ -506,22 +439,19 @@ defined type system. [Usage]
 
 **トピック:**
 
-* Principles of language design such as orthogonality
-* Evaluation order, precedence, and associativity
-* Eager vs. delayed evaluation
-* Defining control and iteration constructs
-* External calls and system libraries
+* 言語設計の原則，例えば直交性
+* 評価順序，優先度，結合性
+* 積極的な評価 vs. 遅延評価
+* 制御と反復構造の定義
+* 外部呼び出しとシステムライブラリ
 
 **学習到達目標:**
 
-1. Discuss the role of concepts such as orthogonality and well-chosen defaults in language design.
-[Familiarity]
-2. Use crisp and objective criteria for evaluating language-design decisions. [Usage]
-3. Give an example program whose result can differ under different rules for evaluation order, precedence, or
-associativity. [Usage]
-4. Show uses of delayed evaluation, such as user-defined control abstractions. [Familiarity]
-5. Discuss the need for allowing calls to external calls and system libraries and the consequences for language
-implementation. [Familiarity]
+1. 言語設計において、直交性や適切に選ばれたデフォルトなどの概念が果たす役割を議論する。[知識]
+2. 言語設計上の決定を評価するために明確で客観的な基準を使用する。[使用]
+3. 評価順序、優先度、または結合性のルールが異なると、結果が異なる可能性があるプログラムの例を示す。[使用]
+4. ユーザー定義の制御抽象化など、遅延評価を用途を示す。[知識]
+5. 外部呼び出しやシステムライブラリを許可する必要性と言語実装に対するその影響を議論する。[知識]
 
 
 
@@ -530,13 +460,12 @@ implementation. [Familiarity]
 
 **トピック:**
 
-* Clausal representation of data structures and algorithms
-* Unification
-* Backtracking and search
-* Cuts
+* データ構造とアルゴリズムの節による表現
+* 単一化
+* バックトラックと検索
+* カット
 
 **学習到達目標:**
 
-1. Use a logic language to implement a conventional algorithm. [Usage]
-2. Use a logic language to implement an algorithm employing implicit search using clauses, relations, and
-cuts. [Usage]
+1. 論理言語を使って従来のアルゴリズムを実装する。[使用]
+2. 論理言語を使って節、関係、カットを用いる暗黙の検索を活用したアルゴリズムを実装する。[使用]
